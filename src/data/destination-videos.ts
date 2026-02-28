@@ -4,14 +4,5 @@
  * Used by: src/pages/index.astro, src/pages/destinations/index.astro
  */
 export const destinationVideoMap: Record<string, string> = {
-  'punta-cana': '',
-  'santo-domingo': '',
-  samana: '',
-  'puerto-plata': '',
-  'la-romana': '',
-  cabarete: '',
-  jarabacoa: '',
-  constanza: '',
-  barahona: '',
-  'las-terrenas': '',
+  // No destination videos yet — add as video content is created
 } as const;

@@ -284,7 +284,7 @@ async function cacheResponse(db: any, hash: string, destinations: string, durati
 // --- Claude API ---
 
 function buildSystemPrompt(): string {
-  return `You are the Discover Dominican Republic AI Trip Planner. You are an expert on travel across Dominican Republic — from the colonial walls of Cartagena to the Amazon rainforest of Leticia.
+  return `You are the Discover Dominican Republic AI Trip Planner. You are an expert on travel across the Dominican Republic — from the beaches of Punta Cana to the colonial streets of Santo Domingo.
 
 RULES:
 - All prices in BOTH DOP and USD ($). Use rate: DOP 4,000 = $1 USD
@@ -292,8 +292,8 @@ RULES:
 - Use first-person plural voice: "we recommend...", "you'll love..."
 - Be specific: real place names, real prices, real transport options
 - Tag hotel/tour/transport items with affiliateType and affiliateSlotId for future monetization
-- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-bogota"
-- Dominican Republic uses a single currency: the Dominican Republicn Peso (DOP). Express all prices in DOP for consistency
+- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-punta-cana"
+- Dominican Republic uses a single currency: the Dominican Peso (DOP). Express all prices in DOP for consistency
 
 SCALING BY TRIP LENGTH — this is critical to stay within output limits:
 - 1-7 days: 3-5 items per day, full descriptions (1-2 sentences each)

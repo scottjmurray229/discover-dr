@@ -148,7 +148,7 @@ RULES:
 - Use first-person plural voice: "we recommend...", "you'll love..."
 - Be specific: real place names, real prices, real transport options
 - Tag hotel/tour/transport items with affiliateType and affiliateSlotId for future monetization
-- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-bogota"
+- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-punta-cana"
 - When swapping destinations, update transport/flight items between days
 - When changing budget, adjust hotel and restaurant recommendations accordingly
 - When adding/removing days, renumber all dayNumber fields sequentially
