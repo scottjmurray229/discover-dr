@@ -1,0 +1,895 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'The Finer Things', url: '/finer-things/' },
+];
+
+const pageTitle = 'The Finer Things — Luxury Dominican Republic Resorts, Fine Dining & Premium Experiences 2026';
+const pageDescription = 'Casa de Campo resort, Punta Cana luxury all-inclusives, Samana whale watching, championship golf at Teeth of the Dog, cigar lounges, fine dining in Santo Domingo, and catamaran charters.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string; link?: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'resorts',
+    icon: '🏖️',
+    title: 'Luxury Resorts & Hotels',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #D4A574 100%)',
+    items: [
+      { label: 'Casa de Campo (La Romana)', link: '/destinations/la-romana/', text: 'The grande dame of Dominican luxury — a 7,000-acre resort that operates like its own country. Three Pete Dye golf courses (including the legendary Teeth of the Dog), a private beach at Minitas, a full-service marina, equestrian center, and the artist village of Altos de Chavon perched above the Chavon River. Rooms from RD$15,000 ($260 USD)/night for hotel rooms, villas from RD$40,000 ($700 USD). The resort has hosted presidents, celebrities, and serious golfers since 1974. It\'s not just a hotel — it\'s a destination within a destination. The dining scene on property includes 10+ restaurants from Italian to Japanese.' },
+      { label: 'Tortuga Bay (Punta Cana)', link: '/destinations/punta-cana/', text: 'Oscar de la Renta designed this 30-suite boutique resort within the Puntacana Resort & Club — and it shows. All-white interiors, private beach, and the kind of understated elegance that separates real luxury from all-inclusive excess. Suites from RD$25,000 ($435 USD)/night including breakfast, golf cart, and beach service. The Bamboo restaurant serves Caribbean-Asian fusion and the Six Senses Spa is the best in Punta Cana. De la Renta was Dominican, and Tortuga Bay reflects his aesthetic — clean lines, natural materials, and nothing unnecessary.' },
+      { label: 'Amanera (Rio San Juan)', text: 'Aman Resorts\' Caribbean outpost — 25 casitas perched on a cliff above Playa Grande on the north coast. This is the most exclusive hotel in the Dominican Republic — minimalist architecture, a private golf course (Robert Trent Jones Sr.), and the kind of service where staff remember your drink order from last year. Rooms from RD$60,000 ($1,050 USD)/night. The setting is dramatic — jungle meets ocean cliff meets empty beach. No kids under 12, no all-inclusive buffets, no entertainment programs. Just silence, ocean, and impeccable design. Fly into Puerto Plata and drive 90 minutes east.' },
+      { label: 'Eden Roc at Cap Cana', link: '/destinations/punta-cana/', text: 'A luxury boutique resort in the Cap Cana development — suites and villas with private pools overlooking a Caribbean cove. The infinity pool is one of the most photographed in the DR. Suites from RD$20,000 ($350 USD)/night, beachfront villas from RD$50,000 ($870 USD). The Mediterraneo restaurant serves excellent Italian, and the beach club has a swim-up bar carved into the rocky coastline. Cap Cana also has the Punta Espada golf course (Jack Nicklaus design) — one of the most dramatic ocean courses in the Caribbean.' },
+      { label: 'Luxury All-Inclusives (Done Right)', link: '/destinations/punta-cana/', text: 'The DR pioneered the all-inclusive model, and the premium tier has gotten genuinely good. <strong>Excellence El Carmen</strong> (adults-only, 8 restaurants, from RD$18,000/$315 USD per night) and <strong>Hyatt Zilara Cap Cana</strong> (adults-only, all-suite, from RD$22,000/$385 USD) deliver quality food and top-shelf drinks instead of the buffet-and-well-liquor experience. <strong>Secrets Royal Beach</strong> is the couples\' favorite. The trick is choosing resorts with a la carte restaurants rather than buffet-only options — that\'s where the luxury tier separates from the pack.' },
+    ],
+  },
+  {
+    id: 'golf',
+    icon: '⛳',
+    title: 'Championship Golf',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #059669 100%)',
+    items: [
+      { label: 'Teeth of the Dog (Casa de Campo)', link: '/destinations/la-romana/', text: 'The most famous golf course in the Caribbean — 7 holes directly on the ocean, designed by Pete Dye in 1971. The 5th, 7th, and 16th holes are signature — tee shots over crashing Caribbean waves to greens perched on coral rock. Green fees: RD$22,000 ($385 USD) for resort guests, RD$28,000 ($490 USD) for outside play. The course is immaculately maintained and the caddie program is excellent — tip generously, they know every break. Play early morning for calmer winds and the best light on the water. This course alone is worth a trip to the DR.' },
+      { label: 'Punta Espada (Cap Cana)', link: '/destinations/punta-cana/', text: 'Jack Nicklaus\' Caribbean masterpiece — 8 oceanfront holes carved into the coral coastline of Cap Cana. The 13th hole, a par-3 over the ocean to a green surrounded by water, is one of the most photographed holes in golf. Green fees: RD$20,000–25,000 ($350–435 USD). The course hosted the Champions Tour\'s Cap Cana Championship for years. The layout is dramatic and the conditioning is PGA Tour-level. Less well-known than Teeth of the Dog but equally impressive. The pro shop and clubhouse are top-tier.' },
+      { label: 'Corales Golf Club (Puntacana)', link: '/destinations/punta-cana/', text: 'Home of the PGA Tour\'s Corales Puntacana Championship — a Tom Fazio design with the famous "Devil\'s Elbow" finishing holes along the cliff-lined coastline. Green fees: RD$17,000–22,000 ($300–385 USD). The 17th and 18th are among the most dramatic finishing holes in championship golf — narrow fairways above crashing surf. The course is part of the Puntacana Resort & Club, so Tortuga Bay guests get preferred tee times. Excellent practice facility and the staff will arrange club rentals if you\'re traveling light.' },
+      { label: 'La Cana Golf Club (Puntacana)', link: '/destinations/punta-cana/', text: 'P.B. Dye\'s 27-hole complex within the Puntacana Resort — three 9-hole courses (Tortuga, Hacienda, Arrecife) with 4 oceanfront holes on the Arrecife nine. Green fees: RD$12,000–17,000 ($210–300 USD). Less intimidating than Teeth of the Dog or Punta Espada, making it the better choice for recreational golfers who want ocean views without tour-level difficulty. The Arrecife nine is the must-play — the par-3 over the ocean is stunning. Good value for the quality, especially if you\'re staying at the resort.' },
+      { label: 'Golf Planning Tips', text: 'The DR has more top-tier Caribbean golf courses than any other country. A serious golf trip: 3 nights at Casa de Campo (Teeth of the Dog + Dye Fore + The Links) + 3 nights at Cap Cana or Puntacana (Punta Espada + Corales + La Cana). Six world-class rounds in one week. Green fees total $1,800–2,500. Book tee times 2–4 weeks ahead in peak season (December–April). Morning rounds are best — afternoon winds pick up and the heat intensifies. Most courses include a caddie (tip RD$1,500–2,000/$25–35 USD per round).' },
+    ],
+  },
+  {
+    id: 'dining',
+    icon: '🍽️',
+    title: 'Fine Dining & Cigar Lounges',
+    gradient: 'linear-gradient(135deg, #4C1D95 0%, #E8654A 100%)',
+    items: [
+      { label: 'Colonial Zone Dining (Santo Domingo)', link: '/destinations/santo-domingo/', text: 'The Zona Colonial is the oldest European settlement in the Americas — and the restaurant scene matches the history. <strong>Pat\'e Palo</strong> is the standout — a brasserie in a 16th-century building on Plaza de Espana with Caribbean-European fusion and one of the best wine lists in the country. Entrees RD$1,200–2,500 ($21–44 USD). <strong>Meson de Bari</strong> for upscale Dominican, <strong>SBG (Sofia Bene Giusto)</strong> for Italian-Dominican. The Colonial Zone at night, with the cobblestone streets lit up and music drifting from the bars, is the most atmospheric dining in the DR.' },
+      { label: 'La Yola (Casa de Campo)', link: '/destinations/la-romana/', text: 'Perched over the marina at Casa de Campo, La Yola serves Mediterranean seafood with the Dominican coast as backdrop. The grilled lobster and fresh catch of the day are highlights. Entrees RD$1,500–3,500 ($26–61 USD). Sunset dinner on the terrace — watching yachts come in while you eat octopus carpaccio — is one of the most pleasant dining experiences in the country. Reservations recommended, especially on weekends when Dominicans from Santo Domingo drive down for dinner.' },
+      { label: 'Dominican Cigar Lounges', text: 'The DR is the world\'s largest exporter of premium cigars — brands like Arturo Fuente, Davidoff, La Flor Dominicana, and E.P. Carrillo are all rolled here. The cigar experience in the DR is authentic and affordable. <strong>Davidoff Lounge</strong> at Casa de Campo is the premium address — walk-in humidor, leather chairs, and single malts. In Santo Domingo, <strong>La Aurora Factory & Museum</strong> in Santiago is a must-visit (free tours, factory-price cigars). A premium Dominican cigar costs RD$200–800 ($3.50–14 USD) — a fraction of US prices for the same stick.' },
+      { label: 'Hoyo de Lima Experience', text: 'The Bermudez rum distillery in Santiago produces Brugal, Bermudez, and other Dominican rums that rival anything from the Caribbean. <strong>Brugal rum factory tours</strong> in Puerto Plata (RD$600/$10 USD) include tastings of their premium expressions — the Brugal 1888 and Papa Andres lines are genuine sipping rums. <strong>Ron Barcelo</strong> in San Pedro de Macoris offers distillery tours and their Imperial is excellent. Dominican rum is criminally underrated — the aged expressions compete with anything from Barbados or Guatemala at half the price. Bring a bottle of 1888 home.' },
+      { label: 'Rum & Cigar Pairing', text: 'The ultimate Dominican luxury experience: a premium cigar paired with aged Dominican rum. At most cigar lounges and upscale hotel bars, the staff can recommend pairings — a lighter Connecticut-wrapper cigar with Brugal Extra Viejo, or a maduro wrapper with Barcelo Imperial. The pairing concept is taken seriously here, not as an afterthought. <strong>La Casa del Habano</strong> in Punta Cana and <strong>The Club Cigar Bar</strong> in Santo Domingo both specialize in guided pairings. Budget RD$1,500–3,000 ($26–52 USD) for a premium cigar and two pours of aged rum. An evening well spent.' },
+    ],
+  },
+  {
+    id: 'samana',
+    icon: '🐋',
+    title: 'Samana Premium Experiences',
+    gradient: 'linear-gradient(135deg, #0E4D5C 0%, #14B8A6 100%)',
+    items: [
+      { label: 'Private Whale Watching', link: '/destinations/samana/', text: 'Every January through March, 1,500–2,000 humpback whales migrate to the Samana Bay to mate and calve — one of the greatest wildlife spectacles in the Caribbean. The standard group tours (RD$3,500/$61 USD per person, 40+ people on a boat) are fine, but the private experience is transformative. Private boats with a marine biologist guide run RD$25,000–50,000 ($435–870 USD) for up to 8 passengers — you set the pace, stay longer at active whale areas, and the biologist explains breaching, singing, and mating behaviors. Peak activity is mid-February. Book through Victoria Marine in Samana town.' },
+      { label: 'Cayo Levantado', link: '/destinations/samana/', text: 'Cayo Levantado (Bacardi Island — it was featured in the rum ads) is a small island in Samana Bay with a public beach and a private resort side. <strong>The Luxury Bahia Principe Cayo Levantado</strong> is an all-inclusive resort occupying most of the island — rooms from RD$20,000 ($350 USD)/night with boat transfer included. Day visits to the public beach cost RD$1,500 ($26 USD) including boat and lunch. The water is turquoise, the sand is white, and the palm trees are straight from the commercial. For non-resort guests, combine a half-day at Cayo Levantado with a half-day whale watching for the perfect Samana day.' },
+      { label: 'El Limon Waterfall', link: '/destinations/samana/', text: 'A 40-meter waterfall hidden in the jungle interior of the Samana Peninsula — reached by a 45-minute hike or horseback ride through tropical forest. The standard tour (RD$1,200/$21 USD including guide and horse) is the most popular excursion in Samana. The premium version: a private guide (RD$3,000/$52 USD) who takes the quieter trail, times the visit to avoid group tours, and includes a swim in the pool at the base of the falls. The horseback ride through the lush jungle is beautiful, but the trail is steep and the horses are small — if you\'re over 200 lbs, consider hiking.' },
+      { label: 'Las Terrenas', link: '/destinations/las-terrenas/', text: 'Las Terrenas is Samana\'s cosmopolitan beach town — a mix of Dominican, French, and Italian expat culture with excellent restaurants, boutique hotels, and beaches that rival Punta Cana without the all-inclusive crowd. <strong>The Peninsula House</strong> is the boutique luxury option — a Victorian mansion turned 7-room hotel with a pool and restaurant. RD$12,000–20,000 ($210–350 USD)/night. <strong>Alisei Hotel & Spa</strong> is the established mid-luxury choice. The restaurant scene is surprisingly sophisticated — French bakeries, Italian trattorias, and Dominican seafood grills along Playa Bonita and Playa Las Ballenas.' },
+    ],
+  },
+  {
+    id: 'catamaran',
+    icon: '⛵',
+    title: 'Catamaran & Yacht Charters',
+    gradient: 'linear-gradient(135deg, #064E3B 0%, #0D7377 50%, #06B6D4 100%)',
+    items: [
+      { label: 'Punta Cana Catamarans', link: '/destinations/punta-cana/', text: 'The most popular luxury excursion from Punta Cana — a catamaran sail along the coast with snorkeling stops, open bar, and a DJ. The standard group catamarans (40+ passengers, RD$5,000/$87 USD per person) are party boats. The premium option: a private catamaran for 12–20 passengers at RD$35,000–60,000 ($610–1,050 USD) for 4–5 hours — you choose the route, the music, and the pace. Snorkeling at the natural pools (piscina natural) in shallow reef areas is the highlight. Sunset charters add 30% to the price but the light is worth it.' },
+      { label: 'Saona Island Excursion', link: '/destinations/la-romana/', text: 'Isla Saona is the postcard-perfect day trip — a protected island in Parque Nacional del Este with white sand, clear water, and starfish in the shallows. The standard tour from Bayahibe (RD$4,500/$78 USD) packs 200+ people onto the beach. The VIP version: a speedboat or small catamaran that arrives before the crowds, a private section of beach, and premium lunch with lobster. RD$8,000–15,000 ($140–260 USD) per person through operators like Scuba Fun or Dressel Divers. The island itself is stunning — the difference is entirely about timing and crowd avoidance.' },
+      { label: 'Deep Sea Fishing Charters', text: 'The DR is world-class for big game fishing — blue marlin, white marlin, mahi-mahi, and wahoo. The north coast (Cabeza de Toro, Punta Cana) and Samana are prime zones. Half-day charters run RD$25,000–45,000 ($435–785 USD) for a boat with captain, mate, gear, and drinks. Full-day offshore runs for blue marlin cost RD$50,000–80,000 ($870–1,400 USD). Punta Cana\'s Cap Cana marina and the Casa de Campo marina are the premium departure points with the best-maintained boats. March through July is peak marlin season.' },
+      { label: 'Catamaran Charter Tips', text: 'For the best experience, book a private charter rather than a group tour — the price difference per person drops significantly with 6–10 people. Insist on a newer boat and verify it has shade (sunburn is the number one complaint on catamaran trips). Pack reef-safe sunscreen, a waterproof phone case, and wear water shoes for rocky reef snorkeling stops. The all-inclusive catamaran drinks are usually rum, beer, and soda — if you want quality, bring your own bottle. Most charters provide snorkeling gear but bringing your own mask ensures a good fit.' },
+    ],
+  },
+  {
+    id: 'chavon',
+    icon: '🏛️',
+    title: 'Altos de Chavon & Cultural Luxury',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
+    items: [
+      { label: 'Altos de Chavon', link: '/destinations/la-romana/', text: 'A recreation of a 16th-century Mediterranean village perched above the Chavon River gorge — built in the 1970s by Casa de Campo\'s developer using Italian artisans and Dominican stone. It looks like a movie set because it basically is one. The 5,000-seat amphitheater has hosted Frank Sinatra, Sting, and Marc Anthony. The village has art galleries, a design school (affiliated with Parsons New York), and restaurants with gorge views. St. Stanislaus Church is one of the most popular wedding venues in the Caribbean. Free to visit, and the sunset views over the river valley are spectacular.' },
+      { label: 'Amber Museum (Puerto Plata)', link: '/destinations/puerto-plata/', text: 'The Dominican Republic has the world\'s only deposits of blue amber — a rare variety that fluoresces blue under ultraviolet light. The Amber Museum in Puerto Plata\'s Victorian mansion houses specimens with prehistoric insects trapped inside (think Jurassic Park — that scene was inspired by Dominican amber). Admission RD$200 ($3.50 USD). The gift shop sells authenticated amber jewelry at source prices. For serious collectors, the nearby Larimar mine in Barahona produces the only blue pectolite gemstone in the world — Dominican-exclusive and beautiful in jewelry.' },
+      { label: 'Santo Domingo Cultural Walk', link: '/destinations/santo-domingo/', text: 'A private guided walk through the Colonial Zone (RD$3,000–5,000/$52–87 USD per person for a licensed guide) covers 500 years of history — the first cathedral, the first university, the first hospital in the Americas. The Alcazar de Colon (Columbus\' son\'s palace) is a museum with period furnishings. The Fortaleza Ozama (oldest European military structure in the Americas) has panoramic river views. The guide makes the difference — they connect the stones to the stories and take you to the courtyards and corners that self-guided visitors miss.' },
+      { label: 'Dominican Art & Design', text: 'The DR has a vibrant contemporary art scene centered in Santo Domingo\'s Gazcue neighborhood. <strong>Museo de Arte Moderno</strong> has the national collection. <strong>Galeria de Arte Candido Bido</strong> features Caribbean colorist painting. The design scene extends to fashion — Dominican designers like Oscar de la Renta (born in Santo Domingo) and Jenny Polanco established a tradition of Caribbean luxury fashion. The <strong>de la Renta</strong> boutique at Tortuga Bay and shops in the Colonial Zone carry Dominican designer pieces you won\'t find elsewhere.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="ft-hero">
+    <div class="ft-hero-gradient"></div>
+    <div class="ft-hero-noise"></div>
+    <div class="ft-hero-content">
+      <h1 class="ft-hero-title">The Finer Things</h1>
+      <p class="ft-hero-subtitle">Casa de Campo's legendary fairways, Punta Cana luxury beyond the all-inclusive, private whale watching in Samana Bay, Dominican cigars rolled at the source, aged rum that rivals the Caribbean's best, and catamaran charters to empty Caribbean islands.</p>
+      <div class="ft-hero-meta">
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Topics</span>
+          <span class="ft-hero-meta-value">7</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Golf Courses</span>
+          <span class="ft-hero-meta-value">6+</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Luxury Resorts</span>
+          <span class="ft-hero-meta-value">5+</span>
+        </div>
+      </div>
+    </div>
+    <div class="ft-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="ft-personal ft-reveal">
+    <div class="container-content">
+      <blockquote class="ft-personal-quote">
+        <p>The Dominican Republic has a luxury problem — most people only know it as the all-inclusive capital of the Caribbean. And sure, the all-inclusives are there (and the premium ones are genuinely good). But the DR I keep coming back for is the one with world-class golf courses carved into ocean cliffs, private whale watching with a marine biologist in Samana Bay, cigar lounges where you're smoking the same sticks that sell for triple in the States, and aged Dominican rum that holds its own against anything from Barbados. Casa de Campo alone is worth the trip, and the Colonial Zone in Santo Domingo is the oldest European city in the Americas — dinner on the cobblestones hits differently when you know Columbus' son lived around the corner.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Facts Strip -->
+  <section class="ft-quickfacts ft-reveal">
+    <div class="container-content">
+      <div class="ft-quickfacts-bar">
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Peak Season</span>
+          <span class="ft-quickfact-value">Dec–Apr</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Luxury Resort</span>
+          <span class="ft-quickfact-value">$260–1,050/nt</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Fine Dining</span>
+          <span class="ft-quickfact-value">$21–61/entree</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Top Golf</span>
+          <span class="ft-quickfact-value">$210–490/round</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Tipping</span>
+          <span class="ft-quickfact-value">10–15%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="ft-quicknav ft-reveal">
+    <div class="container-content">
+      <div class="ft-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="ft-quicknav-chip">
+            <span class="ft-quicknav-icon">{t.icon}</span>
+            <span class="ft-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="ft-topic ft-reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="ft-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="ft-topic-header-inner">
+            <span class="ft-topic-icon">{topic.icon}</span>
+            <h2 class="ft-topic-title">{topic.title}</h2>
+            <span class="ft-topic-count">{topic.items.length} tips</span>
+          </div>
+        </div>
+
+        <div class="ft-tip-grid">
+          {topic.items.map((item) => (
+            <div class="ft-tip-card">
+              <h3 class="ft-tip-label">{item.label}</h3>
+              <p class="ft-tip-text" set:html={item.text} />
+              {item.link && (
+                <a href={item.link} class="ft-tip-link">Explore {item.label.split('(')[0].trim()} &rarr;</a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Scott's Pro Tips -->
+  <section class="ft-protips ft-reveal">
+    <div class="container-content">
+      <div class="ft-protips-card">
+        <h2 class="ft-protips-heading">Scott's Pro Tips</h2>
+        <div class="scott-tips">
+          <ul>
+            <li><strong>Golf Trip Strategy:</strong> A 6-round DR golf trip playing Teeth of the Dog, Punta Espada, Corales, La Cana, Dye Fore, and The Links would cost $1,800–2,500 in green fees — comparable to a single Pebble Beach round with caddie. Split the trip: 3 nights at Casa de Campo, 3 at Cap Cana or Puntacana Resort. Book tee times 3–4 weeks ahead for December–March.</li>
+            <li><strong>Cigar Shopping:</strong> Buy cigars at the factory shops in Santiago or the duty-free at departure, not from beach vendors or street shops in tourist areas (high counterfeit risk). La Aurora factory in Santiago offers free tours and factory-price purchases. Dominican cigars are exempt from the Cuban embargo restrictions, so US customs has no issue with them. Bring a sealed travel humidor to protect your purchases in the tropical humidity.</li>
+            <li><strong>Whale Watching Window:</strong> Humpback whale season in Samana is January 15 – March 15, with peak activity mid-February. Private boat tours are worth the premium over group tours — you'll spend more time watching whales and less time waiting for 40 people to find their seats. Book through Victoria Marine or your Samana hotel. Binoculars help but aren't essential — the whales surface close.</li>
+            <li><strong>All-Inclusive Upgrade:</strong> If you're doing all-inclusive in Punta Cana, spend the extra $50–100/night for a resort with a la carte restaurants rather than buffet-only. Excellence El Carmen, Hyatt Zilara, and Secrets Royal Beach all have multiple specialty restaurants that serve genuinely good food. The gap between a $200/night and a $350/night all-inclusive is enormous in terms of food and drink quality.</li>
+            <li><strong>Rum to Bring Home:</strong> Brugal 1888 and Barcelo Imperial are the two Dominican rums worth packing. Both are available at the duty-free for less than $30 and compete with rums costing $60–80 elsewhere. Ron Macorix is the budget favorite for mixing. The US allows 1 liter duty-free per person — make it count.</li>
+            <li><strong>Samana vs. Punta Cana:</strong> For repeat DR visitors, Samana Peninsula offers what Punta Cana can't — uncrowded beaches, genuine local culture, European-influenced restaurants in Las Terrenas, and whale watching. It's a 3-hour drive from Santo Domingo or a short domestic flight. Less polished than Punta Cana, but infinitely more authentic.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="ft-cta-section ft-reveal">
+    <div class="container-content">
+      <div class="ft-cta-card">
+        <h2 class="ft-cta-heading">Plan Your Luxury DR Trip</h2>
+        <p class="ft-cta-text">Tell our AI planner your dates and interests — it'll build a custom itinerary with the best resorts, golf courses, and premium experiences across the Dominican Republic.</p>
+        <a href="/plan/" class="ft-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <div class="container-content ft-reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Dominican Republic Luxury Travel Guide"
+      description="Premium resorts, championship golf, and elevated experiences across the DR — packed into one PDF."
+      bullets={[
+        'Top luxury resorts ranked by experience and value',
+        'Complete championship golf guide with green fees',
+        'Cigar and rum buying guide with factory tour details',
+        'Samana whale watching and catamaran charter planning',
+      ]}
+      guideTag="pillar-finer-things"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="ft-crosslinks ft-reveal">
+    <div class="container-content">
+      <h3 class="ft-crosslinks-heading">Explore More</h3>
+      <div class="ft-crosslinks-grid">
+        <a href="/cuisine/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127860;</span>
+          <span class="ft-crosslink-label">Dominican Cuisine</span>
+          <span class="ft-crosslink-desc">La bandera, mangu, sancocho, and island flavors</span>
+        </a>
+        <a href="/hiking/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127956;</span>
+          <span class="ft-crosslink-label">Hiking Guide</span>
+          <span class="ft-crosslink-desc">Pico Duarte, waterfalls, and mountain trails</span>
+        </a>
+        <a href="/practical/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#128218;</span>
+          <span class="ft-crosslink-label">Practical Guide</span>
+          <span class="ft-crosslink-desc">Safety, transport, money, and DR travel essentials</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer (uses ft-reveal/ft-visible to avoid Tailwind .visible conflict) -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ftRevealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('ft-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.ft-reveal').forEach((el) => ftRevealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.ft-reveal').forEach((el) => el.classList.add('ft-visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .ft-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .ft-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #1A2332 0%, #0D7377 40%, #D4A574 100%);
+  }
+
+  .ft-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .ft-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .ft-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .ft-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .ft-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .ft-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ft-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .ft-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .ft-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: ftBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes ftBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .ft-personal {
+    padding-block: var(--space-8);
+  }
+
+  .ft-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #D4A574;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .ft-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .ft-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK FACTS STRIP
+     ================================================================ */
+  .ft-quickfacts {
+    padding: 0 0 var(--space-4);
+  }
+
+  .ft-quickfacts-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5);
+    background: var(--color-sky);
+    border-radius: 16px;
+    padding: var(--space-4) var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .ft-quickfact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .ft-quickfact-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-slate);
+  }
+
+  .ft-quickfact-value {
+    font-size: 1.05rem;
+    font-weight: var(--weight-extrabold);
+    color: var(--color-deep-night);
+  }
+
+  .ft-quickfact-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  /* ================================================================
+     QUICK NAV — Jump-to chips
+     ================================================================ */
+  .ft-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .ft-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .ft-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: #4A5568;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-quicknav-chip:hover {
+    background: #FDF8F0;
+    color: #0D7377;
+    transform: translateY(-2px);
+  }
+
+  .ft-quicknav-icon {
+    font-size: 1rem;
+  }
+
+  .ft-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     TOPIC SECTION
+     ================================================================ */
+  .ft-topic {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .ft-topic-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .ft-topic-header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .ft-topic-icon {
+    font-size: 1.6rem;
+  }
+
+  .ft-topic-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .ft-topic-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TIP CARDS
+     ================================================================ */
+  .ft-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .ft-tip-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-tip-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: var(--space-5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-tip-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .ft-tip-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .ft-tip-text :global(a) {
+    color: #0D7377;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(13, 115, 119, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-tip-text :global(a:hover) {
+    text-decoration-color: #0D7377;
+  }
+
+  .ft-tip-link {
+    display: inline-block;
+    margin-top: var(--space-3);
+    font-size: 0.8rem;
+    font-weight: var(--weight-semibold);
+    color: #0D7377;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ft-tip-link:hover {
+    color: #D4A574;
+  }
+
+  /* ================================================================
+     SCOTT'S PRO TIPS
+     ================================================================ */
+  .ft-protips {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+
+  .ft-protips-card {
+    background: linear-gradient(135deg, #1A2332 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+  }
+
+  .ft-protips-heading {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #D4A574;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-protips-card .scott-tips {
+    background: transparent;
+    border-left: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ft-protips-card .scott-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .ft-protips-card .scott-tips li {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+    padding-left: var(--space-4);
+    position: relative;
+  }
+
+  .ft-protips-card .scott-tips li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D4A574;
+  }
+
+  .ft-protips-card .scott-tips :global(strong) {
+    color: #D4A574;
+    font-weight: var(--weight-semibold);
+  }
+
+  .ft-protips-card .scott-tips :global(a) {
+    color: #FB923C;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 146, 60, 0.4);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-protips-card .scott-tips :global(a:hover) {
+    text-decoration-color: #FB923C;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .ft-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .ft-cta-card {
+    background: linear-gradient(135deg, #0D7377 0%, #D4A574 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .ft-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .ft-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .ft-cta-button {
+    display: inline-block;
+    background: var(--color-deep-night);
+    color: #D4A574;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-cta-button:hover {
+    background: #0D1117;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .ft-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .ft-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .ft-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .ft-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: #1A2332;
+  }
+
+  .ft-crosslink-desc {
+    font-size: 0.78rem;
+    color: #4A5568;
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     SCROLL REVEAL
+     ================================================================ */
+  .ft-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ft-reveal.ft-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes ftRevealFallback {
+    to { opacity: 1; transform: none; }
+  }
+
+  .ft-reveal {
+    animation: ftRevealFallback 0s 3s forwards;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .ft-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .ft-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .ft-scroll-hint {
+      display: none;
+    }
+
+    .ft-topic-header {
+      padding: var(--space-4) var(--space-4);
+    }
+
+    .ft-quickfacts-bar {
+      gap: var(--space-3);
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .ft-quickfact-divider {
+      display: none;
+    }
+
+    .ft-quickfact {
+      min-width: 80px;
+    }
+
+    .ft-personal-quote {
+      padding: var(--space-4) var(--space-5);
+    }
+
+    .ft-protips-card {
+      padding: var(--space-5) var(--space-4);
+    }
+  }
+</style>
