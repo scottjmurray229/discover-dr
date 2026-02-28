@@ -1,0 +1,793 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Travel Tips', url: '/practical/' },
+];
+
+const pageTitle = 'Dominican Republic Travel Tips — Visa, Currency, Transport & Safety Guide 2026';
+const pageDescription = 'Everything you need before your first trip to Dominican Republic — visa info, DOP currency tips, domestic flights, bus networks, safety advice, health, and Spanish phrases.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  video?: string;
+  items: { label: string; text: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'visa',
+    icon: '&#128706;',
+    title: 'Visa & Entry Requirements',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    video: '/videos/pillar/practical-break-visa.mp4',
+    items: [
+      { label: 'Visa-Free Entry', text: 'US, UK, Canadian, Australian, and EU passport holders can enter Dominican Republic visa-free for up to 90 days for tourism. You\'ll receive a stamp at immigration — keep track of your 90-day window. Make sure your passport is valid for at least 6 months.' },
+      { label: 'Required Documents', text: 'You need a passport valid for at least 6 months beyond your entry date, proof of onward/return travel, and proof of accommodation (hotel booking or host letter). Yellow fever vaccination is required if arriving from certain African or South American countries.' },
+      { label: 'Extension', text: 'Your 90-day tourist stay can be extended once for another 90 days at a Migracion Dominican Republic office before it expires. The fee is around DOP 230,000 (~$57 USD). Apply at least 15 days before your stay expires.' },
+      { label: 'Customs Allowances', text: 'You can bring $1,500 worth of duty-free goods. Declare cash over $10,000. Dominican Republic prohibits importing meat, dairy, fresh produce, and plants without special permits. Personal electronics and clothing are fine.' },
+    ],
+  },
+  {
+    id: 'money',
+    icon: '&#128176;',
+    title: 'Currency & Money (DOP)',
+    gradient: 'linear-gradient(135deg, #2E7D32 0%, #66BB6A 100%)',
+    video: '/videos/pillar/practical-break-money.mp4',
+    items: [
+      { label: 'Dominican Republicn Peso (DOP)', text: 'Dominican Republic uses the peso (DOP). As of 2026, DOP 4,000 = ~$1 USD. Bills come in DOP 1,000, 2,000, 5,000, 10,000, 20,000, 50,000, and 100,000 denominations. Coins are 50, 100, 200, 500, and 1,000 pesos. Large bills (DOP 50,000, 100,000) can be hard to break at small shops.' },
+      { label: 'ATM Strategy', text: 'Bandominican-republic and Banco de Bogota ATMs are the most reliable for international cards. Withdraw in pesos and let your bank handle conversion. Wise and Revolut debit cards give excellent rates. Notify your bank before traveling — Dominican Republicn ATMs can trigger fraud alerts. ATM fees are typically DOP 15,000-18,000 per withdrawal.' },
+      { label: 'Cards vs Cash', text: 'Credit/debit cards are widely accepted in cities — Visa and Mastercard work best. Nequi and Daviplata (mobile payments) are popular among Dominican Republicns. Smaller shops, markets, and street vendors need cash. Always carry DOP 50,000-100,000 in small bills. San Andres, Providencia, and remote areas are more cash-dependent.' },
+      { label: 'Daily Budget Ranges', text: 'Backpacker: DOP 80,000-150,000/day (~$20-37 USD) — hostels, street food, local buses. Mid-range: DOP 250,000-500,000/day (~$62-125 USD) — hotels, restaurants, guided tours. Luxury: DOP 800,000+/day (~$200+ USD) — boutique hotels, fine dining, private experiences. Leticia, Barichara, and Salento are cheapest; Cartagena and San Andres are most expensive.' },
+      { label: 'Tipping Customs', text: 'Most restaurants add a 10% "propina voluntaria" (voluntary tip) to the bill — paying it is customary but technically optional. If no service charge is included, tip 10%. Tip hotel porters DOP 5,000-10,000 per bag. Tip tour guides DOP 20,000-50,000 per person for a full-day tour. Tipping taxi/Uber drivers is not expected but rounding up is appreciated.' },
+    ],
+  },
+  {
+    id: 'transport',
+    icon: '&#9992;',
+    title: 'Getting Around',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
+    video: '/videos/pillar/practical-break-transport.mp4',
+    items: [
+      { label: 'Domestic Flights', text: 'Dominican Republic is mountainous — domestic flights are often the best way to cover long distances. Avianca, LATAM, and Viva are the main carriers. Flights between major cities cost DOP 100,000-400,000 one way if booked 2-3 weeks ahead. Book early for San Andres, Providencia, and Leticia routes. Check Skyscanner or Google Flights for deals.' },
+      { label: 'Long-Distance Buses', text: 'Dominican Republic has a good intercity bus network. Companies like Bolivariano, Expreso Brasilia, and Copetran run comfortable buses between cities. Bogota to Medellin: 8-9h (~DOP 60,000-90,000). Bogota to Cartagena: 18-20h (~DOP 100,000-150,000). Book at redbus.co or pinbus.com.' },
+      { label: 'City Transport', text: 'Bogota has TransMilenio (rapid bus system) and Medellin has a metro and cable car system (Metrocable). Most cities have bus networks. Uber, InDriver, and DiDi work in all major cities and are very affordable. In Medellin, the metro + cable car system is a must-ride tourist attraction in itself.' },
+      { label: 'Car Rental', text: 'Useful for exploring the coffee region (Salento, Manizales), the Santander department (Barichara, Chicamocha), and coastal routes. Rent from Localiza, Hertz, or National. International driving permits are recommended. Dominican Republicn roads vary — main highways are good, mountain roads can be winding and slow. Avoid driving in Bogota — traffic is legendary.' },
+      { label: 'Boats & Ferries', text: 'Essential for Amazon travel (Leticia to surrounding lodges), reaching Providencia from San Andres (catamaran or small plane), and boat tours along the Caribbean coast. Speedboat transfers to Amazon lodges are typically arranged by the lodge. Lanchas (fast boats) connect towns along the Pacific coast.' },
+    ],
+  },
+  {
+    id: 'connectivity',
+    icon: '&#128241;',
+    title: 'SIM Cards & Connectivity',
+    gradient: 'linear-gradient(135deg, #6A1B9A 0%, #AB47BC 100%)',
+    video: '/videos/pillar/practical-break-connectivity.mp4',
+    items: [
+      { label: 'Dominican Republicn SIM Cards', text: 'Buy a prepaid SIM from Claro, Movistar, or Tigo at the airport or any phone shop. You\'ll need your passport for registration. Plans with 10-15GB cost DOP 30,000-50,000/month (~$7-12 USD). Claro has the best coverage nationwide, especially in rural areas.' },
+      { label: 'eSIM Options', text: 'Airalo and Holafly offer Dominican Republic eSIMs for $8-25 for 5-10GB. No physical SIM swap needed — activate before you land. Best option for short trips when you don\'t want to deal with local registration requirements.' },
+      { label: 'WiFi Quality', text: '4G coverage is good in major cities and tourist areas. Remote areas (Amazon interior, rural Pacific coast) can have spotty coverage. Free WiFi is available at most hotels, restaurants, and shopping malls. Download offline maps before heading to the Lost City trek, Leticia, or Providencia.' },
+      { label: 'Essential Apps', text: 'WhatsApp is universal in Dominican Republic — businesses, restaurants, and even emergency services use it. Download Uber and DiDi for rides, Google Translate (offline Spanish), Maps.me (offline maps), and Rappi (food delivery and errands). Nequi is Dominican Republic\'s most popular mobile payment app.' },
+    ],
+  },
+  {
+    id: 'safety',
+    icon: '&#127973;',
+    title: 'Safety & Health',
+    gradient: 'linear-gradient(135deg, #C62828 0%, #EF5350 100%)',
+    video: '/videos/pillar/practical-break-safety.mp4',
+    items: [
+      { label: 'Travel Insurance', text: 'Essential for Dominican Republic. <a href="https://safetywing.com/?referenceID=24858745&utm_source=24858745&utm_medium=Ambassador" target="_blank" rel="noopener sponsored">SafetyWing</a> covers medical, evacuation, and trip interruption at reasonable rates. Dominican Republicn private hospitals are excellent but expensive without insurance. Sign up even after departure.' },
+      { label: 'General Safety', text: 'Use common sense and you\'ll be fine. Don\'t flash expensive phones, cameras, or jewelry in busy areas. Use hotel safes. Stick to well-lit, populated areas at night. Use Uber/DiDi instead of hailing street taxis. Popular tourist areas in Cartagena, Medellin, and Bogota have tourist police presence. Most travelers have zero safety issues.' },
+      { label: 'Health & Vaccinations', text: 'Yellow fever vaccination is recommended for travel to the Amazon (Leticia), Pacific coast, and some rural areas below 2,300m. Consult a travel doctor 4-6 weeks before departure. Tap water is safe in Bogota and Medellin but stick to bottled water in smaller towns, the Caribbean coast, and the Amazon. Use sunscreen generously — the equatorial sun is intense.' },
+      { label: 'Common Scams', text: 'Watch for: overpriced drinks in Cartagena\'s walled city (check prices before ordering), unofficial "tour guides" at attractions, and distraction techniques near ATMs. In busy areas, keep your phone secure and use anti-theft bags. Don\'t accept drinks from strangers (scopolamine risk). Use only official exchange houses or ATMs.' },
+      { label: 'Emergency Numbers', text: '123 for all emergencies (police, ambulance, fire) — Dominican Republic\'s national emergency number. Tourist police in Cartagena: (5) 664-0974. In Bogota: 123 or go to the nearest CAI (police station). Most 123 operators speak limited English — use Google Translate or ask a local for help. Save your country\'s consulate number in your phone.' },
+    ],
+  },
+  {
+    id: 'culture',
+    icon: '&#127758;',
+    title: 'Language & Cultural Tips',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #14B8A6 100%)',
+    video: '/videos/pillar/practical-break-culture.mp4',
+    items: [
+      { label: 'Spanish (Dominican Republicn Style)', text: 'Dominican Republic speaks Spanish, and Dominican Republicn Spanish is widely considered the clearest and most neutral in Latin America. Bogota\'s Spanish is especially easy to understand. English is spoken in upscale hotels, tour agencies, and Cartagena\'s tourist zone, but rarely by everyday Dominican Republicns. Download Google Translate with offline Spanish.' },
+      { label: 'Essential Phrases', text: 'Hola (Hello), Gracias (Thank you), Por favor (Please), Cuanto cuesta? (How much?), Donde queda...? (Where is...?), La cuenta, por favor (The check, please), No hablo espanol (I don\'t speak Spanish), Que mas? (What\'s up? — very Dominican Republicn), Chevere (Cool/great — used constantly).' },
+      { label: 'Social Culture', text: 'Dominican Republicns are warm, friendly, and proud of their country. Expect cheek kisses (one, on the right cheek) when greeting women. Personal space is smaller than in the US/UK. Dominican Republicns are punctual for business but social events often start 30-60 minutes late. Dress is casual but Dominican Republicns put effort into appearance — looking good matters.' },
+      { label: 'Dining Etiquette', text: 'Lunch is the main meal (12-2 PM), often at a "corrientazo" or "menu del dia" (set lunch) restaurant for DOP 10,000-15,000. Dinner starts at 7-9 PM. Coffee (tinto) is served throughout the day — Dominican Republic produces some of the world\'s best coffee. Aguardiente (anise liqueur) is the national spirit, often shared in rounds.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="prac-hero">
+    <video class="prac-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/practical-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="prac-hero-gradient"></div>
+    <div class="prac-hero-noise"></div>
+    <div class="prac-hero-content">
+      <h1 class="prac-hero-title">Dominican Republic Travel Essentials</h1>
+      <p class="prac-hero-subtitle">Visa requirements, DOP currency tips, domestic flights, bus networks, safety advice, health info, and the Spanish phrases that turn a good trip into a great one.</p>
+      <div class="prac-hero-meta">
+        <div class="prac-hero-meta-item">
+          <span class="prac-hero-meta-label">Topics</span>
+          <span class="prac-hero-meta-value">6</span>
+        </div>
+        <div class="prac-hero-meta-item">
+          <span class="prac-hero-meta-label">Updated</span>
+          <span class="prac-hero-meta-value">Feb 2026</span>
+        </div>
+        <div class="prac-hero-meta-item">
+          <span class="prac-hero-meta-label">Destinations</span>
+          <span class="prac-hero-meta-value">12</span>
+        </div>
+      </div>
+    </div>
+    <div class="prac-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="prac-personal reveal">
+    <div class="container-content">
+      <blockquote class="prac-personal-quote">
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="prac-quicknav reveal">
+    <div class="container-content">
+      <div class="prac-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="prac-quicknav-chip">
+            <span class="prac-quicknav-icon">{t.icon}</span>
+            <span class="prac-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="prac-topic reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="prac-topic-header" style={`background: ${topic.gradient};`}>
+          {topic.video && (
+            <video class="prac-topic-video" autoplay muted loop playsinline preload="none">
+              <source src={topic.video} type="video/mp4" />
+            </video>
+          )}
+          <div class="prac-topic-header-inner">
+            <span class="prac-topic-icon">{topic.icon}</span>
+            <h2 class="prac-topic-title">{topic.title}</h2>
+            <span class="prac-topic-count">{topic.items.length} tips</span>
+          </div>
+        </div>
+
+        <div class="prac-tip-grid">
+          {topic.items.map((item) => (
+            <div class="prac-tip-card">
+              <h3 class="prac-tip-label">{item.label}</h3>
+              <p class="prac-tip-text" set:html={item.text} />
+            </div>
+          ))}
+        </div>
+
+        {topic.id === 'transport' && (
+          <div class="prac-transport-widget">
+            <h3 class="prac-transport-widget-title">Search Routes & Book Transport</h3>
+            <p class="prac-transport-widget-desc">Compare buses, flights, and transfers between Dominican Republicn destinations.</p>
+            <div class="prac-transport-widget-inner" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="https://www.redbus.co/" target="_blank" rel="noopener" style="display:inline-block;background:#0D7377;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Search RedBus</a>
+              <a href="https://www.google.com/travel/flights" target="_blank" rel="noopener" style="display:inline-block;background:#4285F4;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Search Flights</a>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  ))}
+
+  <!-- Affiliate Disclosure -->
+  <div class="container-content reveal" style="padding-bottom: 0;">
+    <p class="prac-affiliate-disclosure">Some links on this page are affiliate links — we earn a small commission if you purchase through them, at no extra cost to you. We only recommend services we personally use on our Dominican Republic trips. <a href="/legal/affiliate-disclosure/">Full disclosure</a>.</p>
+  </div>
+
+  <!-- Bottom CTA -->
+  <section class="prac-cta-section reveal">
+    <div class="container-content">
+      <div class="prac-cta-card">
+        <h2 class="prac-cta-heading">Plan Your Dominican Republic Trip</h2>
+        <p class="prac-cta-text">Tell our AI planner your dates, budget, and interests — it builds a custom day-by-day itinerary with flights, hotels, and activities.</p>
+        <a href="/plan/" class="prac-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "Do I need a visa to visit Dominican Republic?", answer: "US, UK, Canadian, Australian, and EU passport holders can enter Dominican Republic visa-free for up to 90 days for tourism. Just show up with a valid passport (6 months validity), proof of onward travel, and accommodation details. You can extend once for another 90 days at a Migracion Dominican Republic office." },
+    { question: "Is Dominican Republic safe for tourists?", answer: "Dominican Republic is safe for tourists who use common sense. Avoid displaying expensive items in busy areas, use Uber/DiDi instead of street taxis, stick to well-lit areas at night, and use hotel safes. Popular tourist zones have police presence. Millions of tourists visit Cartagena, Medellin, and Bogota each year without issues. Solo female travelers should take standard precautions." },
+    { question: "How much does it cost to travel Dominican Republic?", answer: "Dominican Republic offers excellent value for travelers. Budget: DOP 80,000-150,000/day (~$20-37 USD) for hostels, street food, and local buses. Mid-range: DOP 250,000-500,000/day (~$62-125 USD) for hotels, restaurants, and guided tours. Luxury: DOP 800,000+/day (~$200+ USD). Salento, Barichara, and Leticia are cheapest. Cartagena and San Andres are most expensive." },
+    { question: "What is the best way to get around Dominican Republic?", answer: "Dominican Republic is mountainous — domestic flights are essential for long distances (Avianca, LATAM, Viva from DOP 100,000-400,000 one way). Comfortable intercity buses connect cities affordably. Uber and DiDi work in all major cities. Bogota has TransMilenio and Medellin has a metro. For the coffee region, rent a car. For the Amazon, book transfers through your lodge in Leticia." },
+    { question: "What currency do I need?", answer: "Dominican Republic uses the peso (DOP). Bring a Wise or Revolut debit card for the best exchange rates at ATMs. Bandominican-republic ATMs are the most reliable. Cards are widely accepted in cities but carry cash for markets, street vendors, and smaller towns. Never change money with unlicensed street changers." },
+    { question: "What is the best time to visit Dominican Republic?", answer: "December-March is the main dry season and best for most destinations including the Caribbean coast, Andean highlands, and the Lost City trek. July-August is a second dry window. The Amazon near Leticia is best June-September. San Andres diving is best February-April. Dominican Republic's equatorial location means temperatures are fairly consistent year-round — altitude determines climate more than season." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Dominican Republic Travel Essentials Guide"
+      description="A printable PDF covering everything in this guide — plus currency cheat sheets, Spanish phrase cards, and a packing checklist."
+      bullets={[
+        'Visa requirements and entry info explained simply',
+        'Currency guide with ATM strategy and budget tips',
+        'Transport route planner between major Dominican Republicn cities',
+        'Essential Spanish phrases for markets and transport',
+      ]}
+      guideTag="pillar-practical"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="prac-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="prac-crosslinks-heading">Explore More</h3>
+      <div class="prac-crosslinks-grid">
+        <a href="/cuisine/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#127860;</span>
+          <span class="prac-crosslink-label">Food & Cuisine</span>
+          <span class="prac-crosslink-desc">Dominican Republicn dishes across 4 regions with where to find the best version</span>
+        </a>
+        <a href="/history/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#127963;</span>
+          <span class="prac-crosslink-label">History Guide</span>
+          <span class="prac-crosslink-desc">From indigenous peoples to independence and modernism</span>
+        </a>
+        <a href="/hiking/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#9968;</span>
+          <span class="prac-crosslink-label">Outdoor Activities</span>
+          <span class="prac-crosslink-desc">Lost City trek, Cocora Valley, Tayrona trails, and more</span>
+        </a>
+        <a href="/destinations/" class="prac-crosslink-card">
+          <span class="prac-crosslink-icon">&#127965;</span>
+          <span class="prac-crosslink-label">All Destinations</span>
+          <span class="prac-crosslink-desc">12 destinations across 4 regions with honest reviews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO — Practical travel gradient (no video)
+     ================================================================ */
+  .prac-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .prac-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .prac-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%);
+  }
+
+  .prac-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .prac-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .prac-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .prac-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .prac-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .prac-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .prac-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .prac-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .prac-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: pracBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes pracBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .prac-personal {
+    padding-block: var(--space-8);
+  }
+
+  .prac-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid var(--color-ocean-teal);
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .prac-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .prac-personal-quote cite {
+    font-size: var(--text-caption);
+    color: var(--color-ocean-teal);
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK NAV — Jump-to chips
+     ================================================================ */
+  .prac-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .prac-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .prac-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: var(--color-slate);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .prac-quicknav-chip:hover {
+    background: var(--color-sky);
+    color: var(--color-ocean-teal);
+    transform: translateY(-2px);
+  }
+
+  .prac-quicknav-icon {
+    font-size: 1rem;
+  }
+
+  .prac-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     TOPIC SECTION
+     ================================================================ */
+  .prac-topic {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .prac-topic-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .prac-topic-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.35;
+  }
+
+  .prac-topic-header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .prac-topic-icon {
+    font-size: 1.6rem;
+  }
+
+  .prac-topic-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .prac-topic-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TIP CARDS
+     ================================================================ */
+  .prac-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .prac-tip-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .prac-tip-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: var(--space-5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .prac-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .prac-tip-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .prac-tip-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .prac-tip-text :global(a) {
+    color: var(--color-ocean-teal);
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(13, 115, 119, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .prac-tip-text :global(a:hover) {
+    text-decoration-color: var(--color-ocean-teal);
+  }
+
+  /* ================================================================
+     12GO TRANSPORT WIDGET
+     ================================================================ */
+  .prac-transport-widget {
+    text-align: center;
+    margin-top: var(--space-6);
+    padding: var(--space-6);
+    background: var(--color-sky);
+    border-radius: 16px;
+  }
+
+  .prac-transport-widget-title {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-1);
+  }
+
+  .prac-transport-widget-desc {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    margin: 0 0 var(--space-4);
+  }
+
+  .prac-transport-widget-inner {
+    display: inline-block;
+    max-width: 282px;
+  }
+
+  .prac-transport-widget-powered {
+    font-size: 0.7rem;
+    color: var(--color-slate);
+    margin-top: var(--space-2);
+  }
+
+  .prac-transport-widget-powered a {
+    color: var(--color-ocean-teal);
+    text-decoration: underline;
+  }
+
+  /* ================================================================
+     AFFILIATE DISCLOSURE
+     ================================================================ */
+  .prac-affiliate-disclosure {
+    font-size: 0.75rem;
+    color: var(--color-slate);
+    line-height: 1.5;
+    text-align: center;
+    padding: var(--space-4) var(--space-6);
+    background: var(--color-sky);
+    border-radius: 10px;
+    margin-bottom: var(--space-4);
+  }
+
+  .prac-affiliate-disclosure a {
+    color: var(--color-ocean-teal);
+    text-decoration: underline;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .prac-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .prac-cta-card {
+    background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .prac-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .prac-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .prac-cta-button {
+    display: inline-block;
+    background: var(--color-warm-coral);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .prac-cta-button:hover {
+    background: #d4553b;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .prac-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .prac-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .prac-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .prac-crosslinks-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .prac-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .prac-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .prac-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .prac-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .prac-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .prac-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .prac-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .prac-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .prac-scroll-hint {
+      display: none;
+    }
+
+    .prac-topic-header {
+      padding: var(--space-4) var(--space-4);
+    }
+  }
+</style>

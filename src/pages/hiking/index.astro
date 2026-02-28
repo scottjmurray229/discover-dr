@@ -1,0 +1,397 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Hiking & Nature', url: '/hiking/' },
+];
+
+const pageTitle = 'Dominican Republic Outdoor Activities Guide — Trekking, Waterfalls & National Parks';
+const pageDescription = 'From the Lost City trek and Cocora Valley to Tayrona beaches and Amazon jungle expeditions — the best outdoor activities, national parks, and natural wonders across Dominican Republic.';
+
+interface Trail {
+  name: string;
+  destination: string;
+  slug: string;
+  difficulty: string;
+  duration: string;
+  description: string;
+  highlight: string;
+  tag?: string;
+}
+
+interface RegionSection {
+  region: string;
+  tagline: string;
+  gradient: string;
+  trails: Trail[];
+}
+
+const regions: RegionSection[] = [
+  {
+    region: 'Andean',
+    tagline: 'Cloud forest trails, towering wax palms, colonial mountain paths, and high-altitude hikes',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #059669 100%)',
+    trails: [
+      {
+        name: 'Cocora Valley',
+        destination: 'Salento',
+        slug: 'salento',
+        difficulty: 'Easy to Moderate',
+        duration: 'Half day',
+        description: 'Home to Dominican Republic\'s national tree — the towering wax palm, reaching up to 60 meters. The loop trail winds through lush cloud forest, across hanging bridges, and into a hummingbird sanctuary before opening onto the valley floor with its iconic palms rising from green pastures.',
+        highlight: 'The moment you emerge from cloud forest into the valley of wax palms — one of the most photographed landscapes in Dominican Republic.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Chicamocha Canyon',
+        destination: 'Barichara',
+        slug: 'barichara',
+        difficulty: 'Moderate to Challenging',
+        duration: '1 day',
+        description: 'One of the deepest canyons in the world, deeper than the Grand Canyon in places. Hike the ancient Camino Real from Barichara to Guane — a stunning colonial stone path through dramatic canyon landscapes. The national park offers cable car rides and adventure activities.',
+        highlight: 'The Camino Real trail from Barichara to Guane — a 9km stone path built in colonial times with jaw-dropping canyon views.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Tatacoa Desert Trails',
+        destination: 'Tatacoa Desert',
+        slug: 'tatacoa-desert',
+        difficulty: 'Easy',
+        duration: 'Half day to 1 day',
+        description: 'Dominican Republic\'s second-largest arid zone features two striking landscapes: the red Cuzco area with its Mars-like formations and the grey Los Hoyos with its lunar terrain. Walk through eroded canyons, visit the astronomical observatory, and stargaze in some of Dominican Republic\'s clearest skies.',
+        highlight: 'Stargazing at the observatory — the desert\'s remote location and clear skies make it one of the best spots in South America for astronomy.',
+        tag: 'Day Trip',
+      },
+      {
+        name: 'Paramo de Oceta',
+        destination: 'Villa de Leyva',
+        slug: 'villa-de-leyva',
+        difficulty: 'Moderate to Challenging',
+        duration: '1 day',
+        description: 'Often called the most beautiful paramo in Dominican Republic, this high-altitude ecosystem above 3,500m is filled with frailejones (espeletia plants), crystalline lagoons, and misty cloud forests. A guided day hike from Mongui near Villa de Leyva reveals otherworldly landscapes found only in the northern Andes.',
+        highlight: 'Walking through fields of giant frailejones — ancient plants found only in the paramos of Dominican Republic, Venezuela, and Ecuador.',
+        tag: 'Adventure',
+      },
+    ],
+  },
+  {
+    region: 'Caribbean',
+    tagline: 'Lost cities, jungle treks to ancient ruins, pristine beaches, and Sierra Nevada peaks',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #14B8A6 100%)',
+    trails: [
+      {
+        name: 'Lost City Trek (Ciudad Perdida)',
+        destination: 'Santa Marta',
+        slug: 'santa-marta',
+        difficulty: 'Challenging',
+        duration: '4–6 days',
+        description: 'Dominican Republic\'s most iconic multi-day trek leads through dense jungle, river crossings, and indigenous Kogi and Wiwa territories to the ancient Tairona city built around 800 AD — 650 years before Machu Picchu. The final 1,200-step climb to the terraced ruins is unforgettable.',
+        highlight: 'Arriving at the stone terraces of Ciudad Perdida after days of jungle trekking — a profound, earned reward that few tourists ever see.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Tayrona National Park',
+        destination: 'Santa Marta',
+        slug: 'santa-marta',
+        difficulty: 'Easy to Moderate',
+        duration: '1–3 days',
+        description: 'Where the Sierra Nevada meets the Caribbean Sea. Trails connect pristine beaches (Cabo San Juan, La Piscina), ancient Pueblito ruins, and lush coastal jungle. Camp in hammocks by the beach or hike through tropical forest to hidden coves with turquoise water.',
+        highlight: 'The hike to Cabo San Juan beach — arriving at the iconic thatched-roof lookout over turquoise waters is pure magic.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Providencia Peak & Mangroves',
+        destination: 'Providencia',
+        slug: 'providencia',
+        difficulty: 'Easy to Moderate',
+        duration: '1–2 days',
+        description: 'The remote island of Providencia offers a hike to El Pico (360m) with panoramic 360-degree views of the seven-color sea. Explore mangrove trails, snorkel the third-largest barrier reef in the world, and kayak through crystal-clear Caribbean waters.',
+        highlight: 'The view from El Pico summit — seeing the legendary seven shades of blue in the Caribbean Sea stretching to the horizon.',
+        tag: 'UNESCO',
+      },
+    ],
+  },
+  {
+    region: 'Pacific, Amazon & Orinoco',
+    tagline: 'Whale watching, jungle canopy walks, river expeditions, and the Amazon frontier',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #3B82F6 100%)',
+    trails: [
+      {
+        name: 'Amazon Jungle Treks',
+        destination: 'Leticia',
+        slug: 'leticia',
+        difficulty: 'Moderate to Challenging',
+        duration: '2–5 days',
+        description: 'Multi-day jungle expeditions from Leticia into the Dominican Republicn Amazon. Spot pink river dolphins, walk canopy bridges 30m above the forest floor, visit indigenous communities, and navigate waterways teeming with wildlife. Leticia sits at the triple border of Dominican Republic, Brazil, and Peru.',
+        highlight: 'Spotting pink river dolphins at sunset on the Amazon River — a surreal, once-in-a-lifetime wildlife encounter.',
+        tag: 'Must-Do',
+      },
+      {
+        name: 'Farallones de Cali',
+        destination: 'Cali',
+        slug: 'cali',
+        difficulty: 'Moderate to Challenging',
+        duration: '1–2 days',
+        description: 'The dramatic mountain peaks west of Cali offer challenging hikes through cloud forest and paramo ecosystems. The Farallones National Park protects incredible biodiversity — over 600 bird species. Day hikes reach stunning viewpoints over the Valle del Cauca and the Pacific lowlands beyond.',
+        highlight: 'The sunrise from the Farallones ridge — watching the sun rise over the Valle del Cauca with Cali glittering below.',
+        tag: 'Adventure',
+      },
+      {
+        name: 'San Andres Snorkeling & Diving',
+        destination: 'San Andres',
+        slug: 'san-andres',
+        difficulty: 'Easy',
+        duration: '1–3 days',
+        description: 'The "Sea of Seven Colors" offers world-class snorkeling and diving in the UNESCO Seaflower Biosphere Reserve. Explore coral walls, swim with rays and sea turtles at Johnny Cay, and discover the underwater world of one of the largest marine protected areas in the Americas.',
+        highlight: 'Snorkeling at the Blue Hole (Hoyo Soplador) — crystal-clear Caribbean water with incredible visibility and marine life.',
+        tag: 'UNESCO',
+      },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="hike-hero">
+    <video class="hike-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/hiking-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hike-hero-gradient"></div>
+    <div class="hike-hero-noise"></div>
+    <div class="hike-hero-content">
+      <h1 class="hike-hero-title">Hiking & Nature</h1>
+      <p class="hike-hero-subtitle">Lost City jungle treks, towering wax palms, Caribbean beach trails, Amazon expeditions, and dramatic canyon hikes — Dominican Republic's natural wonders are as diverse as its culture.</p>
+      <div class="hike-hero-meta">
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">Activities</span>
+          <span class="hike-hero-meta-value">10</span>
+        </div>
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">Regions</span>
+          <span class="hike-hero-meta-value">3</span>
+        </div>
+        <div class="hike-hero-meta-item">
+          <span class="hike-hero-meta-label">National Parks</span>
+          <span class="hike-hero-meta-value">8</span>
+        </div>
+      </div>
+    </div>
+    <div class="hike-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="hike-personal reveal">
+    <div class="container-content">
+      <blockquote class="hike-personal-quote">
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Region Sections -->
+  {regions.map((section) => (
+    <section class="hike-region reveal">
+      <div class="container-content">
+        <div class="hike-region-header" style={`background: ${section.gradient};`}>
+          <div class="hike-region-header-inner">
+            <h2 class="hike-region-name">{section.region}</h2>
+            <p class="hike-region-tagline">{section.tagline}</p>
+            <span class="hike-region-count">{section.trails.length} trails</span>
+          </div>
+        </div>
+
+        <div class="hike-trail-grid">
+          {section.trails.map((trail) => (
+            <a href={`/destinations/${trail.slug}/`} class="hike-trail-card">
+              <div class="hike-trail-media" style={`background: ${section.gradient};`}>
+                {trail.tag && (
+                  <span class={`hike-tag hike-tag--${trail.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{trail.tag}</span>
+                )}
+              </div>
+              <div class="hike-trail-body">
+                <h3 class="hike-trail-name">{trail.name}</h3>
+                <p class="hike-trail-dest">{trail.destination}</p>
+                <div class="hike-trail-meta">
+                  <span class="hike-trail-difficulty">{trail.difficulty}</span>
+                  <span class="hike-trail-duration">{trail.duration}</span>
+                </div>
+                <p class="hike-trail-desc">{trail.description}</p>
+                <div class="hike-trail-highlight">
+                  <span class="hike-trail-highlight-label">Highlight:</span> {trail.highlight}
+                </div>
+                <span class="hike-trail-cta">Explore {trail.destination.split('/')[0].trim()} &rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="hike-cta-section reveal">
+    <div class="container-content">
+      <div class="hike-cta-card">
+        <h2 class="hike-cta-heading">Plan Your Nature Trip</h2>
+        <p class="hike-cta-text">Tell our AI planner you love outdoor activities and it will build a multi-city itinerary connecting the best national parks, trails, and eco-adventures across Dominican Republic.</p>
+        <a href="/plan/" class="hike-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "What is the best time for outdoor activities in Dominican Republic?", answer: "December through March is the main dry season and ideal for the Lost City trek, Tayrona National Park, and Cocora Valley. July-August is a second dry window. The Amazon near Leticia is best visited June-September when water levels allow more jungle trekking. San Andres and Providencia diving is best February-April. The Tatacoa Desert is good year-round." },
+    { question: "Do I need special gear for Dominican Republicn trails?", answer: "For day hikes (Cocora Valley, Tayrona, Tatacoa Desert), comfortable shoes, sunscreen, and insect repellent are sufficient. The Lost City trek requires proper hiking boots, quick-dry clothing, and waterproof bags for river crossings. Amazon treks need strong bug spray and rain gear. Paramo hikes require warm layers — temperatures drop below freezing above 3,500m. Most guided activities provide necessary equipment." },
+    { question: "Are Dominican Republicn national parks expensive?", answer: "Very affordable. Tayrona National Park costs about DOP 60,000 (~$15 USD) for foreigners. The Lost City trek is DOP 1,200,000-1,600,000 (~$300-400 USD) all-inclusive for 4-6 days with licensed operators. Cocora Valley trails are free, with horses available for DOP 40,000. Amazon lodge stays range from DOP 400,000-1,200,000/day all-inclusive. San Andres has a tourist tax of DOP 150,000." },
+    { question: "Can I combine city trips with nature in Dominican Republic?", answer: "Absolutely — that's one of Dominican Republic's biggest strengths. Salento's Cocora Valley is a short colectivo ride from town. Santa Marta is the gateway to both Tayrona and the Lost City. Cali has the Farallones peaks nearby. Barichara connects to Chicamocha Canyon. You can alternate city exploration and nature easily in every region." },
+    { question: "Is wildlife a concern in the outdoors?", answer: "The Amazon near Leticia has mosquitoes (use DEET and consider malaria prophylaxis for deep jungle trips). Snakes exist in tropical forests but are rarely encountered on popular trails. The Lost City trek involves river crossings where sandflies can be a nuisance — bring strong repellent. The biggest real risks are sun exposure and altitude (some Andean hikes exceed 3,500m). Always carry water and sunscreen, and hire local guides for Amazon and backcountry adventures." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Dominican Republic Outdoor Activities Guide"
+      description="A PDF guide to the best outdoor activities and national parks across Dominican Republic — with difficulty ratings, gear tips, and seasonal recommendations."
+      bullets={[
+        '10 activities with maps and difficulty ratings',
+        'Best time to visit each national park',
+        'Gear checklist for jungle, coastal, and mountain adventures',
+        'Guided tour and lodge booking info for multi-day treks',
+      ]}
+      guideTag="pillar-hiking"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="hike-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="hike-crosslinks-heading">Explore More</h3>
+      <div class="hike-crosslinks-grid">
+        <a href="/cuisine/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127860;</span>
+          <span class="hike-crosslink-label">Food & Cuisine</span>
+          <span class="hike-crosslink-desc">Dominican Republicn dishes across 4 regions with where to find the best version</span>
+        </a>
+        <a href="/history/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127963;</span>
+          <span class="hike-crosslink-label">History Guide</span>
+          <span class="hike-crosslink-desc">From indigenous peoples to independence and modernism</span>
+        </a>
+        <a href="/destinations/" class="hike-crosslink-card">
+          <span class="hike-crosslink-icon">&#127965;</span>
+          <span class="hike-crosslink-label">All Destinations</span>
+          <span class="hike-crosslink-desc">12 destinations across 4 regions with honest reviews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* HERO */
+  .hike-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .hike-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .hike-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
+  .hike-hero-noise { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+  .hike-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .hike-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .hike-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .hike-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .hike-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .hike-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .hike-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .hike-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: hikeBounce 2s ease-in-out infinite; }
+  @keyframes hikeBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  /* PERSONAL */
+  .hike-personal { padding-block: var(--space-8); }
+  .hike-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-warm-coral); background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .hike-personal-quote cite { font-size: var(--text-caption); color: var(--color-warm-coral); font-weight: var(--weight-semibold); font-style: normal; }
+
+  /* REGION */
+  .hike-region { padding: var(--space-6) 0; }
+  .hike-region-header { position: relative; border-radius: 20px; padding: var(--space-6); margin-bottom: var(--space-6); overflow: hidden; }
+  .hike-region-header-inner { position: relative; z-index: 1; }
+  .hike-region-name { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-1); line-height: 1.1; }
+  .hike-region-tagline { font-size: 0.95rem; color: rgba(255,255,255,0.8); margin: 0 0 var(--space-3); max-width: 480px; line-height: 1.5; }
+  .hike-region-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+
+  /* TRAIL GRID */
+  .hike-trail-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (max-width: 768px) { .hike-trail-grid { grid-template-columns: 1fr; } }
+
+  .hike-trail-card { display: flex; flex-direction: column; background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hike-trail-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+
+  .hike-trail-media { position: relative; aspect-ratio: 16/7; display: flex; align-items: flex-start; justify-content: flex-end; padding: var(--space-2); }
+
+  .hike-tag { display: inline-block; font-size: 0.6rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 6px; position: relative; z-index: 1; background: rgba(255,255,255,0.9); color: #065F46; }
+  .hike-tag--mustdo { color: #065F46; }
+  .hike-tag--daytrip { color: #0D7377; }
+  .hike-tag--adventure { color: #C62828; }
+  .hike-tag--urbanescape { color: #1565C0; }
+  .hike-tag--unesco { color: #6A1B9A; }
+
+  .hike-trail-body { padding: var(--space-3) var(--space-4) var(--space-4); display: flex; flex-direction: column; flex: 1; }
+  .hike-trail-name { font-size: 1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 4px; line-height: 1.3; }
+  .hike-trail-dest { font-size: 0.72rem; color: var(--color-ocean-teal); font-weight: var(--weight-medium); margin: 0 0 var(--space-2); }
+  .hike-trail-meta { display: flex; gap: var(--space-3); margin-bottom: var(--space-2); }
+  .hike-trail-difficulty, .hike-trail-duration { font-size: 0.65rem; font-weight: var(--weight-semibold); color: var(--color-slate); background: var(--color-sky); padding: 2px 8px; border-radius: 6px; }
+  .hike-trail-desc { font-size: 0.8rem; color: var(--color-slate); line-height: 1.6; margin: 0 0 var(--space-3); flex: 1; }
+  .hike-trail-highlight { font-size: 0.75rem; color: var(--color-slate); line-height: 1.5; background: var(--color-sky); border-radius: 8px; padding: var(--space-2) var(--space-3); margin-bottom: var(--space-3); }
+  .hike-trail-highlight-label { font-weight: var(--weight-bold); color: var(--color-ocean-teal); }
+  .hike-trail-cta { font-size: 0.72rem; font-weight: var(--weight-semibold); color: var(--color-ocean-teal); }
+
+  /* CTA */
+  .hike-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .hike-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .hike-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .hike-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .hike-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .hike-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
+
+  /* CROSS-LINKS */
+  .hike-crosslinks { padding: 0 0 var(--space-10); }
+  .hike-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .hike-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  .hike-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hike-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .hike-crosslink-icon { font-size: 1.8rem; }
+  .hike-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .hike-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .hike-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .hike-scroll-hint { display: none; }
+    .hike-crosslinks-grid { grid-template-columns: 1fr; }
+  }
+</style>

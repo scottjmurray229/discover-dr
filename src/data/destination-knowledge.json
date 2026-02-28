@@ -1,0 +1,174 @@
+{
+  "destinations": {
+    "punta-cana": {
+      "title": "Punta Cana",
+      "tagline": "The Caribbean's All-Inclusive Paradise",
+      "region": "east-coast",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Apr"],
+      "budgetPerDay": { "backpacker": 40, "midRange": 120, "luxury": 400 },
+      "gettingThere": "Fly to Punta Cana International Airport (PUJ) — the busiest airport in the Caribbean with direct flights from most US and Canadian cities plus Europe. Taxi or shuttle to Bavaro Beach resorts ~RD$1,500 ($25) in 20 min.",
+      "highlights": ["Bavaro Beach & resort zone", "Hoyo Azul cenote", "Saona Island catamaran day trip", "Macao Beach surfing", "Indigenous Eyes Ecological Park", "Cap Cana marina & restaurants", "Scape Park adventure", "Playa Blanca snorkeling"],
+      "essentials": {
+        "gettingAround": "Most visitors use resort shuttles or organized tours. Taxis between resort areas RD$500-1,500. Uber works in the area. Renting a car useful for Macao Beach and non-resort exploration.",
+        "airport": "Punta Cana International (PUJ)",
+        "trainConnections": ["Shuttle to Santo Domingo (3 hr, ~RD$1,000)", "Bus to La Romana (1.5 hr, ~RD$400)", "Day trip to Saona Island (boat from Bayahibe)"],
+        "language": "Spanish, good English at resorts and tourist areas"
+      }
+    },
+    "santo-domingo": {
+      "title": "Santo Domingo",
+      "tagline": "The First City of the Americas",
+      "region": "santo-domingo",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Jul"],
+      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 250 },
+      "gettingThere": "Fly to Las Americas International Airport (SDQ). Taxi or Uber to Zona Colonial ~RD$1,500-2,000 ($25-35) in 30 min. Direct flights from Miami, New York, Madrid, and across the Caribbean.",
+      "highlights": ["Zona Colonial (UNESCO World Heritage)", "Alcazar de Colon", "Catedral Primada de America", "Malecon waterfront", "Los Tres Ojos caves", "Faro a Colon (Columbus Lighthouse)", "Calle Las Damas", "Mercado Modelo"],
+      "essentials": {
+        "gettingAround": "Zona Colonial is completely walkable. Metro covers main corridors (RD$20/ride). Uber and DiDi widely available. Taxis use meters or negotiate — agree on price before riding.",
+        "airport": "Las Americas International (SDQ)",
+        "trainConnections": ["Bus to Punta Cana (3 hr, ~RD$600)", "Bus to Santiago (2.5 hr, ~RD$350)", "Bus to Samana (3 hr, ~RD$500)"],
+        "language": "Spanish, some English in tourist areas and hotels"
+      }
+    },
+    "samana": {
+      "title": "Samana",
+      "tagline": "Whale Watching & Untouched Beaches",
+      "region": "interior",
+      "bestMonths": ["Jan", "Feb", "Mar", "Apr", "Dec"],
+      "budgetPerDay": { "backpacker": 35, "midRange": 90, "luxury": 280 },
+      "gettingThere": "Fly to El Catey International Airport (AZS) or drive from Santo Domingo (3 hr). The Samana highway makes the drive scenic and fast. Buses from Santo Domingo ~RD$500.",
+      "highlights": ["Humpback whale watching (Jan-Mar)", "El Limon waterfall", "Los Haitises National Park", "Playa Rincon", "Cayo Levantado (Bacardi Island)", "Playa Bonita", "Mangrove kayaking"],
+      "essentials": {
+        "gettingAround": "Rent a car or use moto-taxis (motoconchos). Boats to Cayo Levantado from the port. Tour operators run whale watching and Los Haitises excursions from the town dock.",
+        "airport": "El Catey International (AZS)",
+        "trainConnections": ["Bus to Santo Domingo (3 hr, ~RD$500)", "Drive to Las Terrenas (40 min)", "Boat to Cayo Levantado (30 min)"],
+        "language": "Spanish, limited English except at hotels"
+      }
+    },
+    "puerto-plata": {
+      "title": "Puerto Plata",
+      "tagline": "Cable Cars, Amber & the Golden Coast",
+      "region": "north-coast",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Jun", "Jul"],
+      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 220 },
+      "gettingThere": "Fly to Gregorio Luperon International Airport (POP). Taxi to town center ~RD$1,000 ($17) in 15 min. Direct flights from New York, Miami, Toronto, and European charters.",
+      "highlights": ["Teleferico (cable car) to Pico Isabel de Torres", "27 Charcos de Damajagua waterfalls", "Fortaleza San Felipe", "Amber Museum", "Playa Dorada resort area", "Brugal Rum Factory tour", "Ocean World Adventure Park", "Puerto Plata Malecon"],
+      "essentials": {
+        "gettingAround": "Motoconchos (motorcycle taxis) are the cheapest way around. Taxis for longer trips. Gua-guas (minibuses) connect towns along the coast. Uber limited — use local taxis.",
+        "airport": "Gregorio Luperon International (POP)",
+        "trainConnections": ["Gua-gua to Cabarete (40 min, ~RD$100)", "Bus to Santiago (1.5 hr, ~RD$250)", "Gua-gua to Sosua (20 min, ~RD$50)"],
+        "language": "Spanish, some English in tourist zones"
+      }
+    },
+    "la-romana": {
+      "title": "La Romana",
+      "tagline": "Altos de Chavon & Caribbean Luxury",
+      "region": "east-coast",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Apr"],
+      "budgetPerDay": { "backpacker": 35, "midRange": 100, "luxury": 350 },
+      "gettingThere": "Fly to La Romana Airport (LRM) or Punta Cana (PUJ) and drive 1.5 hr. Casa de Campo resort has its own private airport. Buses from Santo Domingo ~RD$400.",
+      "highlights": ["Altos de Chavon artist village", "Catalina Island snorkeling", "Saona Island day trip", "Casa de Campo resort & golf", "Bayahibe beaches", "Amphitheater at Altos de Chavon", "Cotubanama National Park", "Padre Nuestro trail"],
+      "essentials": {
+        "gettingAround": "Taxis and motoconchos for local trips. Boats from Bayahibe to Saona and Catalina islands. Casa de Campo has internal golf cart transport. Renting a car useful for independence.",
+        "airport": "La Romana Airport (LRM)",
+        "trainConnections": ["Bus to Santo Domingo (2 hr, ~RD$350)", "Drive to Punta Cana (1.5 hr)", "Boat to Saona Island (1 hr from Bayahibe)"],
+        "language": "Spanish, English at resorts"
+      }
+    },
+    "cabarete": {
+      "title": "Cabarete",
+      "tagline": "Kiteboarding Capital of the Caribbean",
+      "region": "north-coast",
+      "bestMonths": ["Jan", "Feb", "Mar", "Jun", "Jul", "Aug"],
+      "budgetPerDay": { "backpacker": 30, "midRange": 75, "luxury": 200 },
+      "gettingThere": "Fly to Gregorio Luperon Airport (POP) and take a taxi or shuttle to Cabarete (~RD$1,500, 25 min). Gua-guas from Puerto Plata run frequently (~RD$100).",
+      "highlights": ["Kite Beach kiteboarding", "Playa Encuentro surfing", "El Choco National Park caves & cenotes", "Cabarete Beach nightlife", "Playa Cabarete yoga & wellness", "Sosua Beach day trip", "Laguna Cabarete kayaking"],
+      "essentials": {
+        "gettingAround": "Cabarete is small and walkable along the beach road. Motoconchos for short trips. Gua-guas along the coast. Rent a scooter for Playa Encuentro and El Choco.",
+        "airport": "Nearest: Gregorio Luperon International (POP)",
+        "trainConnections": ["Gua-gua to Puerto Plata (40 min, ~RD$100)", "Gua-gua to Sosua (15 min, ~RD$50)", "Bus to Santiago (2 hr, ~RD$300)"],
+        "language": "Spanish, good English and French in the expat community"
+      }
+    },
+    "jarabacoa": {
+      "title": "Jarabacoa",
+      "tagline": "City of Eternal Spring & Adventure Capital",
+      "region": "interior",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Jun", "Jul"],
+      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 150 },
+      "gettingThere": "No airport — drive from Santiago (1.5 hr) or Santo Domingo (2.5 hr). Caribe Tours and other bus companies run from Santo Domingo (~RD$400). The mountain road from Santiago is scenic.",
+      "highlights": ["Pico Duarte trek (Caribbean's highest peak)", "Salto de Jimenoa waterfall", "Salto de Baiguate waterfall", "White water rafting on Rio Yaque", "Paragliding over the valley", "Coffee plantation tours", "Canyoning & zip-lining", "Rancho Baiguate adventure center"],
+      "essentials": {
+        "gettingAround": "Motoconchos for local trips. Rent a car for waterfalls and remote trails. Tour operators like Rancho Baiguate arrange adventure activities and Pico Duarte treks from town.",
+        "airport": "Nearest: Cibao International, Santiago (STI)",
+        "trainConnections": ["Bus to Santo Domingo (2.5 hr, ~RD$400)", "Drive to Santiago (1.5 hr)", "Drive to Constanza (2 hr)"],
+        "language": "Spanish only, very limited English"
+      }
+    },
+    "constanza": {
+      "title": "Constanza",
+      "tagline": "The Dominican Alps — Cool Mountains & Farmland",
+      "region": "interior",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Nov"],
+      "budgetPerDay": { "backpacker": 20, "midRange": 50, "luxury": 120 },
+      "gettingThere": "No airport — drive from Santo Domingo (2.5 hr) or Jarabacoa (2 hr). The mountain roads are winding but spectacular. Limited public transport — rental car recommended.",
+      "highlights": ["Valle Nuevo National Park", "Aguas Blancas waterfall", "Piramide Cimarron geographic center", "Japanese colony history", "Strawberry farms & flower nurseries", "Ebano Verde Scientific Reserve", "La Culata cloud forest", "Cool mountain climate"],
+      "essentials": {
+        "gettingAround": "A car is essential — public transport is very limited. Roads to Valle Nuevo require 4WD. Local guides available for hiking and birding. Bring warm layers — temperatures drop to 5-10C at night.",
+        "airport": "Nearest: Las Americas (SDQ) or Cibao (STI)",
+        "trainConnections": ["Drive to Santo Domingo (2.5 hr)", "Drive to Jarabacoa (2 hr)", "Drive to San Jose de Ocoa (1.5 hr)"],
+        "language": "Spanish only"
+      }
+    },
+    "barahona": {
+      "title": "Barahona",
+      "tagline": "The Untouched Southwest — Larimar, Eagles & Wild Beaches",
+      "region": "interior",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Nov"],
+      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 150 },
+      "gettingThere": "Fly to Maria Montez Airport (BRX) or drive from Santo Domingo (3.5 hr). Limited flights — most visitors drive. The coastal road south of Barahona is one of the DR's most scenic drives.",
+      "highlights": ["Bahia de las Aguilas beach", "Lago Enriquillo & crocodiles", "Larimar mine visit", "Playa San Rafael natural pool", "Jaragua National Park", "Cachote cloud forest", "Playa Los Patos", "Southwest coastal drive"],
+      "essentials": {
+        "gettingAround": "Rental car essential for exploring the southwest coast. Boats to Bahia de las Aguilas from Cabo Rojo. Local guides for Lago Enriquillo and Larimar mine. Roads can be rough — SUV recommended.",
+        "airport": "Maria Montez International (BRX)",
+        "trainConnections": ["Bus to Santo Domingo (3.5 hr, ~RD$500)", "Drive to Pedernales (2.5 hr)", "Drive to Lago Enriquillo (1.5 hr)"],
+        "language": "Spanish only"
+      }
+    },
+    "las-terrenas": {
+      "title": "Las Terrenas",
+      "tagline": "The Bohemian Beach Town with French Flair",
+      "region": "interior",
+      "bestMonths": ["Dec", "Jan", "Feb", "Mar", "Apr", "Jul"],
+      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 220 },
+      "gettingThere": "Fly to El Catey Airport (AZS, 20 min drive) or drive from Santo Domingo (2.5 hr via Samana highway). Gua-guas from Samana town (~RD$150, 40 min).",
+      "highlights": ["Playa Coson beach", "Playa Bonita", "Playa Las Ballenas", "Pueblo de los Pescadores dining", "El Limon waterfall hike", "French bakeries & cafes", "Beachfront nightlife", "Los Haitises boat excursion"],
+      "essentials": {
+        "gettingAround": "Motoconchos are the cheapest option. Rent a scooter or ATV to explore beaches. Small town — walkable along the main road. Tours to El Limon waterfall by horseback or hiking.",
+        "airport": "Nearest: El Catey International (AZS)",
+        "trainConnections": ["Gua-gua to Samana (40 min, ~RD$150)", "Bus to Santo Domingo (2.5 hr, ~RD$500)", "Drive to El Limon waterfall (30 min)"],
+        "language": "Spanish, good French and some English"
+      }
+    }
+  },
+  "connections": {
+    "punta-cana-santo-domingo": { "mode": "bus/shuttle", "duration": "3 hours", "operator": "Bavaro Express / Caribe Tours", "cost": "~RD$600-1,000 ($10-17)" },
+    "santo-domingo-samana": { "mode": "bus", "duration": "3 hours", "operator": "Caribe Tours / Metro", "cost": "~RD$500 ($8)" },
+    "santo-domingo-puerto-plata": { "mode": "bus", "duration": "3.5 hours", "operator": "Caribe Tours / Metro", "cost": "~RD$450 ($8)" },
+    "santo-domingo-jarabacoa": { "mode": "bus", "duration": "2.5 hours", "operator": "Caribe Tours", "cost": "~RD$400 ($7)" },
+    "santo-domingo-barahona": { "mode": "bus", "duration": "3.5 hours", "operator": "Caribe Tours", "cost": "~RD$500 ($8)" },
+    "santo-domingo-la-romana": { "mode": "bus", "duration": "2 hours", "operator": "Expreso Bavaro / Metro", "cost": "~RD$350 ($6)" },
+    "punta-cana-la-romana": { "mode": "bus/taxi", "duration": "1.5 hours", "operator": "Local transport", "cost": "~RD$400 ($7)" },
+    "puerto-plata-cabarete": { "mode": "gua-gua", "duration": "40 minutes", "operator": "Local gua-gua", "cost": "~RD$100 ($2)" },
+    "samana-las-terrenas": { "mode": "gua-gua", "duration": "40 minutes", "operator": "Local gua-gua", "cost": "~RD$150 ($3)" },
+    "jarabacoa-constanza": { "mode": "drive", "duration": "2 hours", "operator": "Self-drive", "cost": "~RD$1,500 fuel ($25)" }
+  },
+  "travelTips": {
+    "currency": "Dominican Peso (DOP/RD$). Cards accepted at resorts and cities. Always carry cash for small towns, motoconchos, and colmados. ATMs (Banco Popular, BHD Leon, Banreservas) widely available — withdraw in multiples of RD$1,000.",
+    "visaFree": "US, UK, Canadian, and EU citizens can purchase a tourist card (RD$600/$10 USD) for 30 days, extendable to 60. No visa required. Passport must be valid for duration of stay.",
+    "bestOverallMonths": "December to April (dry season). Whale watching in Samana January-March. Hurricane season June-November, though September-October are highest risk.",
+    "winterNote": "The DR has consistent tropical temperatures year-round: coastal areas 27-32C, mountain towns like Jarabacoa and Constanza can drop to 10-18C. Pack layers for the mountains.",
+    "simCard": "Buy a Claro or Altice SIM at the airport for ~RD$500-1,000 ($8-17) with 4G data. Coverage good in cities and tourist areas, spotty in mountains and remote southwest.",
+    "transport": "Caribe Tours and Metro are the main intercity bus companies. Gua-guas (minibuses) cover local routes cheaply. Motoconchos (motorcycle taxis) everywhere. Uber works in Santo Domingo and Punta Cana. Domestic flights limited — most travel is by road."
+  }
+}

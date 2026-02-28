@@ -1,0 +1,257 @@
+{
+  "name": "Punta Cana & Santo Domingo",
+  "subtitle": "Punta Cana \u2192 Santo Domingo",
+  "dates": "Mar 6\u2013Mar 8, 2026",
+  "days": [
+    {
+      "day": 1,
+      "date": "Fri, Mar 6",
+      "title": "Arrive Punta Cana",
+      "location": "Punta Cana, Dominican Republic",
+      "items": [
+        {
+          "id": "d1-1",
+          "time": "11:00 AM",
+          "icon": "\u2708\ufe0f",
+          "type": "transport",
+          "title": "Arrive Punta Cana Airport (PUJ)",
+          "detail": "Flight arrives at PUJ Terminal A. Taxi or shuttle to Bavaro Beach hotel zone ~RD$1,500 ($25), 20 min drive. Pre-book airport transfer or use Uber.",
+          "status": "confirmed",
+          "lat": 18.5674,
+          "lng": -68.3634
+        },
+        {
+          "id": "d1-2",
+          "time": "12:30 PM",
+          "icon": "\ud83c\udfe8",
+          "type": "accommodation",
+          "title": "Check In \u2014 Bavaro Beach Hotel",
+          "detail": "Beachfront hotel on Bavaro Beach. Drop bags, change into beach gear. Walking distance to restaurants and beach bars.",
+          "status": "confirmed",
+          "lat": 18.6873,
+          "lng": -68.4040
+        },
+        {
+          "id": "d1-3",
+          "time": "1:30 PM",
+          "icon": "\ud83c\udf5e",
+          "type": "food",
+          "title": "Lunch at Jellyfish Restaurant",
+          "detail": "Beachfront dining on Bavaro Beach. Fresh ceviche, grilled seafood, and Dominican rice and beans. Mains RD$800\u20131,500 ($14\u201326). Feet in the sand while you eat.",
+          "status": "confirmed",
+          "lat": 18.6880,
+          "lng": -68.4045
+        },
+        {
+          "id": "d1-4",
+          "time": "3:00 PM",
+          "icon": "\ud83c\udf0a",
+          "type": "activity",
+          "title": "Bavaro Beach & Snorkeling",
+          "detail": "Spend the afternoon on one of the Caribbean's most famous beaches. Crystal-clear water, white sand, palm trees. Snorkel gear rental ~RD$500 ($9) from beach vendors.",
+          "status": "confirmed",
+          "lat": 18.6873,
+          "lng": -68.4040
+        },
+        {
+          "id": "d1-5",
+          "time": "5:30 PM",
+          "icon": "\ud83c\udf34",
+          "type": "activity",
+          "title": "Hoyo Azul Cenote at Cap Cana",
+          "detail": "A stunning natural sinkhole with turquoise water at the base of a 75-foot limestone cliff. Swim in the cenote, explore Scape Park. Entry ~RD$3,000 ($50). Book ahead in high season.",
+          "status": "confirmed",
+          "lat": 18.5175,
+          "lng": -68.3660
+        },
+        {
+          "id": "d1-6",
+          "time": "7:30 PM",
+          "icon": "\ud83c\udf7d\ufe0f",
+          "type": "food",
+          "title": "Dinner at Cap Cana Marina",
+          "detail": "Upscale dining at the marina. Try fresh lobster, Dominican-style mofongo, or grilled catch of the day. Budget RD$2,000\u20134,000/person ($35\u201370). Sunset views over the marina.",
+          "status": "confirmed",
+          "lat": 18.5165,
+          "lng": -68.3685
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "Sat, Mar 7",
+      "title": "Punta Cana \u2192 Santo Domingo",
+      "location": "Punta Cana \u2192 Santo Domingo",
+      "items": [
+        {
+          "id": "d2-1",
+          "time": "7:30 AM",
+          "icon": "\u2615",
+          "type": "food",
+          "title": "Breakfast at Hotel",
+          "detail": "Dominican breakfast: mangu (mashed plantains) with fried cheese, salami, and eggs \u2014 los tres golpes. Fresh tropical juice and Dominican coffee.",
+          "status": "confirmed",
+          "lat": 18.6873,
+          "lng": -68.4040
+        },
+        {
+          "id": "d2-2",
+          "time": "9:00 AM",
+          "icon": "\ud83d\ude90",
+          "type": "transport",
+          "title": "Shuttle to Santo Domingo",
+          "detail": "Bavaro Express or private transfer to Santo Domingo. ~3 hours via Autopista del Este. Cost: shuttle RD$600\u20131,000 ($10\u201317), private transfer ~RD$5,000 ($85). Highway has good rest stops.",
+          "status": "confirmed",
+          "lat": 18.6873,
+          "lng": -68.4040
+        },
+        {
+          "id": "d2-3",
+          "time": "12:00 PM",
+          "icon": "\ud83c\udfe8",
+          "type": "accommodation",
+          "title": "Check In \u2014 Zona Colonial Hotel",
+          "detail": "Boutique hotel in the heart of the Colonial Zone. Walking distance to all historic sites, restaurants, and nightlife along Calle El Conde.",
+          "status": "confirmed",
+          "lat": 18.4722,
+          "lng": -69.8830
+        },
+        {
+          "id": "d2-4",
+          "time": "12:30 PM",
+          "icon": "\ud83c\udf5c",
+          "type": "food",
+          "title": "Lunch at Pat'e Palo",
+          "detail": "Historic restaurant in a 16th-century building on Plaza de Espa\u00f1a. Try the chivo guisado (goat stew) or la bandera dominicana (rice, beans, meat). Mains RD$600\u20131,200 ($10\u201320).",
+          "status": "confirmed",
+          "lat": 18.4740,
+          "lng": -69.8830
+        },
+        {
+          "id": "d2-5",
+          "time": "2:00 PM",
+          "icon": "\ud83c\udfdb\ufe0f",
+          "type": "activity",
+          "title": "Zona Colonial Walking Tour",
+          "detail": "Explore the first European settlement in the Americas. Visit Alcazar de Col\u00f3n, Catedral Primada de Am\u00e9rica (first cathedral in the New World), Fortaleza Ozama, and Calle Las Damas. Self-guided or join a walking tour ~RD$1,500 ($25).",
+          "status": "confirmed",
+          "lat": 18.4722,
+          "lng": -69.8830
+        },
+        {
+          "id": "d2-6",
+          "time": "5:00 PM",
+          "icon": "\ud83c\udf05",
+          "type": "activity",
+          "title": "Malecon Sunset Walk",
+          "detail": "Stroll the Malecon waterfront promenade as the sun sets over the Caribbean. Street vendors, music, and the energy of Dominican nightlife warming up. Stop for a Presidente beer at a beachside bar.",
+          "status": "confirmed",
+          "lat": 18.4635,
+          "lng": -69.9110
+        },
+        {
+          "id": "d2-7",
+          "time": "7:30 PM",
+          "icon": "\ud83c\udf7d\ufe0f",
+          "type": "food",
+          "title": "Dinner at Mesón de Bari",
+          "detail": "Traditional Dominican cuisine in the Colonial Zone. Famous for mofongo (mashed plantains with garlic and pork), sancocho, and fresh seafood. Budget RD$800\u20131,800/person ($14\u201330). Live merengue music on weekends.",
+          "status": "confirmed",
+          "lat": 18.4718,
+          "lng": -69.8842
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "Sun, Mar 8",
+      "title": "Santo Domingo & Depart",
+      "location": "Santo Domingo, Dominican Republic",
+      "items": [
+        {
+          "id": "d3-1",
+          "time": "8:00 AM",
+          "icon": "\u2615",
+          "type": "food",
+          "title": "Coffee & Mangu at La Cafeter\u00eda",
+          "detail": "Strong Dominican coffee and fresh mangu with eggs at a local spot in the Colonial Zone. Budget RD$300\u2013500 ($5\u20139). The best way to start a Dominican morning.",
+          "status": "confirmed",
+          "lat": 18.4720,
+          "lng": -69.8835
+        },
+        {
+          "id": "d3-2",
+          "time": "9:30 AM",
+          "icon": "\ud83d\udd73\ufe0f",
+          "type": "activity",
+          "title": "Los Tres Ojos (Three Eyes)",
+          "detail": "Stunning underground cave system with three crystal-clear lagoons. Descend into the limestone caves and take a boat across the third lagoon. Entry RD$200 ($3.50). Allow 1\u20131.5 hours.",
+          "status": "confirmed",
+          "lat": 18.4860,
+          "lng": -69.8570
+        },
+        {
+          "id": "d3-3",
+          "time": "11:30 AM",
+          "icon": "\ud83d\uded2",
+          "type": "activity",
+          "title": "Mercado Modelo Shopping",
+          "detail": "Santo Domingo's main artisan market. Larimar jewelry, amber, Dominican cigars, rum, paintings, and souvenirs. Bargain hard \u2014 start at half the asking price. Great for last-minute gifts.",
+          "status": "confirmed",
+          "lat": 18.4745,
+          "lng": -69.8880
+        },
+        {
+          "id": "d3-4",
+          "time": "12:30 PM",
+          "icon": "\ud83c\udf5c",
+          "type": "food",
+          "title": "Farewell Lunch \u2014 La Bandera Dominicana",
+          "detail": "End the trip with the national dish: la bandera (rice, red beans, and stewed meat) at a local comedor. Budget RD$200\u2013400 ($3.50\u20137). Simple, satisfying, and authentically Dominican.",
+          "status": "confirmed",
+          "lat": 18.4730,
+          "lng": -69.8850
+        },
+        {
+          "id": "d3-5",
+          "time": "2:00 PM",
+          "icon": "\ud83d\udcf7",
+          "type": "activity",
+          "title": "Faro a Col\u00f3n (Columbus Lighthouse)",
+          "detail": "A massive cross-shaped monument housing Columbus's remains (disputed). The lighthouse projects a cross-shaped beam visible for miles. Museum inside with exhibits on Dominican history and culture. Entry RD$100 ($2).",
+          "status": "confirmed",
+          "lat": 18.4829,
+          "lng": -69.8627
+        },
+        {
+          "id": "d3-6",
+          "time": "4:00 PM",
+          "icon": "\u2708\ufe0f",
+          "type": "transport",
+          "title": "Taxi to Las Americas Airport",
+          "detail": "Uber or taxi from Zona Colonial to SDQ airport. ~30 min, RD$1,500\u20132,000 ($25\u201335). Allow extra time for traffic. Departure terminal is well-organized.",
+          "status": "confirmed",
+          "lat": 18.4296,
+          "lng": -69.6689
+        }
+      ]
+    }
+  ],
+  "weather": [
+    { "day": "Fri", "icon": "\u2600\ufe0f", "high": 30, "low": 22, "rain": 10 },
+    { "day": "Sat", "icon": "\u26c5", "high": 29, "low": 21, "rain": 20 },
+    { "day": "Sun", "icon": "\u2600\ufe0f", "high": 31, "low": 22, "rain": 5 }
+  ],
+  "contacts": [
+    { "icon": "\ud83d\udea8", "name": "Dominican Emergency", "role": "Emergency Services", "phone": "911" },
+    { "icon": "\ud83c\udfe5", "name": "HOMS Hospital", "role": "Santo Domingo (Private)", "phone": "+1-809-548-3888" },
+    { "icon": "\ud83c\udfe5", "name": "Hospiten Bavaro", "role": "Punta Cana (Private)", "phone": "+1-809-686-1414" },
+    { "icon": "\ud83d\ude95", "name": "Caribe Tours", "role": "Intercity bus", "phone": "+1-809-221-4422" },
+    { "icon": "\ud83c\udfe8", "name": "Hotel Concierge", "role": "Accommodation help", "phone": "+1-809-000-0000" }
+  ],
+  "group": [
+    { "id": "g1", "name": "Scott", "avatar": "\ud83e\udd20", "role": "host", "color": "#0D7377" }
+  ],
+  "notifications": [],
+  "changeLog": []
+}

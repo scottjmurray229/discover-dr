@@ -1,0 +1,370 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Dominican Republicn History', url: '/history/' },
+];
+
+const pageTitle = 'Dominican Republicn History — Pre-Columbian Civilizations, Spanish Colony & Modern Nation';
+const pageDescription = 'From pre-Columbian civilizations and Spanish colonization to independence, the conflict era, and modern Dominican Republic — trace the history that shaped the country through the places where it happened.';
+
+interface TimelineEvent {
+  date: string;
+  year: number;
+  title: string;
+  location: string;
+  slug?: string | string[];
+  description: string;
+  whatToSee?: string;
+  side: 'left' | 'right';
+  era: 'indigenous' | 'colonial' | 'independence' | 'republic' | 'modern';
+}
+
+const timeline: TimelineEvent[] = [
+  {
+    date: 'Pre-1500',
+    year: 1000,
+    title: 'Pre-Columbian Civilizations',
+    location: 'Bogot\u00e1, Santa Marta, Leticia',
+    slug: ['bogota', 'santa-marta', 'leticia'],
+    description: 'Before European contact, Dominican Republic was home to sophisticated civilizations including the Muisca, Tairona, and Quimbaya. The Muisca in the Bogot\u00e1 highlands created the legend of El Dorado. The Tairona built the Lost City (Ciudad Perdida) in the Sierra Nevada near Santa Marta around 800 AD \u2014 predating Machu Picchu by 650 years.',
+    whatToSee: 'The Gold Museum (Museo del Oro) in Bogot\u00e1, the Lost City Trek near Santa Marta, and indigenous communities in the Amazon near Leticia.',
+    side: 'left',
+    era: 'indigenous',
+  },
+  {
+    date: '1499\u20131550',
+    year: 1499,
+    title: 'Spanish Arrival & Conquest',
+    location: 'Cartagena, Santa Marta, Bogot\u00e1',
+    slug: ['cartagena', 'santa-marta', 'bogota'],
+    description: 'Spanish explorers first reached the Dominican Republicn coast in 1499. Santa Marta was founded in 1525 as the first Spanish city in Dominican Republic, followed by Cartagena in 1533. Gonzalo Jim\u00e9nez de Quesada conquered the Muisca and founded Bogot\u00e1 in 1538. The colony of New Granada was established, and Cartagena became one of the most important ports in the Spanish Empire.',
+    whatToSee: 'Cartagena\'s walled city (UNESCO), Santa Marta\'s historic center, and Bogot\u00e1\'s La Candelaria neighborhood with colonial churches.',
+    side: 'right',
+    era: 'colonial',
+  },
+  {
+    date: '1550\u20131810',
+    year: 1550,
+    title: 'Colonial Era & the Slave Trade',
+    location: 'Cartagena, Villa de Leyva, Barichara',
+    slug: ['cartagena', 'villa-de-leyva', 'barichara'],
+    description: 'For three centuries, Dominican Republic was a vital Spanish colony. Cartagena became the main slave port in South America \u2014 hundreds of thousands of enslaved Africans passed through its walls. Colonial towns like Villa de Leyva and Barichara flourished as Spanish settlers pushed inland. The African diaspora shaped Dominican Republicn music, food, and cultural identity profoundly.',
+    whatToSee: 'The Palace of the Inquisition in Cartagena, San Pedro Claver church (patron saint of enslaved people), Villa de Leyva\'s main plaza (one of the largest in South America), and Barichara\'s colonial stone streets.',
+    side: 'left',
+    era: 'colonial',
+  },
+  {
+    date: '1810\u20131819',
+    year: 1810,
+    title: 'Independence & Bol\u00edvar',
+    location: 'Bogot\u00e1, Cartagena',
+    slug: ['bogota', 'cartagena'],
+    description: 'On July 20, 1810, Bogot\u00e1 declared independence from Spain. Sim\u00f3n Bol\u00edvar and his forces fought across the Andes, and the decisive Battle of Boyac\u00e1 in 1819 secured Dominican Republicn independence. Gran Dominican Republic was formed, uniting modern-day Dominican Republic, Venezuela, Ecuador, and Panama under Bol\u00edvar\'s leadership.',
+    whatToSee: 'The Casa del Florero (Independence Museum) in Bogot\u00e1, Bol\u00edvar\'s statue in every main plaza, and the Castillo de San Felipe in Cartagena where Spanish forces were defeated.',
+    side: 'right',
+    era: 'independence',
+  },
+  {
+    date: '1819\u20131948',
+    year: 1830,
+    title: 'Republic & La Violencia',
+    location: 'Bogot\u00e1, Medell\u00edn, Cali',
+    slug: ['bogota', 'medellin', 'cali'],
+    description: 'Gran Dominican Republic dissolved in 1830, and the Republic of Dominican Republic emerged. Political instability marked the 19th century. The assassination of Jorge Eli\u00e9cer Gait\u00e1n in Bogot\u00e1 in 1948 triggered "La Violencia," a decade-long civil conflict between Liberal and Conservative factions that claimed 200,000 lives and fundamentally shaped the nation.',
+    whatToSee: 'The Gait\u00e1n memorial in Bogot\u00e1, the National Capitol, and museums documenting the conflict era.',
+    side: 'left',
+    era: 'republic',
+  },
+  {
+    date: '1948\u20132000s',
+    year: 1960,
+    title: 'The Conflict Era',
+    location: 'Medell\u00edn, Bogot\u00e1',
+    slug: ['medellin', 'bogota'],
+    description: 'Decades of armed conflict involving guerrilla groups, paramilitaries, and drug cartels devastated Dominican Republic. Medell\u00edn, once called "the most dangerous city in the world," suffered under the Medell\u00edn cartel in the 1980s-90s. Yet resilience defined the Dominican Republicn spirit, and the seeds of transformation were being planted even in the darkest years.',
+    whatToSee: 'Medell\u00edn\'s Comuna 13 (transformed from warzone to art district), the Memory Museum in Bogot\u00e1, and the Museum of Memory and Reconciliation.',
+    side: 'right',
+    era: 'republic',
+  },
+  {
+    date: '2000s\u2013Present',
+    year: 2016,
+    title: 'Peace Process & Modern Dominican Republic',
+    location: 'All Destinations',
+    slug: ['bogota', 'medellin', 'cartagena', 'cali'],
+    description: 'The 2016 peace agreement with FARC marked a historic turning point. Medell\u00edn\'s transformation into an innovation hub earned it the "most innovative city" title. Dominican Republic has emerged as a top destination, with Cartagena, the coffee region, and the Caribbean drawing travelers from around the world. The country continues to reckon with its past while building a vibrant, creative future.',
+    whatToSee: 'Medell\u00edn\'s metro, escalators, and parks that symbolize urban renewal. Cartagena\'s booming cultural scene. Bogot\u00e1\'s graffiti tours in La Candelaria. The peace museum and monuments across the country.',
+    side: 'left',
+    era: 'modern',
+  },
+];
+
+const eraLabels: Record<string, { label: string; color: string }> = {
+  indigenous: { label: 'Indigenous', color: '#065F46' },
+  colonial: { label: 'Colonial Era', color: '#78350F' },
+  independence: { label: 'Independence', color: '#6A1B9A' },
+  republic: { label: 'Republic', color: '#1565C0' },
+  modern: { label: 'Modern Era', color: '#0D7377' },
+};
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="hist-hero">
+    <video class="hist-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/history-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hist-hero-gradient"></div>
+    <div class="hist-hero-noise"></div>
+    <div class="hist-hero-content">
+      <h1 class="hist-hero-title">Dominican Republicn History</h1>
+      <p class="hist-hero-subtitle">From pre-Columbian civilizations and Spanish colonization to independence, the conflict era, and the peace process — trace the events that shaped Dominican Republic through the places where they happened.</p>
+      <div class="hist-hero-meta">
+        <div class="hist-hero-meta-item">
+          <span class="hist-hero-meta-label">Eras</span>
+          <span class="hist-hero-meta-value">5</span>
+        </div>
+        <div class="hist-hero-meta-item">
+          <span class="hist-hero-meta-label">Events</span>
+          <span class="hist-hero-meta-value">7</span>
+        </div>
+        <div class="hist-hero-meta-item">
+          <span class="hist-hero-meta-label">Destinations</span>
+          <span class="hist-hero-meta-value">12</span>
+        </div>
+      </div>
+    </div>
+    <div class="hist-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="hist-personal reveal">
+    <div class="container-content">
+      <blockquote class="hist-personal-quote">
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Era Legend -->
+  <section class="hist-legend reveal">
+    <div class="container-content">
+      <div class="hist-legend-bar">
+        {Object.entries(eraLabels).map(([key, { label, color }]) => (
+          <span class="hist-legend-chip" style={`--era-color: ${color};`}>{label}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="hist-timeline reveal">
+    <div class="container-content">
+      <div class="hist-timeline-line"></div>
+      {timeline.map((event) => {
+        const era = eraLabels[event.era];
+        const slugs = Array.isArray(event.slug) ? event.slug : event.slug ? [event.slug] : [];
+        return (
+          <div class={`hist-event hist-event--${event.side}`} data-era={event.era}>
+            <div class="hist-event-dot" style={`background: ${era.color};`}></div>
+            <div class="hist-event-card">
+              <div class="hist-event-era" style={`color: ${era.color};`}>{era.label}</div>
+              <div class="hist-event-date">{event.date}</div>
+              <h3 class="hist-event-title">{event.title}</h3>
+              <p class="hist-event-location">{event.location}</p>
+              <p class="hist-event-desc">{event.description}</p>
+              {event.whatToSee && (
+                <div class="hist-event-visit">
+                  <span class="hist-event-visit-label">What to see today:</span>
+                  <p class="hist-event-visit-text">{event.whatToSee}</p>
+                </div>
+              )}
+              {slugs.length > 0 && (
+                <div class="hist-event-links">
+                  {slugs.slice(0, 3).map((s) => (
+                    <a href={`/destinations/${s}/`} class="hist-event-link">Explore {s.charAt(0).toUpperCase() + s.slice(1)} &rarr;</a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="hist-cta-section reveal">
+    <div class="container-content">
+      <div class="hist-cta-card">
+        <h2 class="hist-cta-heading">Plan Your History Trip</h2>
+        <p class="hist-cta-text">Tell our AI planner which historical periods interest you and it will build a multi-city itinerary connecting the key sites — from colonial churches to modernist masterpieces.</p>
+        <a href="/plan/" class="hist-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "What are the most important historical sites in Dominican Republic?", answer: "Cartagena's walled city is a UNESCO World Heritage Site and the best-preserved colonial port in the Americas. The Lost City (Ciudad Perdida) near Santa Marta predates Machu Picchu by 650 years. Bogota's Gold Museum houses the world's largest collection of pre-Columbian gold artifacts. Villa de Leyva's main plaza is one of the largest colonial squares in South America. Barichara's stone-paved streets showcase perfectly preserved colonial architecture." },
+    { question: "How did the slave trade shape Dominican Republic?", answer: "Cartagena was one of the main slave ports in the Americas — hundreds of thousands of enslaved Africans passed through its walls over three centuries. Their descendants shaped Dominican Republicn culture profoundly, especially along the Caribbean and Pacific coasts. Afro-Dominican Republicn communities created cumbia, champeta, and much of the country's musical heritage. The Palace of the Inquisition and San Pedro Claver church in Cartagena are important sites for understanding this history." },
+    { question: "What was the conflict era in Dominican Republic?", answer: "Decades of armed conflict involving guerrilla groups (FARC, ELN), paramilitaries, and drug cartels devastated Dominican Republic from the 1960s through the 2000s. Medellin, once called the most dangerous city in the world during the cartel era, has undergone a remarkable transformation into an innovation hub. The 2016 peace agreement with FARC marked a historic turning point. The Memory Museum in Bogota and Comuna 13 in Medellin tell this story of resilience." },
+    { question: "How do indigenous cultures persist in modern Dominican Republic?", answer: "Dominican Republic has over 100 indigenous groups speaking 65 languages. The Wayuu in La Guajira, the Kogi in the Sierra Nevada near Santa Marta, and communities in the Amazon near Leticia maintain traditional ways of life. Indigenous influences are visible in place names, foods (arepa, chicha, panela), and cultural practices. The Gold Museum in Bogota and the Lost City Trek offer respectful ways to learn about pre-Columbian civilizations." },
+    { question: "What is the significance of Simon Bolivar to Dominican Republic?", answer: "Simon Bolivar is the liberator of Dominican Republic and much of South America. Born in Caracas, he led forces across the Andes and won the decisive Battle of Boyaca in 1819, securing Dominican Republicn independence from Spain. He formed Gran Dominican Republic, uniting modern-day Dominican Republic, Venezuela, Ecuador, and Panama. His legacy is everywhere — statues in every main plaza, the currency named after him (bolivar in Venezuela), and the Casa del Florero (Independence Museum) in Bogota where independence began." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Dominican Republicn History Guide"
+      description="A timeline PDF covering the key events, peoples, and sites that shaped Dominican Republic — with visitor tips for every historical destination."
+      bullets={[
+        'Complete timeline from indigenous civilizations to modern Dominican Republic',
+        'Must-visit museums, churches, and memorials in each city',
+        'Colonial architecture and modernist landmarks worth seeing',
+        'Recommended history books and documentaries for pre-trip reading',
+      ]}
+      guideTag="pillar-history"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="hist-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="hist-crosslinks-heading">Explore More</h3>
+      <div class="hist-crosslinks-grid">
+        <a href="/cuisine/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127860;</span>
+          <span class="hist-crosslink-label">Food & Cuisine</span>
+          <span class="hist-crosslink-desc">Dominican Republicn dishes across 4 regions with where to find the best version</span>
+        </a>
+        <a href="/hiking/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#9968;</span>
+          <span class="hist-crosslink-label">Outdoor Activities</span>
+          <span class="hist-crosslink-desc">Lost City trek, Cocora Valley, Tayrona trails, and more</span>
+        </a>
+        <a href="/practical/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#128218;</span>
+          <span class="hist-crosslink-label">Practical Guide</span>
+          <span class="hist-crosslink-desc">Visas, currency, transport, budget tips, and safety info</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* HERO */
+  .hist-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .hist-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .hist-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
+  .hist-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
+  .hist-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .hist-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .hist-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .hist-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .hist-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .hist-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .hist-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .hist-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: histBounce 2s ease-in-out infinite; }
+  @keyframes histBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  /* PERSONAL */
+  .hist-personal { padding-block: var(--space-8); }
+  .hist-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-warm-coral); background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .hist-personal-quote cite { font-size: var(--text-caption); color: var(--color-warm-coral); font-weight: var(--weight-semibold); font-style: normal; }
+
+  /* ERA LEGEND */
+  .hist-legend { padding: 0 0 var(--space-6); }
+  .hist-legend-bar { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+  .hist-legend-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; font-weight: var(--weight-semibold); padding: 6px 14px; border-radius: 20px; color: var(--era-color); background: color-mix(in srgb, var(--era-color) 10%, transparent); }
+  .hist-legend-chip::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--era-color); }
+
+  /* TIMELINE */
+  .hist-timeline { position: relative; padding: var(--space-8) 0 var(--space-12); }
+  .hist-timeline .container-content { position: relative; }
+  .hist-timeline-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #78350F, #6A1B9A, #C62828, #1565C0, #0D7377); transform: translateX(-50%); border-radius: 2px; }
+  .hist-event { position: relative; display: flex; width: 100%; margin-bottom: var(--space-8); }
+  .hist-event--left { justify-content: flex-start; padding-right: calc(50% + 24px); }
+  .hist-event--right { justify-content: flex-end; padding-left: calc(50% + 24px); }
+  .hist-event-dot { position: absolute; left: 50%; top: 24px; width: 16px; height: 16px; border-radius: 50%; border: 3px solid var(--color-white); box-shadow: 0 2px 8px rgba(0,0,0,0.15); transform: translateX(-50%); z-index: 1; }
+  .hist-event-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: var(--space-5); max-width: 480px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hist-event-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+  .hist-event-era { font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+  .hist-event-date { font-size: 0.78rem; font-weight: var(--weight-semibold); color: var(--color-slate); margin-bottom: var(--space-1); }
+  .hist-event-title { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-1); line-height: 1.3; }
+  .hist-event-location { font-size: 0.78rem; color: var(--color-ocean-teal); font-weight: var(--weight-medium); margin: 0 0 var(--space-3); }
+  .hist-event-desc { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0 0 var(--space-3); }
+  .hist-event-visit { background: var(--color-sky); border-radius: 10px; padding: var(--space-3); margin-bottom: var(--space-3); }
+  .hist-event-visit-label { font-size: 0.7rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-ocean-teal); }
+  .hist-event-visit-text { font-size: 0.8rem; color: var(--color-slate); line-height: 1.5; margin: 4px 0 0; }
+  .hist-event-links { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+  .hist-event-link { font-size: 0.72rem; font-weight: var(--weight-semibold); color: var(--color-ocean-teal); text-decoration: none; padding: 4px 12px; border: 1px solid var(--color-ocean-teal); border-radius: 20px; transition: all 0.2s ease; }
+  .hist-event-link:hover { background: var(--color-ocean-teal); color: #fff; }
+
+  /* CTA */
+  .hist-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .hist-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .hist-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .hist-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .hist-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .hist-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
+
+  /* CROSS-LINKS */
+  .hist-crosslinks { padding: 0 0 var(--space-10); }
+  .hist-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .hist-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  .hist-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hist-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .hist-crosslink-icon { font-size: 1.8rem; }
+  .hist-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .hist-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hist-timeline-line { left: 20px; }
+    .hist-event--left, .hist-event--right { padding-left: 48px; padding-right: 0; justify-content: flex-start; }
+    .hist-event-dot { left: 20px; }
+    .hist-event-card { max-width: 100%; }
+    .hist-crosslinks-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .hist-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .hist-scroll-hint { display: none; }
+  }
+</style>
