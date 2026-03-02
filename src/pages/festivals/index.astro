@@ -1,0 +1,338 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Dominican Republic Festival Calendar', url: '/festivals/' },
+];
+
+const pageTitle = 'Dominican Republic Festival Calendar 2026 — Carnival, Merengue & More';
+const pageDescription = "Santiago's Carnival, Santo Domingo's devil mask parade, the Merengue Festival, and Independence Day — the DR celebrates with drumbeats, color, and Caribbean soul. Here's the full calendar.";
+
+const festivals = [
+  {
+    name: 'Carnival Santiago — La Fiesta Mayor',
+    location: 'Santiago de los Caballeros',
+    dates: 'February (Sundays through Carnival season)',
+    description: 'The most elaborate Carnival celebration in the Caribbean — and Santiago makes that claim with serious conviction. The Lechón masks (papier-mâché masterpieces) are works of art that take craftsmen months to create, with elaborate scenes, mirrors, and symbolic imagery built into every piece. Santiago\'s Carnival runs every Sunday afternoon during February, building to a climax on Carnival Sunday before Lent. The parade route along Calle del Sol is lined 10-deep with locals and the energy is relentless. This is the real Dominican Carnival — come to Santiago, not Santo Domingo.',
+    tag: 'Best in Caribbean',
+    gradient: 'linear-gradient(135deg, #C62828 0%, #FF6F00 100%)',
+  },
+  {
+    name: 'Carnival Nacional — Santo Domingo',
+    location: 'Santo Domingo (Malecón)',
+    dates: 'February (Sundays, especially final Sunday)',
+    description: 'Santo Domingo\'s Carnival is the national showcase — a massive parade along the Malecón waterfront featuring regional delegations from every Dominican province. The Diablo Cojuelo (limping devil) character is the star: enormous horned masks with pointed teeth and inflated pig bladders on sticks used to "whip" bystanders who aren\'t quick enough. The final Sunday before Ash Wednesday is the grand finale. The Malecón fills with a million people. Arrive early for a viewing spot on the oceanfront.',
+    tag: 'National Carnival',
+    gradient: 'linear-gradient(135deg, #1A237E 0%, #E53935 100%)',
+  },
+  {
+    name: 'Independence Day Celebrations',
+    location: 'Santo Domingo (national), nationwide',
+    dates: 'February 27',
+    description: 'Dominican Independence Day (February 27, 1844) falls during Carnival season, making the last week of February the most festive period in the Dominican calendar. Military parades in Santo Domingo\'s Colonial City, patriotic concerts, flags everywhere, and a national mood of celebration and pride. The Plaza de la Bandera and the Colonial Zone are the centers of official celebration. Hotels book early for this week — Carnival Sunday often lands the same weekend as Independence Day.',
+    tag: 'National Holiday',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #C62828 100%)',
+  },
+  {
+    name: 'Festival del Merengue — Puerto Plata',
+    location: 'Puerto Plata (Malecón)',
+    dates: 'July (one week)',
+    description: 'Merengue is the heartbeat of Dominican culture — the national rhythm, the party music, the music of love and loss and everything in between. Puerto Plata\'s Merengue Festival brings orchestras, trios, and solo artists to the Malecón for a week of free concerts and dancing. The North Coast summer scene is at its peak: warm Atlantic breezes, outdoor dancing until 3am, and merengue coming from every corner. Puerto Plata is more accessible and authentic than the Santo Domingo version.',
+    tag: 'Music',
+    gradient: 'linear-gradient(135deg, #006064 0%, #0288D1 100%)',
+  },
+  {
+    name: 'Festival del Merengue — Santo Domingo',
+    location: 'Santo Domingo (Malecón)',
+    dates: 'October (one week)',
+    description: 'The Santo Domingo Merengue Festival is the larger and more prestigious of the two national merengue events — big orchestras, television coverage, and the country\'s top artists performing on the Malecón. October is excellent weather on the South Coast: post-hurricane season, lower humidity, 28°C. The festival is free and the Malecón turns into a continuous outdoor dance floor from late afternoon until well past midnight. Dominican merengue live — not a beach DJ set, but full 15-piece orchestras — is something you need to experience.',
+    tag: 'National Festival',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FFB300 100%)',
+  },
+  {
+    name: 'Cabarete Race Week',
+    location: 'Cabarete (North Coast)',
+    dates: 'June (one week)',
+    description: 'Cabarete is one of the world\'s premier windsurfing and kiteboarding destinations, and Race Week brings the best water-sports athletes from around the world to compete in one of the most beautiful natural settings for the sport: the trade-wind corridor of the North Coast. Windsurfers, kiters, wave riders, and SUP athletes compete across multiple categories. The beach scene during Race Week is electric — athletes, spectators, and Cabarete\'s international expat community creating a week of sport and beach party culture.',
+    tag: 'Water Sports',
+    gradient: 'linear-gradient(135deg, #0097A7 0%, #00BCD4 100%)',
+  },
+  {
+    name: 'Gagá Festival',
+    location: 'Haitian-Dominican communities (nationwide)',
+    dates: 'Holy Week (April)',
+    description: 'Gagá is an Afro-Haitian religious tradition that spills into the streets of Dominican bateyes (sugarcane communities) during Holy Week. Bands of musicians, dancers, and devotees process through communities, playing bamboo instruments and drums, singing, and stopping at crossroads for ritual offerings. Gagá draws on Vodou traditions brought by Haitian workers and has developed a distinctly Dominican character over generations. It\'s not a tourist event — it\'s a living spiritual practice. Experiencing it requires knowing where to go; guesthouses near bateyes communities can guide you.',
+    tag: 'Cultural Heritage',
+    gradient: 'linear-gradient(135deg, #4A148C 0%, #880E4F 100%)',
+  },
+  {
+    name: 'Jazz Festivals (Various)',
+    location: 'Casa de Campo (La Romana), Cabarete',
+    dates: 'November',
+    description: 'The Dominican Republic has developed a serious jazz scene anchored by the Casa de Campo Jazz Festival in La Romana and associated events in Cabarete. International and Latin jazz artists perform at Casa de Campo\'s world-class resort venue in November — a combination of luxury setting and genuine musical substance. The Cabarete Jazz & Blues festival pairs the North Coast beach town with an eclectic music lineup. Both events draw international visitors who discover the DR beyond the all-inclusive resort circuit.',
+    tag: 'Jazz',
+    gradient: 'linear-gradient(135deg, #263238 0%, #455A64 100%)',
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+
+<style>
+  .fest-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 var(--space-6) 60px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #7B0000 0%, #C62828 50%, #003087 100%);
+  }
+  .fest-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35; }
+  .fest-hero-gradient { position: absolute; inset: 0; background: linear-gradient(to top, rgba(123,0,0,0.95) 0%, rgba(123,0,0,0.3) 60%, transparent 100%); }
+  .fest-hero-content { position: relative; z-index: 2; max-width: 760px; }
+  .fest-hero-eyebrow { font-size: 0.72rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.12em; color: #FFD54F; margin-bottom: var(--space-3); }
+  .fest-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.15; margin: 0 0 var(--space-4); }
+  .fest-hero-subtitle { font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,0.82); line-height: 1.6; margin: 0 0 var(--space-6); max-width: 600px; }
+  .fest-hero-meta { display: flex; gap: var(--space-6); flex-wrap: wrap; }
+  .fest-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .fest-hero-meta-label { font-size: 0.68rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .fest-hero-meta-value { font-size: 1.4rem; font-weight: var(--weight-bold); color: #fff; }
+
+  .fest-personal { padding-block: var(--space-8); }
+  .fest-personal-quote { max-width: 720px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #C62828; background: var(--color-sky, #fff8e1); border-radius: 0 12px 12px 0; }
+  .fest-personal-quote p { font-size: var(--text-body, 1.05rem); color: var(--color-heading, #1a2332); line-height: 1.7; font-style: italic; margin-bottom: var(--space-3); }
+  .fest-personal-quote cite { font-size: 0.85rem; color: #C62828; font-weight: var(--weight-semibold); font-style: normal; }
+
+  .fest-section { padding: var(--space-6) 0 var(--space-10); }
+  .fest-section-heading { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); margin: 0 0 var(--space-2); text-align: center; }
+  .fest-section-sub { font-size: 1rem; color: var(--color-slate, #5a6a7a); text-align: center; margin: 0 0 var(--space-8); }
+
+  .fest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-6); }
+  .fest-card { border-radius: 20px; overflow: hidden; background: var(--color-white, #fff); box-shadow: 0 4px 20px rgba(0,0,0,0.07); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
+  .fest-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+  .fest-card-header { padding: var(--space-5) var(--space-5) var(--space-4); min-height: 130px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .fest-card-tag { display: inline-block; font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.18); backdrop-filter: blur(4px); padding: 3px 10px; border-radius: 20px; margin-bottom: var(--space-2); width: fit-content; }
+  .fest-card-name { font-size: 1.15rem; font-weight: var(--weight-bold); color: #fff; line-height: 1.3; margin: 0 0 4px; }
+  .fest-card-location { font-size: 0.78rem; color: rgba(255,255,255,0.75); font-weight: var(--weight-medium); }
+  .fest-card-body { padding: var(--space-4) var(--space-5) var(--space-5); flex: 1; display: flex; flex-direction: column; gap: var(--space-3); }
+  .fest-card-dates { display: flex; align-items: center; gap: var(--space-2); font-size: 0.8rem; font-weight: var(--weight-semibold); color: #C62828; }
+  .fest-card-dates::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #C62828; flex-shrink: 0; }
+  .fest-card-desc { font-size: 0.88rem; color: var(--color-body, #3d4d5e); line-height: 1.65; flex: 1; }
+
+  .fest-tips { padding: var(--space-8) 0; background: linear-gradient(135deg, #7B0000 0%, #003087 100%); }
+  .fest-tips-inner { max-width: 820px; margin: 0 auto; padding: 0 var(--space-6); }
+  .fest-tips-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-6); text-align: center; }
+  .fest-tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4); }
+  .fest-tip-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: var(--space-4) var(--space-5); }
+  .fest-tip-icon { font-size: 1.5rem; margin-bottom: var(--space-2); }
+  .fest-tip-title { font-size: 0.9rem; font-weight: var(--weight-bold); color: #fff; margin-bottom: var(--space-2); }
+  .fest-tip-text { font-size: 0.82rem; color: rgba(255,255,255,0.72); line-height: 1.6; }
+
+  .fest-cta-section { padding: var(--space-8) 0; }
+  .fest-cta-card { background: linear-gradient(135deg, #7B0000 0%, #C62828 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .fest-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .fest-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .fest-cta-button { display: inline-block; background: #FFD54F; color: #7B0000; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .fest-cta-button:hover { background: #FFCA28; transform: translateY(-2px); }
+
+  .fest-crosslinks { padding: 0 0 var(--space-10); }
+  .fest-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); text-align: center; margin: 0 0 var(--space-4); }
+  .fest-crosslinks-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); max-width: 640px; margin: 0 auto; }
+  .fest-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white, #fff); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .fest-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .fest-crosslink-icon { font-size: 1.8rem; }
+  .fest-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); }
+  .fest-crosslink-desc { font-size: 0.78rem; color: var(--color-slate, #5a6a7a); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .fest-crosslinks-grid { grid-template-columns: 1fr; }
+    .fest-grid { grid-template-columns: 1fr; }
+    .fest-hero { padding: 0 var(--space-4) 40px; min-height: 55vh; }
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+
+  <header class="fest-hero">
+    <video class="fest-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/festivals-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="fest-hero-gradient"></div>
+    <div class="fest-hero-content">
+      <p class="fest-hero-eyebrow">Dominican Republic Events & Festivals</p>
+      <h1 class="fest-hero-title">Dominican Republic Festival Calendar 2026</h1>
+      <p class="fest-hero-subtitle">The most elaborate Carnival masks in the Caribbean, merengue orchestras on the Malecón, kite racing in Cabarete, and Independence Day with the whole country singing — the DR celebrates at full volume.</p>
+      <div class="fest-hero-meta">
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Events</span>
+          <span class="fest-hero-meta-value">8</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Peak Month</span>
+          <span class="fest-hero-meta-value">February</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Best City</span>
+          <span class="fest-hero-meta-value">Santiago</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <section class="fest-personal reveal">
+    <div class="container-content">
+      <blockquote class="fest-personal-quote">
+        <p>February in the Dominican Republic is Carnival season, and if you haven't been to Santiago's Carnival, you haven't seen what Caribbean celebration can actually be. The masks aren't party store masks — they're hand-crafted papier-mâché sculptures built over months, weighing several pounds each, covered in mirrors, painted in elaborate scenes. The people wearing them have been perfecting their moves for years. The music is real merengue, at full volume, from live brass and percussion. And the crowd is 95% Dominican — this is for them, not for tourists. Plan your February trip around Santiago Carnival and everything else in the DR will feel like a bonus.</p>
+        <cite>— Scott Murray, Discover Dominican Republic</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="fest-section reveal">
+    <div class="container-content">
+      <h2 class="fest-section-heading">Dominican Republic's Top Festivals & Events</h2>
+      <p class="fest-section-sub">February is the undisputed peak — Carnival and Independence Day make it the most festive month in the Dominican calendar.</p>
+      <div class="fest-grid">
+        {festivals.map((fest) => (
+          <div class="fest-card reveal">
+            <div class="fest-card-header" style={`background: ${fest.gradient};`}>
+              {fest.tag && <span class="fest-card-tag">{fest.tag}</span>}
+              <h3 class="fest-card-name">{fest.name}</h3>
+              <div class="fest-card-location">{fest.location}</div>
+            </div>
+            <div class="fest-card-body">
+              <div class="fest-card-dates">{fest.dates}</div>
+              <p class="fest-card-desc">{fest.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="fest-tips reveal">
+    <div class="fest-tips-inner">
+      <h2 class="fest-tips-heading">Scott's DR Festival Tips</h2>
+      <div class="fest-tips-grid">
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127881;</div>
+          <div class="fest-tip-title">Santiago vs. Santo Domingo Carnival: go to Santiago</div>
+          <p class="fest-tip-text">Santo Domingo's Carnival is large and patriotic. Santiago's is the most artistically extraordinary — the Lechón mask tradition is a genuine craft heritage. The parades on Calle del Sol every Sunday of February are where Dominican Carnival culture reaches its peak. If you can only attend one, Santiago.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#129349;</div>
+          <div class="fest-tip-title">Carnival Sunday: wear dark clothes</div>
+          <p class="fest-tip-text">The Diablo Cojuelo figures use inflated pig bladder "whips" on parade spectators who don't move fast enough — it's a tradition and part of the fun, but it's coming. Wear clothes you don't mind getting dusty. The bladder whip doesn't hurt but the contact is surprising. Most Dominicans find the squeamish tourist reaction very funny.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127926;</div>
+          <div class="fest-tip-title">Merengue Festival: stay for the late set</div>
+          <p class="fest-tip-text">Merengue is late-night music culture — the best orchestra sets start after 10pm and run until 2am. Show up early for the opening acts and food vendors, find a good spot near the main stage, and plan to be there when the big names perform after midnight. This is when you dance whether you know how to or not.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127754;</div>
+          <div class="fest-tip-title">Cabarete Race Week: spectate for free</div>
+          <p class="fest-tip-text">Cabarete Race Week is free to watch from the beach. The kiteboarding and windsurfing action happens close to shore — a beach chair and a cold Presidente beer is all you need. The beach bars during Race Week have excellent energy. If you kite or windsurf, entry fees for competition categories run $50–150 depending on event.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127970;</div>
+          <div class="fest-tip-title">February accommodation: book 3 months ahead</div>
+          <p class="fest-tip-text">Carnival season (February) is the most in-demand period in the DR, especially in Santiago and Santo Domingo. Hotels along the Malecón and in the Colonial Zone fill quickly. Book by November for February travel. Santiago's small hotel scene around Calle del Sol is particularly tight during Carnival Sundays.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127822;</div>
+          <div class="fest-tip-title">Food at festivals: street food is the move</div>
+          <p class="fest-tip-text">Dominican festival street food is excellent and cheap: chimichurri sandwiches, tostones, fried pork (chicharrón), corn on the cob, and fresh coconut water from vendors. The restaurant options near parade routes are always overcrowded and overpriced. Eat from street vendors, use both hands, and don't worry about the mess.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fest-cta-section reveal">
+    <div class="container-content">
+      <div class="fest-cta-card">
+        <h2 class="fest-cta-heading">Plan Your Dominican Republic Festival Trip</h2>
+        <p class="fest-cta-text">Build a DR itinerary around Carnival, Merengue Festival, or Cabarete Race Week — combining city celebrations with North Coast beaches, the Samaná Peninsula, and Colonial Santo Domingo.</p>
+        <a href="/plan/" class="fest-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={[
+    { question: "When is Dominican Carnival and where should I celebrate it?", answer: "Dominican Carnival runs on Sundays throughout February. Santiago de los Caballeros hosts the most artistically elaborate celebration — the Lechón mask tradition produces papier-mâché masterpieces that are serious craft heritage. Santo Domingo's Carnival on the Malecón is the largest by attendance, culminating in the final Carnival Sunday before Ash Wednesday. Both cities are worth attending if you can manage it — Santiago on a Sunday afternoon, Santo Domingo for the final grand parade." },
+    { question: "What is the Diablo Cojuelo?", answer: "The Diablo Cojuelo (Limping Devil) is the central character of Dominican Carnival — a figure in an elaborate horned mask with pointed teeth and a colorful costume, carrying an inflated pig bladder on a stick. The bladder is used to 'whip' spectators who aren't quick enough to get out of the way. It's a tradition rooted in colonial-era festival culture. The contact is light and part of the fun — don't flinch dramatically or you'll become the crowd's entertainment." },
+    { question: "When is the Merengue Festival in the Dominican Republic?", answer: "The DR has two major Merengue Festivals: Puerto Plata hosts its festival on the North Coast Malecón in July; Santo Domingo's festival on the capital's Malecón runs in October. Both are free and feature full orchestras performing from late afternoon through midnight and beyond. October in Santo Domingo has excellent weather — post-hurricane season, 28°C, low humidity. Puerto Plata's July version is hotter but the North Coast trade winds make evening concerts comfortable." },
+    { question: "What is Cabarete Race Week?", answer: "Cabarete Race Week is an annual water-sports competition in June held at Cabarete on the Dominican North Coast — one of the world's premier kiteboarding and windsurfing destinations. Elite athletes compete in windsurfing, kiteboarding, wave riding, and SUP events. Spectators watch free from the beach. The social scene during Race Week is excellent — international athletes, the Cabarete expat community, and beach bars running events all week." },
+    { question: "Is Dominican Republic safe for festival visitors?", answer: "The DR is generally safe for tourists attending major festivals, particularly in tourist-oriented areas like Cabarete, Puerto Plata's Malecón, and Santo Domingo's Colonial Zone. Carnival crowds in Santiago and Santo Domingo require standard urban precautions: keep valuables secured, be aware in dense crowds, and stay with your group. Avoid displaying expensive cameras or jewelry. Taxis from established companies rather than informal drivers are recommended late at night." },
+    { question: "What's the best time of year to visit the Dominican Republic for festivals?", answer: "February is the undisputed peak for festivals — Carnival runs every Sunday through the month, Independence Day (Feb 27) falls within Carnival season, and the weather is excellent (low 80s°F, trade winds, minimal rain). October is the second-best festival month — the Santo Domingo Merengue Festival, post-hurricane season, and lower tourist prices. Avoid August-September (peak hurricane season, though the DR's north coast is relatively protected)." },
+  ]} />
+
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get the Dominican Republic Festival Guide"
+      description="Carnival planning guide, Merengue Festival calendar, and how to combine DR festivals with beaches, whale watching, and the Colonial Zone."
+      bullets={[
+        'Santiago vs. Santo Domingo Carnival — which to attend and when',
+        'Complete Carnival Sunday schedule with best viewing spots',
+        'Merengue Festival guide — how to experience it beyond the resort',
+        'Combining February festival season with Samaná whale watching',
+      ]}
+      guideTag="pillar-festivals-dr"
+    />
+  </div>
+
+  <section class="fest-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="fest-crosslinks-heading">Keep Exploring the Dominican Republic</h3>
+      <div class="fest-crosslinks-grid">
+        <a href="/hiking/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127956;</span>
+          <span class="fest-crosslink-label">Hiking & Nature</span>
+          <span class="fest-crosslink-desc">Pico Duarte, Los Haitises, and the DR's natural wonders</span>
+        </a>
+        <a href="/destinations/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127965;</span>
+          <span class="fest-crosslink-label">All Destinations</span>
+          <span class="fest-crosslink-desc">Santo Domingo, Samaná, Cabarete — every destination reviewed</span>
+        </a>
+        <a href="/cuisine/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127822;</span>
+          <span class="fest-crosslink-label">Dominican Food</span>
+          <span class="fest-crosslink-desc">La bandera, sancocho, mofongo — the flavors of the DR</span>
+        </a>
+        <a href="/practical/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#9992;</span>
+          <span class="fest-crosslink-label">Getting Around</span>
+          <span class="fest-crosslink-desc">Airports, gua-gua, car rental, and navigating the DR</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
