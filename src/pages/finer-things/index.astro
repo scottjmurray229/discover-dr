@@ -84,6 +84,25 @@ const topics: TopicSection[] = [
     ],
   },
   {
+    id: 'gear',
+    icon: '🎒',
+    title: 'Gear Worth Packing',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0D7377 100%)',
+    items: [
+      { label: 'DJI Mini 4 Pro Drone', text: 'The DR\'s northeastern coast and Samaná Peninsula from above rival anything in the Caribbean — turquoise water, lush jungle, and almost no one in the frame. Under 249g with 34-minute flight time. <a href="https://www.amazon.com/dp/B0CFF1SJ3P?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'GoPro HERO13', text: 'Waterproof to 10m out of the box — for snorkeling Saona Island, the natural pools at Punta Cana, and the Macuco-style boat rides. <a href="https://www.amazon.com/dp/B0DCM34GXX?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'Peak Design Travel Tripod', text: 'Canal reflections, resort shots at golden hour, and Samaná Peninsula landscapes — the Peak Design Travel Tripod is the best compact tripod available. <a href="https://www.amazon.com/dp/B085BQS6K4?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'Sony WH-1000XM5 Headphones', text: 'Industry-best noise cancellation for the 3–4 hour flights from the East Coast and for blocking out resort entertainment you didn\'t sign up for. <a href="https://www.amazon.com/dp/B09XS7JWHH?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'Apple AirTag 4-Pack', text: 'One in each bag, one in a jacket pocket. Peace of mind at Punta Cana International and on boat excursions. <a href="https://www.amazon.com/dp/B0D54JZTHY?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'JBL Clip 4 IP67 Speaker', text: 'Beach days at Punta Cana and Las Terrenas deserve a proper soundtrack — not just whatever the resort is playing. The Clip 4 is IP67 waterproof, clips to your beach bag, and runs 10 hours per charge. <a href="https://www.amazon.com/dp/B08PJ7JMQM?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'YETI Rambler Wine Tumbler', text: 'Mamajuana is best enjoyed chilled — so is everything at a DR beach bar. The YETI Rambler keeps drinks cold for hours and won\'t tip over on sand. <a href="https://www.amazon.com/dp/B08RLLJ8MH?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'Anker 735 GaN Charger (65W)', text: 'Three ports (2 USB-C, 1 USB-A), 65W, roughly the size of a large lipstick. Handles drone batteries, camera, and phone from one outlet. <a href="https://www.amazon.com/dp/B09C5RG6KV?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'Anker Power Bank', text: 'Full phone charges on the road — useful for beach days away from the resort and long whale watching excursions in Samaná Bay. <a href="https://www.amazon.com/dp/B0DWCPS2Y4?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'Flypal Inflatable Foot Rest', text: 'The DR is 3–4 hours from Miami, 4–5 from New York — short enough that most skip the foot rest, long enough that you\'ll wish you had it. <a href="https://www.amazon.com/dp/B074T9CP81?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+      { label: 'Sockwell Compression Socks', text: 'For the flights and for long golf days at Teeth of the Dog where you\'re on your feet for 5+ hours in Caribbean heat. <a href="https://www.amazon.com/dp/B089DRF9WM?tag=discoverdr-20" target="_blank" rel="noopener">Check price on Amazon</a>.' },
+    ],
+  },
+  {
     id: 'chavon',
     icon: '🏛️',
     title: 'Altos de Chavon & Cultural Luxury',
@@ -234,6 +253,11 @@ const topics: TopicSection[] = [
       </div>
     </div>
   </section>
+
+  <!-- Affiliate Disclosure -->
+  <div class="container-content ft-reveal" style="padding-bottom: 0;">
+    <p class="ft-affiliate-disclosure">Some links on this page are affiliate links — we earn a small commission if you purchase through them, at no extra cost to you. We only recommend gear we personally use. <a href="/legal/affiliate-disclosure/">Full disclosure</a>.</p>
+  </div>
 
   <!-- Bottom CTA -->
   <section class="ft-cta-section ft-reveal">
@@ -713,6 +737,25 @@ const topics: TopicSection[] = [
 
   .ft-protips-card .scott-tips :global(a:hover) {
     text-decoration-color: #FB923C;
+  }
+
+  /* ================================================================
+     AFFILIATE DISCLOSURE
+     ================================================================ */
+  .ft-affiliate-disclosure {
+    font-size: 0.75rem;
+    color: #4A5568;
+    line-height: 1.5;
+    text-align: center;
+    padding: var(--space-4) var(--space-6);
+    background: var(--color-sky);
+    border-radius: 10px;
+    margin-bottom: var(--space-4);
+  }
+
+  .ft-affiliate-disclosure a {
+    color: var(--color-ocean-teal);
+    text-decoration: underline;
   }
 
   /* ================================================================
