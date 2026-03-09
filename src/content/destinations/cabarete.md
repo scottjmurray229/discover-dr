@@ -2,7 +2,7 @@
 title: "Cabarete"
 description: "Discover Cabarete — the kiteboarding and windsurfing capital of the Caribbean with world-class beach bars, adventure sports, and laid-back Atlantic vibes."
 heroImage: ""
-tagline: "The Kiteboarding Capital of the Caribbean"
+tagline: "The constant trade winds that make Cabarete the kiteboarding capital of the Caribbean — and one of the DR's most authentic beach towns"
 region: "north-coast"
 bestMonths: ["Jan", "Feb", "Mar", "Jun", "Jul"]
 budgetPerDay:

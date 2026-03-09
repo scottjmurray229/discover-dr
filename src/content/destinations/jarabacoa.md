@@ -2,7 +2,7 @@
 title: "Jarabacoa"
 description: "Explore Jarabacoa — the Dominican Republic's mountain adventure hub with Pico Duarte treks, white-water rafting, waterfalls, and cool highland climate."
 heroImage: ""
-tagline: "The City of Everlasting Spring"
+tagline: "Rafting the Jimenoa River, hiking to Salto de Aguas Blancas waterfall, and the mountain escape that Dominicans keep to themselves"
 region: "interior"
 bestMonths: ["Nov", "Dec", "Jan", "Feb", "Mar"]
 budgetPerDay:

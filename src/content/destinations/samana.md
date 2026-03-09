@@ -2,7 +2,7 @@
 title: "Samana"
 description: "Experience the Samana Peninsula's humpback whale watching, El Limon waterfall, Los Haitises National Park, and the pristine sands of Playa Rincon."
 heroImage: ""
-tagline: "Wild Beauty at the Edge of the Caribbean"
+tagline: "Humpback whales in the bay from January through March, Los Haitises mangroves, and the DR's most hauntingly beautiful peninsula"
 region: "interior"
 bestMonths: ["Jan", "Feb", "Mar", "Dec"]
 budgetPerDay:
