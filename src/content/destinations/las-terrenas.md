@@ -2,6 +2,7 @@
 title: "Las Terrenas"
 description: "Discover Las Terrenas — the Samaná Peninsula's laid-back beach town with European expat charm, Playa Bonita, whale watching, and vibrant international food scene."
 heroImage: ""
+heroAlt: "Playa Cosón palm-fringed beach and French-expat village, Las Terrenas, Dominican Republic"
 tagline: "French expat-founded beach town with palm-fringed streets, the Dominican Republic's best fresh seafood, and Playa Bonita"
 region: "interior"
 bestMonths: ["Jan", "Feb", "Mar", "Apr", "Dec"]

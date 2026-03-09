@@ -2,6 +2,7 @@
 title: "La Romana"
 description: "Explore La Romana's Altos de Chavon artists' village, Casa de Campo luxury resort, and island escapes to Isla Saona and Catalina Island."
 heroImage: ""
+heroAlt: "Casa de Campo Altos de Chavón village and Chavón River gorge, La Romana, Dominican Republic"
 tagline: "Altos de Chavón Mediterranean village replica, world-class Casa de Campo golf, and the coral reefs of the Catalina Island"
 region: "east-coast"
 bestMonths: ["Dec", "Jan", "Feb", "Mar", "Apr"]

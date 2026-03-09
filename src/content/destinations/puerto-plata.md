@@ -2,6 +2,7 @@
 title: "Puerto Plata"
 description: "Visit Puerto Plata's Amber Coast for the cable car to Isabel de Torres, 27 Charcos waterfalls, Victorian architecture, and authentic Dominican culture."
 heroImage: ""
+heroAlt: "Victorian gingerbread houses and Fortaleza San Felipe, Puerto Plata, Dominican Republic"
 tagline: "Victorian-era cable car to the mountaintop, waterfalls you can paraglide near, and the north coast's most photogenic city"
 region: "north-coast"
 bestMonths: ["Dec", "Jan", "Feb", "Mar", "Jun"]

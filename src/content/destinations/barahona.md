@@ -2,6 +2,7 @@
 title: "Barahona"
 description: "Explore Barahona — the Dominican Republic's untouched southwest with Bahía de las Águilas, Lago Enriquillo, Larimar mines, and off-the-beaten-path Caribbean beauty."
 heroImage: ""
+heroAlt: "Bahía de las Águilas pristine beach and Lake Enriquillo flamingos, Barahona, Dominican Republic"
 tagline: "Flamingos at Laguna Oviedo, cacti forests, Lake Enriquillo, and the DR's most unexplored corner that rewards patient travelers"
 region: "interior"
 bestMonths: ["Dec", "Jan", "Feb", "Mar", "Apr"]

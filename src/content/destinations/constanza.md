@@ -2,6 +2,7 @@
 title: "Constanza"
 description: "Discover Constanza — the highest valley in the Caribbean with strawberry farms, cool mountain climate, Valle Nuevo National Park, and stunning highland scenery."
 heroImage: ""
+heroAlt: "Cloud-forest waterfalls and strawberry fields in Constanza, Dominican Republic"
 tagline: "Alpine strawberry fields at 1,200 metres, the Dominican Alps best hiking, and a valley so green it doesn't look like the Caribbean"
 region: "interior"
 bestMonths: ["Nov", "Dec", "Jan", "Feb", "Mar"]

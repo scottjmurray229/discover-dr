@@ -2,6 +2,7 @@
 title: "Punta Cana"
 description: "Explore Punta Cana's pristine Bavaro Beach, all-inclusive resorts, world-class golf, and natural wonders like Hoyo Azul and Indigenous Eyes Park."
 heroImage: ""
+heroAlt: "Pristine Bávaro Beach white sand and turquoise Caribbean, Punta Cana, Dominican Republic"
 tagline: "The Dominican Republic's eastern tip — 48km of palm-fringed beach, coral reefs, and the Caribbean resort that everyone eventually ends up at"
 region: "east-coast"
 bestMonths: ["Dec", "Jan", "Feb", "Mar", "Apr"]

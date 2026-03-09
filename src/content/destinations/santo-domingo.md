@@ -2,6 +2,7 @@
 title: "Santo Domingo"
 description: "Discover Santo Domingo's UNESCO Colonial Zone, the first cathedral in the Americas, vibrant Malecon nightlife, and 500 years of New World history."
 heroImage: ""
+heroAlt: "Columbus Park and the Cathedral of Santa María la Menor in colonial Santo Domingo"
 tagline: "The oldest European city in the Americas — Columbus sailed in 1496, and the Zona Colonial's cobblestones still remember it"
 region: "santo-domingo"
 bestMonths: ["Dec", "Jan", "Feb", "Mar", "Apr"]
