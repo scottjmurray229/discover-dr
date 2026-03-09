@@ -2,6 +2,7 @@
 title: "The Dominican Republic's Hidden Interior"
 description: "Most visitors never leave the coast. The DR's interior — mountains, waterfalls, coffee farms, and real Dominican life — is the country's best-kept secret."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

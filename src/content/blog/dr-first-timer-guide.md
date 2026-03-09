@@ -2,6 +2,7 @@
 title: "Dominican Republic First-Timer Guide: Everything You Need to Know Before You Go"
 description: "Complete first-timer guide to the Dominican Republic — visas, currency, safety, best regions, when to visit, and how to get the most out of your first trip."
 pubDate: 2026-02-20
+dateModified: 2026-03-08
 heroImage: ""
 author: "Scott"
 tags: ["dominican-republic", "first-timer", "planning", "practical", "budget"]

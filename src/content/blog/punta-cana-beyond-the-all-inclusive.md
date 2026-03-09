@@ -2,6 +2,7 @@
 title: "Punta Cana Beyond the All-Inclusive: What We Actually Did"
 description: "We stayed at an all-inclusive but refused to stay inside it. Here's what we found when we actually explored Punta Cana and the surrounding area."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

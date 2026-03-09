@@ -2,6 +2,7 @@
 title: "Beyond Punta Cana: Dominican Republic Off the Resort"
 description: "What the Dominican Republic actually looks like beyond the all-inclusive corridor — colonial cities, mountain towns, whale-watching bays, and the Caribbean's most underrated beaches."
 pubDate: 2026-02-15
+dateModified: 2026-03-08
 heroImage: ""
 author: "Scott"
 tags: ["dominican-republic", "punta-cana", "off-the-beaten-path", "culture", "adventure"]

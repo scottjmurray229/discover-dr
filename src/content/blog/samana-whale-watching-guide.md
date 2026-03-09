@@ -2,6 +2,7 @@
 title: "Samaná Whale Watching Guide: Everything You Need to Know"
 description: "Complete guide to whale watching in Samaná Bay — when to go, which operators to book, what to expect, and how to combine it with the best of the Samaná Peninsula."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 heroImage: ""
 author: "Scott"
 tags: ["dominican-republic", "samana", "whale-watching", "wildlife", "caribbean"]

@@ -2,6 +2,7 @@
 title: "Punta Cana Travel Guide: How to Get the Most From the DR's Resort Capital"
 description: "Complete Punta Cana travel guide — best resorts, Saona Island, what to do beyond the beach, when to visit, and how to avoid the tourist traps."
 pubDate: 2026-02-25
+dateModified: 2026-03-08
 heroImage: ""
 author: "Scott"
 tags: ["dominican-republic", "punta-cana", "beach", "resort", "caribbean"]

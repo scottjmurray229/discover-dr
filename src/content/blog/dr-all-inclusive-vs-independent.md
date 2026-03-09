@@ -2,6 +2,7 @@
 title: "Dominican Republic All-Inclusive vs Independent Travel: Which Is Worth It?"
 description: "Honest comparison of all-inclusive resorts versus independent travel in the Dominican Republic — costs, experiences, what each style delivers, and how to decide."
 pubDate: 2026-02-10
+dateModified: 2026-03-08
 heroImage: ""
 author: "Scott"
 tags: ["dominican-republic", "all-inclusive", "budget", "planning"]
