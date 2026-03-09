@@ -2,6 +2,14 @@
 title: "Cabarete"
 description: "Discover Cabarete — the kiteboarding and windsurfing capital of the Caribbean with world-class beach bars, adventure sports, and laid-back Atlantic vibes."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Kite surfers on Kite Beach and Cabarete's beach bar strip, Dominican Republic"
 tagline: "The constant trade winds that make Cabarete the kiteboarding capital of the Caribbean — and one of the DR's most authentic beach towns"
 region: "north-coast"
@@ -144,7 +152,7 @@ For something mellower, several wine bars and cocktail spots have opened in rece
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Cabarete?
 
 Cabarete is compact enough to walk everywhere. The main strip from Kite Beach to the western end of Cabarete Bay is about a 25-minute walk along the beach or the road. Motoconchos (motorcycle taxis) are everywhere and charge RD$50-100 (~$1-$2 USD) for short hops within town. For trips to Encuentro Beach or El Choco, a motoconcho costs about RD$150-200 (~$2.50-$3.50 USD).
 
@@ -162,7 +170,7 @@ ATMs are available along the main road, and most restaurants and shops accept cr
 
 Wi-Fi is solid at most hotels, restaurants, and the coworking spaces in town. Several cafes cater specifically to the digital nomad crowd with fast connections, power outlets, and good coffee.
 
-### Safety
+### Is Cabarete Safe for Tourists?
 
 Cabarete is generally safe, but use common sense. Do not leave valuables unattended on the beach. The main strip is well-populated and lit at night, but the back streets can be dark and less populated after hours. Stick to the main areas at night, and you will have no issues. The ocean demands respect — always check conditions before kiting or surfing, and listen to the locals about currents.
 

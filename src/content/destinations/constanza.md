@@ -2,6 +2,14 @@
 title: "Constanza"
 description: "Discover Constanza — the highest valley in the Caribbean with strawberry farms, cool mountain climate, Valle Nuevo National Park, and stunning highland scenery."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Cloud-forest waterfalls and strawberry fields in Constanza, Dominican Republic"
 tagline: "Alpine strawberry fields at 1,200 metres, the Dominican Alps best hiking, and a valley so green it doesn't look like the Caribbean"
 region: "interior"
@@ -142,7 +150,7 @@ Valle Nuevo is even better for stargazing, though camping in the park requires a
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Constanza?
 
 A vehicle is essential in Constanza. The town itself is walkable, but the farms, waterfalls, and Valle Nuevo are all reached by mountain roads that have no public transport. Renting a car — ideally an SUV or 4x4 — is the best option. If you arrive without a suitable vehicle, local guides with 4x4s can be arranged through your hotel or by asking in town. These guided excursions typically run RD$4,000-6,000 (~$68-$102 USD) for a half day.
 

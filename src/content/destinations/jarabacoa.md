@@ -2,6 +2,14 @@
 title: "Jarabacoa"
 description: "Explore Jarabacoa — the Dominican Republic's mountain adventure hub with Pico Duarte treks, white-water rafting, waterfalls, and cool highland climate."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Jimenoa waterfall plunging into a turquoise pool near Jarabacoa, Dominican Republic"
 tagline: "Rafting the Jimenoa River, hiking to Salto de Aguas Blancas waterfall, and the mountain escape that Dominicans keep to themselves"
 region: "interior"
@@ -150,7 +158,7 @@ I am not usually a heights person, but the takeoff was smooth and once airborne 
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Jarabacoa?
 
 You really need a vehicle in Jarabacoa. The waterfalls, trailheads, and attractions are spread across the surrounding mountains, and public transport is limited to guaguas (minibuses) that run infrequently on fixed routes. Renting a car in Santo Domingo or Santiago is the best option. An SUV or high-clearance vehicle is helpful for some of the rougher mountain roads, particularly the route to Salto Aguas Blancas.
 

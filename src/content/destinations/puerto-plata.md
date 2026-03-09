@@ -2,6 +2,14 @@
 title: "Puerto Plata"
 description: "Visit Puerto Plata's Amber Coast for the cable car to Isabel de Torres, 27 Charcos waterfalls, Victorian architecture, and authentic Dominican culture."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Victorian gingerbread houses and Fortaleza San Felipe, Puerto Plata, Dominican Republic"
 tagline: "Victorian-era cable car to the mountaintop, waterfalls you can paraglide near, and the north coast's most photogenic city"
 region: "north-coast"
@@ -126,7 +134,7 @@ Sosua, a 20-minute drive east, offers a sheltered bay with calm water, excellent
 
 Thirty minutes east of Puerto Plata, Cabarete is the adventure sports capital of the Caribbean. World-class kiteboarding and windsurfing conditions draw enthusiasts from around the globe. Even if you do not participate, watching the kiteboarders launch and soar against the backdrop of the green mountains is spectacular. The beach bar scene in Cabarete is the best on the north coast, with a relaxed, international vibe.
 
-## Where to Eat
+## What Should I Eat in Puerto Plata?
 
 Puerto Plata's food scene is Dominican through and through, with prices that reflect a real city rather than a resort zone.
 
@@ -138,11 +146,11 @@ Dominican coffee deserves special mention. The north coast is coffee country -- 
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Puerto Plata?
 
 Puerto Plata is walkable within the city centre. For the beaches and surrounding attractions, taxis, *guaguas* (minibuses), and *motoconchos* are available. A taxi from the city to Playa Dorada costs about RD$300-500 (~$5-8 USD). *Guaguas* run along the coastal road between Puerto Plata, Sosua, and Cabarete for RD$100-150 (~$2-3 USD). Renting a car (RD$2,100-3,600 / ~$35-60 USD per day) gives the most flexibility, particularly for reaching the 27 Charcos and the mountain roads.
 
-### Where to Stay
+### Where Should I Stay in Puerto Plata?
 
 The city centre offers small hotels and guesthouses in the RD$1,200-3,000 (~$20-50 USD) range, some in restored Victorian buildings with real character. The Playa Dorada resort complex has all-inclusive options from RD$5,400 (~$90 USD) per person per night. For budget travellers, Puerto Plata is one of the most affordable destinations in the entire Caribbean.
 
@@ -150,7 +158,7 @@ The city centre offers small hotels and guesthouses in the RD$1,200-3,000 (~$20-
 
 The north coast receives more rainfall than the east coast, particularly from November through January. This is counterintuitive -- these are "dry season" months elsewhere in the DR -- so plan accordingly. Rain typically arrives in short bursts rather than all-day events. February through June offers the best balance of dry weather and comfortable temperatures. Summers are hot and humid but less rainy than autumn.
 
-### Safety
+### Is Puerto Plata Safe for Tourists?
 
 Puerto Plata is a working Dominican city, not a curated resort zone. Exercise standard urban awareness: avoid displaying expensive jewellery or electronics, use ATMs inside banks rather than on the street, and stay on populated, well-lit streets after dark. The tourist areas, Victorian quarter, and Malecon are generally safe. Ask hotel staff about any areas to avoid.
 

@@ -2,6 +2,14 @@
 title: "Punta Cana"
 description: "Explore Punta Cana's pristine Bavaro Beach, all-inclusive resorts, world-class golf, and natural wonders like Hoyo Azul and Indigenous Eyes Park."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Pristine Bávaro Beach white sand and turquoise Caribbean, Punta Cana, Dominican Republic"
 tagline: "The Dominican Republic's eastern tip — 48km of palm-fringed beach, coral reefs, and the Caribbean resort that everyone eventually ends up at"
 region: "east-coast"
@@ -147,7 +155,7 @@ For something more authentic, head to the bars and *colmados* (corner shops with
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Punta Cana?
 
 Within the resort zone, taxis are the primary option and prices are fixed (but confirm before you ride). A taxi from Bavaro to the airport costs about RD$1,800-2,400 (~$30-40 USD). Rental cars are available and useful for day trips, but driving in the Dominican Republic requires confidence -- road conditions vary, signage is inconsistent, and *motoconchos* (motorcycle taxis) weave through traffic unpredictably. Expect to pay RD$2,400-3,600 (~$40-60 USD) per day for a basic rental.
 

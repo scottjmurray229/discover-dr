@@ -2,6 +2,14 @@
 title: "Las Terrenas"
 description: "Discover Las Terrenas — the Samaná Peninsula's laid-back beach town with European expat charm, Playa Bonita, whale watching, and vibrant international food scene."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Playa Cosón palm-fringed beach and French-expat village, Las Terrenas, Dominican Republic"
 tagline: "French expat-founded beach town with palm-fringed streets, the Dominican Republic's best fresh seafood, and Playa Bonita"
 region: "interior"
@@ -154,7 +162,7 @@ The tour includes stops at Taino caves with pre-Columbian petroglyphs and pictog
 
 Full-day boat tours to Los Haitises from Samaná run about RD$4,000-7,000 (~$68-$119 USD) per person including guide, boat, lunch, and park entry. The trip takes five to six hours. Book through your hotel or a reputable tour operator in Las Terrenas. The boat ride across Samaná Bay can be choppy, so bring motion sickness medication if you are prone.
 
-## Getting Around
+## What's the Best Way to Get Around Las Terrenas?
 
 Las Terrenas is a scooter town. The compact layout means most beaches, restaurants, and shops are within a 10-minute ride, and the flat coastal roads are easy to navigate. Scooter rentals run RD$1,000-1,500 (~$17-$25 USD) per day and are available from numerous shops along the main road. Always wear a helmet — the traffic is relaxed but Dominican driving norms apply, which means expect the unexpected.
 

@@ -2,6 +2,14 @@
 title: "Santo Domingo"
 description: "Discover Santo Domingo's UNESCO Colonial Zone, the first cathedral in the Americas, vibrant Malecon nightlife, and 500 years of New World history."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Columbus Park and the Cathedral of Santa María la Menor in colonial Santo Domingo"
 tagline: "The oldest European city in the Americas — Columbus sailed in 1496, and the Zona Colonial's cobblestones still remember it"
 region: "santo-domingo"
@@ -107,7 +115,7 @@ The key to Dominican nightlife is understanding that nothing starts early. Dinne
 
 The residential neighbourhood of Gazcue, just west of the Colonial Zone, houses the Plaza de la Cultura, a complex of museums, theatres, and cultural institutions. The Museo del Hombre Dominicano is the standout, with extensive collections covering Taino indigenous culture, the colonial period, and the African roots of Dominican identity. The Museo de Arte Moderno houses an impressive collection of Dominican contemporary art. Both museums charge nominal entry fees of RD$100-200 (~$2-3 USD).
 
-## Where to Eat
+## What Should I Eat in Santo Domingo?
 
 Santo Domingo's food scene is the best in the country, and it is not close. The city draws on Dominican, Spanish, African, and Taino culinary traditions, filtered through five centuries of *mestizaje* (cultural mixing). Eating here is essential to understanding the culture.
 
@@ -127,11 +135,11 @@ Do not overlook the street vendors. *Empanadas* stuffed with beef, chicken, or c
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Santo Domingo?
 
 Santo Domingo traffic is intense. The Metro -- the first and only subway system in the Caribbean -- operates two lines that connect the major commercial areas and are clean, efficient, and cheap at RD$35 (~$0.60 USD) per ride. For the Colonial Zone, walking is the only sensible option. Uber and InDriver are widely used and significantly safer than street taxis. If you take a street taxi, agree on the price before getting in -- meters are non-existent.
 
-### Where to Stay
+### Where Should I Stay in Santo Domingo?
 
 The Colonial Zone is the obvious choice for first-time visitors, with boutique hotels and guesthouses ranging from RD$1,800 (~$30 USD) for a basic room to RD$12,000+ (~$200+ USD) for a restored colonial property with a courtyard pool. The Gazcue neighbourhood is quieter and more affordable. The Piantini and Naco areas are modern, safe, and close to the best restaurants and nightlife, with mid-range hotels running RD$4,800-7,200 (~$80-120 USD).
 
@@ -139,7 +147,7 @@ The Colonial Zone is the obvious choice for first-time visitors, with boutique h
 
 Santo Domingo is hot and humid year-round. Temperatures hover between 77 and 90 degrees Fahrenheit. The dry season from December through April is the most comfortable for sightseeing. Rain is most common from May through November, typically in heavy afternoon showers that clear within an hour. Carry a compact umbrella and plan outdoor sightseeing for the morning.
 
-### Safety
+### Is Santo Domingo Safe for Tourists?
 
 The Colonial Zone is well-patrolled and generally safe during daytime and evening hours. Exercise increased caution after midnight in less-populated areas. Use rideshare apps rather than hailing taxis on the street. Keep valuables out of sight and carry only the cash you need for the day. The *barrios* north and west of the Colonial Zone are residential neighbourhoods where tourists have little reason to go -- stick to established areas unless you are with a local guide.
 

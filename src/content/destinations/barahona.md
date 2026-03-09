@@ -2,6 +2,14 @@
 title: "Barahona"
 description: "Explore Barahona — the Dominican Republic's untouched southwest with Bahía de las Águilas, Lago Enriquillo, Larimar mines, and off-the-beaten-path Caribbean beauty."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Bahía de las Águilas pristine beach and Lake Enriquillo flamingos, Barahona, Dominican Republic"
 tagline: "Flamingos at Laguna Oviedo, cacti forests, Lake Enriquillo, and the DR's most unexplored corner that rewards patient travelers"
 region: "interior"
@@ -72,7 +80,7 @@ Barahona city itself sits on a small bay, a modest port town with a central park
 
 I have been to beaches across the Caribbean, Southeast Asia, and the Pacific, and Bahía de las Águilas is one of the most stunning I have ever seen. Eight kilometers of unbroken white sand curve along a turquoise bay, backed by nothing — no hotels, no restaurants, no beach chairs, no umbrellas. Just sand, sea, and the dry hills of Jaragua National Park rising behind.
 
-### Getting There
+### How Do I Get to Barahona?
 
 Reaching Bahía de las Águilas requires effort, which is exactly why it remains pristine. From Barahona, you drive about 90 minutes south along the coastal road to the fishing village of Las Cuevas. From there, local boatmen ferry visitors to the beach in small fishing boats — the ride takes about 20 minutes and costs RD$2,000-3,000 (~$34-$51 USD) per boat, which seats four to six people. There is no road access to the beach, and the boat is the only way in and out.
 
@@ -138,7 +146,7 @@ The largest national park in the Dominican Republic, Jaragua covers the southwes
 
 Beyond Bahía de las Águilas, the park offers hiking through dry forest, visits to Taino cave art sites, and birdwatching that includes endemic and migratory species. Access is limited and requires a park permit and guide, which can be arranged through the park office near Oviedo or through hotels in the area. Full-day guided excursions run about RD$3,000-5,000 (~$51-$85 USD) per person.
 
-## Food and Drink
+## What Should I Eat and Drink in Barahona?
 
 The cuisine in the Barahona region reflects its coastal and rural character. Fresh seafood dominates — red snapper, shrimp, lobster, and conch prepared in simple Dominican style with rice, beans, and tostones. The fish is caught daily by local fishermen, and the quality is outstanding.
 
@@ -150,7 +158,7 @@ Local rum is the drink of choice. A bottle of Brugal or Barceló costs about RD$
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Barahona?
 
 A rental car is essential, and a 4x4 or high-clearance vehicle is strongly recommended. The main road south from Barahona is paved and manageable, but the roads to the Larimar mines, some of the interior attractions, and rural areas are rough. Gas stations are spaced far apart — fill up in Barahona before heading south, and carry extra water in the vehicle.
 

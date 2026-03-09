@@ -2,6 +2,14 @@
 title: "La Romana"
 description: "Explore La Romana's Altos de Chavon artists' village, Casa de Campo luxury resort, and island escapes to Isla Saona and Catalina Island."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Casa de Campo Altos de Chavón village and Chavón River gorge, La Romana, Dominican Republic"
 tagline: "Altos de Chavón Mediterranean village replica, world-class Casa de Campo golf, and the coral reefs of the Catalina Island"
 region: "east-coast"
@@ -123,7 +131,7 @@ Bayahibe is also an excellent base for diving. The underwater world off this coa
 
 A lesser-known attraction near Bayahibe is the Padre Nuestro trail within Cotubanama National Park. This hiking trail leads through dry tropical forest to a series of freshwater cenotes -- natural sinkholes filled with clear water -- where you can swim surrounded by jungle. The trail also passes through Taino cave sites with petroglyphs. It is far quieter than the island tours and offers a completely different experience of the region's natural beauty. Park entry is RD$200 (~$3 USD), and a local guide can be hired for RD$600-1,200 (~$10-20 USD).
 
-## Where to Eat
+## What Should I Eat in La Romana?
 
 ### In La Romana Town
 
@@ -141,11 +149,11 @@ Several restaurants within the Altos de Chavon village serve Italian and interna
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around La Romana?
 
 La Romana town is compact and walkable for the central area. For Bayahibe, Altos de Chavon, and the surrounding beaches, taxis are necessary. Agree on fares before getting in -- common routes include La Romana to Bayahibe (RD$1,200-1,800 / ~$20-30 USD) and La Romana to Casa de Campo gate (RD$600-900 / ~$10-15 USD). Rental cars are available and useful for exploring the region independently at RD$2,400-3,600 (~$40-60 USD) per day.
 
-### Where to Stay
+### Where Should I Stay in La Romana?
 
 The accommodation spectrum in La Romana is unusually wide. Bayahibe has budget-friendly guesthouses and dive hotels starting at RD$1,500-3,000 (~$25-50 USD). Mid-range all-inclusive resorts near Bayahibe and Dominicus beach run RD$6,000-12,000 (~$100-200 USD). And then there is Casa de Campo, which occupies its own stratosphere. I recommend Bayahibe for independent travellers and divers, the Dominicus area for families wanting an all-inclusive, and Casa de Campo if budget is not a consideration.
 

@@ -2,6 +2,14 @@
 title: "Samana"
 description: "Experience the Samana Peninsula's humpback whale watching, El Limon waterfall, Los Haitises National Park, and the pristine sands of Playa Rincon."
 heroImage: ""
+aeoFacts:
+  currency: "DOP (Dominican Peso)"
+  plugType: "A/B, 120V"
+  language: "Spanish (English in resorts)"
+  bestTime: "December to April (dry season)"
+  visaInfo: "Visa-free for most nationalities"
+  timeZone: "UTC-4 (Atlantic Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Humpback whale breaching in Samaná Bay, Dominican Republic"
 tagline: "Humpback whales in the bay from January through March, Los Haitises mangroves, and the DR's most hauntingly beautiful peninsula"
 region: "interior"
@@ -121,7 +129,7 @@ The town of Santa Barbara de Samana sits on the southern shore of the bay and se
 
 The town's most distinctive feature is the *La Churcha* (The Church), a small tin-roofed Protestant church built in the 1820s by formerly enslaved African Americans who settled here after being freed and offered land by the Haitian government (Samana was under Haitian rule at the time). The descendants of these settlers still live in the area and speak an English Creole that is fascinating to hear. This little-known chapter of Dominican history adds an unexpected layer to the peninsula's story.
 
-## Where to Eat
+## What Should I Eat in Samana?
 
 Samana's food scene is rustic and seafood-focused, which suits the setting perfectly. Do not expect fine dining. Do expect the freshest fish you have ever eaten.
 
@@ -133,13 +141,13 @@ The beach restaurants (*champas*) at Playa Rincon and other remote beaches serve
 
 ## Practical Information
 
-### Getting Around
+### What's the Best Way to Get Around Samana?
 
 A rental car is the best option for exploring the Samana Peninsula, especially if you want to reach beaches and attractions on your own schedule. The roads between major towns are paved and reasonable. Secondary roads to beaches and waterfalls range from rough to very rough -- a vehicle with high clearance is recommended. Rental cars run RD$2,400-4,200 (~$40-70 USD) per day.
 
 *Motoconchos* (motorcycle taxis) are available in all towns for short trips, typically RD$100-200 (~$2-3 USD). *Guaguas* (minibuses) run between Samana, Las Terrenas, and Las Galeras for RD$100-200 (~$2-3 USD) but on flexible schedules. Tour operators can arrange transportation to all major attractions.
 
-### Where to Stay
+### Where Should I Stay in Samana?
 
 The peninsula offers three distinct bases: the town of Samana (best for whale watching and Los Haitises), Las Terrenas (most developed, best dining and nightlife), and Las Galeras (most remote and tranquil). Backpacker guesthouses start at RD$1,200-1,800 (~$20-30 USD). Mid-range hotels with pool and breakfast run RD$4,200-7,200 (~$70-120 USD). Boutique eco-lodges on the hillsides above the bay offer stunning views for RD$6,000-12,000 (~$100-200 USD).
 
