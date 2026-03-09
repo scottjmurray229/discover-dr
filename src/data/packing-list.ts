@@ -23,7 +23,7 @@ export const DR_CONFIG: PackingConfig = {
   currency: 'DOP',
   plugType: 'Type A/B',
   plugVoltage: '110V',
-  affiliateTag: 'discovermore-20',
+  affiliateTag: 'discoverphili-20',
   destinationEssentials: DR_ESSENTIALS,
   gearRecommendations: DR_GEAR_RECOMMENDATIONS,
 };
