@@ -24,8 +24,13 @@ relatedDestinations:
   - "samana"
 faqItems:
   - { question: "Is Punta Cana safe for tourists?", answer: "Punta Cana is one of the safest destinations in the Caribbean. The resort zone is well-patrolled and tourist-focused. Exercise normal precautions outside the hotel areas, as you would anywhere. Stick to authorized tour operators for excursions, and avoid flashing valuables in non-tourist areas." }
+  - { question: "Is Punta Cana worth visiting?", answer: "For a resort beach vacation, yes — Bavaro Beach is genuinely world-class and the all-inclusive model is excellent value for families. For travelers seeking authentic cultural immersion, Punta Cana is a starting point, not a destination. The real Dominican Republic exists just beyond the resort gates, and the best experiences here require actually venturing out." }
+  - { question: "Best time to visit Punta Cana?", answer: "December through April offers the driest weather and most comfortable temperatures. Hurricane season runs June through November, with September and October carrying the highest risk. Shoulder season (May-June) often delivers great weather at 30-40% lower prices than peak season." }
+  - { question: "How much does Punta Cana cost per day?", answer: "All-inclusive resorts run RD$9,000-30,000 ($150-500 USD) per night for two, covering most meals and drinks. Non-resort accommodation runs $45-120 USD/day. Book resort excursions directly with local operators in Cortecito rather than through the hotel desk — prices are 40-60% lower for the same trips." }
+  - { question: "Do I need a visa for the Dominican Republic?", answer: "US, Canadian, Australian, UK, and most EU nationals can enter the Dominican Republic for up to 30 days without a visa (extendable). As of 2022, the tourist card is included in most airline ticket prices to the DR. Check current requirements with the Dominican embassy before travel." }
+  - { question: "What is Punta Cana famous for?", answer: "Punta Cana is famous for Bavaro Beach (consistently ranked among the world's best), its all-inclusive resort concentration (the largest in the Caribbean), the Hoyo Azul cenote, Saona Island day trips, and PUJ airport (the busiest airport in the Caribbean). It is the Dominican Republic's primary tourism engine." }
   - { question: "Should I stay at an all-inclusive resort?", answer: "For a first visit, all-inclusives offer outstanding value and convenience, especially for families. A solid mid-range all-inclusive runs RD$9,000-15,000 (~$150-250 USD) per night for two. However, staying outside the resort bubble lets you experience real Dominican culture, eat at local comedores, and spend significantly less. I recommend at least two days venturing beyond the resort gates." }
-  - { question: "What is the best time to visit Punta Cana?", answer: "December through April offers the driest weather and most comfortable temperatures. Hurricane season runs June through November, with September and October carrying the highest risk. That said, shoulder season (May-June) often delivers great weather at 30-40% lower prices." }
+  - { question: "Punta Cana vs La Romana — which east coast destination?", answer: "Punta Cana has better beaches directly at the resorts and more flight options. La Romana has Altos de Chavon, better access to Isla Saona, and a slightly more cultured feel beyond the all-inclusive bubble. For pure beach vacation, Punta Cana. For culture alongside beaches, La Romana and Bayahibe." }
 affiliatePicks:
   - name: "Bavaro Beach Resort"
     type: "hotel"
@@ -64,6 +69,8 @@ The water is shallow and calm for a surprising distance from shore, making it id
 ### Beyond the Resort Beach
 
 The stretch near the fishing village of Cortecito offers a more local experience. Small bars and restaurants line the sand, vendors sell fresh coconut water and *empanadas de yuca*, and Dominican families gather on weekends with coolers of *Presidente* beer and speakers blasting *bachata*. It is louder and less polished than the resort sections, and I loved every minute of it. This is where you get a glimpse of how Dominicans actually enjoy their own beaches.
+
+<immersive-break-inline videoSrc="/videos/destinations/punta-cana-hero.mp4" heading="Punta Cana: Bavaro Beach and the Caribbean Dream" subheading="The all-inclusive done right — and what's waiting just beyond the resort gate" />
 
 ## Hoyo Azul: The Hidden Cenote
 

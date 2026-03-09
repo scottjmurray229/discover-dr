@@ -26,10 +26,14 @@ relatedDestinations:
   - "constanza"
   - "jarabacoa"
 faqItems:
-  - { question: "How do I get to Bahía de las Águilas?", answer: "The beach is accessible only by boat from the fishing village of Las Cuevas, about 90 minutes south of Barahona. A round-trip boat ride costs RD$2,000-3,000 (~$34-$51 USD) per boat (fits 4-6 people). There is no road access and no facilities on the beach — bring everything you need including food, water, sunscreen, and a shade structure. Most visitors arrange a full-day trip through their hotel or a local guide." }
   - { question: "Is Barahona safe for tourists?", answer: "The Barahona region is generally safe and the people are welcoming to the few tourists who make it this far. Standard precautions apply — lock your vehicle, keep valuables secured, and avoid driving the mountain roads at night. The biggest safety concern is the remoteness itself: medical facilities are limited, cell service is spotty in rural areas, and some roads are rough. Travel with a full tank of gas and carry water." }
-  - { question: "How many days do I need in Barahona?", answer: "Three to four days is ideal. This gives you time for Bahía de las Águilas (full day), Lago Enriquillo (half to full day), the Larimar mines (half day), and the coastal drive with beach stops. Rushing through in one or two days means you miss the rhythm of the place, which is part of the experience. The distances between attractions are significant, so build in driving time." }
-  - { question: "What is Larimar and where can I buy it?", answer: "Larimar is a rare blue pectolite mineral found only in the Dominican Republic, specifically in the mountains above Barahona. The volcanic blue stone is used in jewelry and is considered a national treasure. You can visit the mines near the village of Los Chupaderos and buy directly from miners. Prices at the source are significantly lower than in Santo Domingo tourist shops — expect to pay RD$500-5,000 (~$8.50-$85 USD) depending on quality and size." }
+  - { question: "Is Barahona worth visiting?", answer: "For travelers who have seen the resort side of the Dominican Republic and want something completely different, absolutely. Bahía de las Águilas is the most beautiful beach in the country — and arguably in the entire Caribbean — but it is accessible only by boat and has no facilities. Lago Enriquillo with its American crocodiles and rhinoceros iguanas is extraordinary. This is the raw, unpolished DR." }
+  - { question: "Best time to visit Barahona?", answer: "December through April is the dry season and most comfortable for the coastal drive and outdoor activities. The southwest is significantly drier than the rest of the DR year-round — the semi-arid climate means less rain than Samana or the north coast. Avoid driving the mountain roads in heavy rain." }
+  - { question: "How much does Barahona cost per day?", answer: "Barahona is very affordable. Budget travelers can manage $34-50 USD/day in guesthouses. Casa Bonita (the best lodge) runs $205 USD/night and is worth the splurge. Boat trips to Bahía de las Águilas run $34-51 USD/boat (shared). Lago Enriquillo tours run $42 USD/person. Overall a very cost-effective adventure destination." }
+  - { question: "How do I get to Bahía de las Águilas?", answer: "The beach is accessible only by boat from the fishing village of Las Cuevas, about 90 minutes south of Barahona. A round-trip boat ride costs RD$2,000-3,000 (~$34-$51 USD) per boat (fits 4-6 people). There is no road access and no facilities on the beach — bring everything you need including food, water, sunscreen, and a shade structure." }
+  - { question: "What is Barahona famous for?", answer: "Barahona is famous for Bahía de las Águilas (widely considered the DR's most beautiful beach), Lago Enriquillo (the largest lake in the Caribbean, home to American crocodiles and rhinoceros iguanas), the Larimar gemstone mines (the only Larimar mines in the world), and the spectacular coastal highway from Barahona to Pedernales." }
+  - { question: "How many days do I need in Barahona?", answer: "Three to four days is ideal. This gives you time for Bahía de las Águilas (full day), Lago Enriquillo (half to full day), the Larimar mines (half day), and the coastal drive with beach stops. Rushing through in one or two days means you miss the rhythm of the place, which is part of the experience." }
+  - { question: "What is Larimar and where can I buy it?", answer: "Larimar is a rare blue pectolite mineral found only in the Dominican Republic, specifically in the mountains above Barahona. It is used in jewelry and considered a national treasure. You can visit the mines near Los Chupaderos and buy directly from miners at prices significantly below Santo Domingo tourist shops — RD$500-5,000 (~$8.50-$85 USD) depending on quality." }
 affiliatePicks:
   - name: "Casa Bonita Tropical Lodge"
     type: "hotel"
@@ -80,6 +84,8 @@ The sand is fine, white, and firm — the kind that squeaks under your feet. The
 There is no shade. Let me repeat that for emphasis: there is absolutely no natural shade on this beach. The sun in the Barahona region is intense, and between 11 AM and 2 PM it is punishing. Bring a large umbrella or a pop-up shade structure, and bring far more sunscreen than you think you need. I also recommend a wide-brim hat, sunglasses, and a rash guard for extended swimming.
 
 Bring all your food and water. There is nothing to buy on the beach — no vendors, no kiosks, no fresh coconuts. I packed sandwiches, fruit, a full cooler of water and Presidente, and it was exactly right. This is wilderness beach-going at its purest. If that sounds inconvenient, it is the wrong destination for you. If it sounds like paradise, it absolutely is.
+
+<immersive-break-inline videoSrc="/videos/destinations/barahona-hero.mp4" heading="The Other Dominican Republic" subheading="Empty beaches, flamingos, and landscapes that defy every Caribbean stereotype." />
 
 ## The Coastal Road: Barahona to Pedernales
 
@@ -170,3 +176,17 @@ The Barahona region is ecologically fragile and relatively undeveloped. Practice
 Barahona is for travelers who want to go beyond the postcard version of the Dominican Republic. If you need resort amenities, reliable Wi-Fi, and a smoothly curated experience, look elsewhere. But if you want empty beaches that take your breath away, landscapes that defy Caribbean stereotypes, wildlife encounters that feel genuine, and the satisfaction of reaching places that most visitors never see, the southwest delivers something truly special.
 
 I left Barahona with a sense of discovery that I rarely feel anymore in the age of Instagram tourism. This corner of the Dominican Republic is a reminder that extraordinary places still exist without crowds, without hype, and without compromise.
+
+<div class="scott-tips">
+
+**Scott's Tips for Barahona**
+
+- **Rent a 4x4, not a regular car.** The roads to the Larimar mines and some coastal access points will defeat a low-clearance vehicle. The extra rental cost is worth every peso.
+- **Fill up on gas and cash in Barahona before heading south.** There are no ATMs and limited fuel between Barahona and Pedernales. Carry significantly more cash and water than you think you need.
+- **For Bahía de las Águilas, arrive early.** The boat from Las Cuevas fills fast and the beach is best before 10am. Bring everything — there are zero vendors on the beach.
+- **At Lago Enriquillo, go at sunrise or skip the midday heat.** Midday temperatures regularly exceed 35°C (95°F) in the basin. The flamingos and iguanas are more active in the early morning anyway.
+- **Buy Larimar directly from miners, not tourist shops.** Prices at the mine near Los Chupaderos are a fraction of what Santo Domingo shops charge, and the money goes directly to the families who do the work.
+- **Book your accommodation before you arrive.** Options are limited and the few good places fill up, especially on weekends when Dominican tourists escape the capital.
+- **This region is deliberately slow.** Barahona rewards travelers who stop frequently, take unmarked roads to see what's there, and accept that things don't happen on any schedule. Resistance to that pace will make you miserable.
+
+</div>

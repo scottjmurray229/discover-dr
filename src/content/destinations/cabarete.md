@@ -30,6 +30,10 @@ faqItems:
   - { question: "Is Cabarete safe for solo travelers?", answer: "Cabarete is one of the safest towns on the north coast for visitors. The main beach strip is well-lit and populated into the late evening. Use standard precautions — avoid unlit back streets at night and keep valuables secured. The expat community is large and welcoming, making it easy to meet people." }
   - { question: "What is the best time to visit Cabarete for kiteboarding?", answer: "The strongest and most consistent trade winds blow from January through March and again from June through July. February and March are the prime months with winds averaging 15-25 knots almost daily. The shoulder months of April, May, and August still get rideable days but are less consistent." }
   - { question: "Where should I stay in Cabarete?", answer: "Kite Beach has the best access to wind sports and a cluster of boutique hotels. Cabarete Bay (the main strip) is better for nightlife, restaurants, and a wider range of accommodations from hostels to condos. Budget travelers should look at guesthouses on the inland side of the main road where rates drop significantly." }
+  - { question: "How far is Cabarete from Puerto Plata airport?", answer: "Gregorio Luperón International Airport (POP) is about 20 kilometers west of Cabarete — roughly 20 minutes by taxi or shared guagua. Taxis charge RD$1,200-1,500 (~$20-25 USD) for the direct transfer. Shared vans (guaguas) run along the coastal road for RD$100-150 and are slower but much cheaper if you are not in a rush." }
+  - { question: "What is the best restaurant in Cabarete?", answer: "For seafood, La Casita de Papi on the beach strip serves excellent fresh fish and lobster at honest prices. For breakfast, Cabarete Coffee Company is a local institution. For international food, the beach strip has Thai, Italian, and Lebanese options that have served the expat community for years. The rotating food trucks near the kite beach parking area are worth exploring for cheap Dominican lunch." }
+  - { question: "Can I visit Cabarete without doing water sports?", answer: "Absolutely. Cabarete has a strong restaurant and nightlife scene, excellent hiking in El Choco National Park, the Cabarete Caves and lagoon for swimming, and it serves as a great base for north coast day trips — the 27 Waterfalls of Damajagua, Mount Isabel de Torres cable car in Puerto Plata, and whale watching in Samaná are all within reach." }
+  - { question: "Is Cabarete good for digital nomads?", answer: "Yes — Cabarete has an unusually strong digital nomad infrastructure for a Caribbean beach town. Several dedicated coworking spaces exist, Wi-Fi at hotels and cafes is reliably fast, and the international community means plenty of people working remotely. Monthly rental apartments are available at RD$25,000-60,000 (~$425-$1,000 USD) depending on proximity to the beach." }
 affiliatePicks:
   - name: "Velero Beach Resort"
     type: "hotel"
@@ -101,6 +105,8 @@ I hired a local guide at the park entrance for about RD$1,000 (~$17 USD), and it
 
 The park entrance fee is about RD$200 (~$3.50 USD), and you can easily spend two to three hours exploring. Bring water, sunscreen, and shoes with grip — some of the limestone paths are slippery.
 
+<immersive-break-inline videoSrc="/videos/destinations/cabarete-hero.mp4" heading="Where the Trade Winds Never Stop" subheading="Kiteboarding, surf breaks, and north coast energy that keeps you coming back." />
+
 ## The Cabarete Caves and Lagoon
 
 Separate from El Choco, the Cabarete Caves complex on the eastern edge of town offers another underground adventure. These are larger caves with impressive stalactite formations and underground pools. Several tour operators run guided trips that include headlamp exploration and swimming in the subterranean lagoons.
@@ -170,3 +176,17 @@ For a longer day trip, the Samaná Peninsula is about a three-hour drive and put
 Cabarete is perfect for active travelers who want more than a resort experience. If you kite, surf, or want to learn, this is the place. If you are a digital nomad looking for a Caribbean base with reliable internet and an international community, Cabarete checks every box. And if you simply want a beach town with character, good food, and an energy that keeps you coming back, this little stretch of the north coast delivers.
 
 I came for three days and stayed for eight. That tells you everything you need to know.
+
+<div class="scott-tips">
+
+**Scott's Tips for Cabarete**
+
+- **Book kite lessons at least 48 hours ahead.** The top schools fill up fast in peak wind season (January–March and June–July). Walk-in lessons are possible in slower months but are not guaranteed.
+- **Stay at Kite Beach if wind sports are your reason for coming.** Stay on the main Cabarete Bay strip if nightlife, restaurants, and the social scene matter more. They are only a 10-minute walk apart, but the vibe is noticeably different.
+- **The 27 Waterfalls of Damajagua is a must-do day trip.** It is 45 minutes west and genuinely one of the best adventure excursions in the entire Caribbean — jumping and sliding down a series of natural waterfall pools. Go on a weekday to avoid the weekend crowds.
+- **Check wind forecasts on Windy.com before planning water sport days.** Wind is reliable but not guaranteed — some days are completely flat. Flexibility in your schedule lets you hit the water when conditions are perfect.
+- **Eat Dominican for lunch at the local comedores.** A full meal of rice, beans, chicken or fish, and salad costs under RD$400 (~$7 USD). The tourist restaurants are good but significantly pricier for the same quality.
+- **Motoconchos are cheap and fast for short hops.** Negotiate the price before you get on — RD$50-100 should cover any trip within Cabarete. Taxis are more comfortable for longer distances.
+- **The back streets have some of the best budget guesthouses.** A two-minute walk from the beach strip dramatically reduces room rates. Perfectly safe, just quieter.
+
+</div>

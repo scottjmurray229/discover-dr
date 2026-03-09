@@ -30,6 +30,10 @@ faqItems:
   - { question: "When is the best time for whale watching?", answer: "Humpback whales visit Samaná Bay from mid-January through late March to breed and calve in the warm, protected waters. Peak season is February, when whale activity is at its highest. Whale-watching tours depart from the town of Samaná (about 40 minutes from Las Terrenas) and from Las Terrenas itself. Expect to pay RD$4,000-6,000 (~$68-$102 USD) per person for a half-day tour. Sightings are virtually guaranteed during peak season." }
   - { question: "Is Las Terrenas expensive compared to other Dominican towns?", answer: "It is moderately more expensive than inland towns like Jarabacoa or Constanza, but still very affordable by Caribbean standards. The European influence means restaurant prices are slightly higher than typical Dominican towns, especially at the French and Italian spots. However, local Dominican restaurants and street food are priced normally. Budget travelers can manage on RD$2,200 (~$37 USD) per day, while mid-range visitors eating well at international restaurants will spend about RD$7,000 (~$119 USD)." }
   - { question: "Can I get around Las Terrenas without a car?", answer: "Yes. The town is compact and most beaches, restaurants, and shops are within walking or scooter distance. Scooter rental is the most popular way to get around — RD$1,000-1,500 (~$17-$25 USD) per day — and gives you the freedom to explore nearby beaches. For day trips to Samaná town, El Limón waterfall, or Los Haitises National Park, you can hire a driver or join a tour group." }
+  - { question: "What is Playa Bonita and how far is it?", answer: "Playa Bonita is a stunning palm-lined beach about 3 kilometers west of Las Terrenas town — 10 minutes by scooter or motoconcho. It is one of the most beautiful beaches in the Dominican Republic and significantly quieter than the main town beach. A handful of small restaurants and beach bars operate here, but development is minimal. Go in the morning for calm water and maximum shade from the leaning palms." }
+  - { question: "Is Las Terrenas good for digital nomads?", answer: "Very good. The European expat community has created strong demand for reliable internet, and most hotels, cafes, and coworking spaces have decent Wi-Fi. The international dining scene, French and Italian grocery stores, and relaxed pace make it comfortable for extended stays. Monthly apartment rentals are available at RD$30,000-80,000 (~$510-$1,360 USD) depending on size and location." }
+  - { question: "What day trips can I do from Las Terrenas?", answer: "El Limón waterfall is 45 minutes away — a rewarding hike or horseback ride to a 52-meter cascade. Los Haitises National Park (90 minutes) is one of the most ecologically rich places in the Caribbean — mangrove channels, limestone haystack hills, and cave paintings. Whale watching departs from Samaná town (40 minutes). Playa Rincón, consistently rated among the best beaches in the country, is 90 minutes by combined road and boat." }
+  - { question: "Do I need to speak French to visit Las Terrenas?", answer: "Absolutely not. Spanish is the local language and widely spoken by Dominican residents. English works at most tourist-facing businesses. French is useful primarily for interacting with expat-owned restaurants and shops where it is common — but staff at all major establishments speak Spanish and often English. The multilingual environment is one of the town's charms, not a barrier." }
 affiliatePicks:
   - name: "Hotel Alisei"
     type: "hotel"
@@ -123,6 +127,8 @@ Half-day tours run about RD$4,000-6,000 (~$68-$102 USD) per person, including bo
 
 If you visit during whale season, this excursion is non-negotiable. Build your entire Samaná itinerary around it.
 
+<immersive-break-inline videoSrc="/videos/destinations/las-terrenas-hero.mp4" heading="Caribbean Soul, European Flair" subheading="Where French bistros, Dominican beaches, and humpback whales share the same peninsula." />
+
 ## El Limón Waterfall
 
 Salto El Limón is a 40-meter waterfall set in lush tropical forest, about 30 minutes from Las Terrenas. It is one of the most visited natural attractions on the Samaná Peninsula, and for good reason — the cascade is powerful, the jungle setting is stunning, and the pool at the base is perfect for swimming.
@@ -200,3 +206,17 @@ Las Terrenas succeeds because it does not try to be one thing. It is simultaneou
 I came to Las Terrenas expecting a pleasant beach stop and found a place with genuine cultural richness, outstanding food, and a community that is warm, international, and deeply engaged with the peninsula's natural beauty. It is the kind of town where a three-day visit easily becomes a week, and where the thought of leaving arrives with reluctance.
 
 The Samaná Peninsula is one of the Dominican Republic's greatest assets, and Las Terrenas is the best way to experience it.
+
+<div class="scott-tips">
+
+**Scott's Tips for Las Terrenas**
+
+- **Rent a scooter on your first morning.** The town makes no sense on foot — the beaches, restaurants, and side trips are spread along the coastline, and a scooter (RD$1,000-1,500 per day) unlocks everything. Playa Bonita, Playa Cosón, and the road toward El Limón are all scooter distances.
+- **For whale watching, book direct with operators in Samaná town, not hotel middlemen.** Tours sold through hotels carry a significant markup. The boats, guides, and experience are identical — you are just paying more for the booking convenience. Go to the waterfront in Samaná and book same-day or one day ahead.
+- **Eat at the French-run restaurants but snack at Dominican spots.** A grilled fish plate at a local comedor costs RD$300-400 (~$5-7 USD). The French bistros are genuinely excellent — reserve them for dinner. You get the best of both cuisines for a fraction of what you would pay if you only ate at tourist restaurants.
+- **Visit Playa Bonita in the morning.** Wind picks up in the afternoon and can kick up sand. The morning light on those leaning palms is extraordinary, and you often have significant stretches to yourself before 10am.
+- **The road to El Limón is rough — take a horse or a guided motorcycle.** Several operators at the trailhead offer horseback rides to the waterfall (about 45 minutes each way) through jungle and streams. It is the most atmospheric way to arrive and avoids the muddy hiking path after rain.
+- **Los Haitises is the best day trip on the peninsula.** Many visitors skip it, which is a mistake. The mangrove channels, cave paintings, and limestone haystack hills are unlike anything else in the Caribbean. Book a boat tour from Samaná town and go on a weekday.
+- **January through March is peak season and whale season simultaneously.** Book accommodation three months ahead if visiting in February — this is the most popular time on the peninsula and rooms at good properties sell out weeks in advance.
+
+</div>

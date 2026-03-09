@@ -30,6 +30,10 @@ faqItems:
   - { question: "Do I need a 4x4 to visit Constanza?", answer: "The main road from Santo Domingo via Bonao and Casabito is paved and manageable in a regular car, though it is steep and winding. The road from Jarabacoa to Constanza is rougher and benefits from high clearance. For Valle Nuevo National Park, a 4x4 is essential — the park roads are unpaved, steep, and can be muddy. If you only have a sedan, stick to the main routes and arrange a local 4x4 tour for the park." }
   - { question: "Is Constanza worth a special trip?", answer: "If you appreciate unique landscapes and want to see a side of the Caribbean that few visitors ever experience, absolutely. Constanza offers a genuinely different experience — cool air, mountain farming, pine forests, and an otherworldly national park. It pairs perfectly with Jarabacoa for a three to five day mountain circuit. For beach-only travelers, it may feel too remote and quiet." }
   - { question: "What is there to eat in Constanza?", answer: "Constanza is famous for its produce — strawberries, lettuce, potatoes, garlic, and other vegetables that grow in the cool climate. Local restaurants serve hearty Dominican mountain food: sancocho (stew), grilled chicken, mofongo, and fresh trout. Meals are very affordable, typically RD$300-600 (~$5-$10 USD). The strawberries are sold at roadside stands and are some of the sweetest I have tasted anywhere." }
+  - { question: "How long should I spend in Constanza?", answer: "Two nights minimum, three nights is ideal. Day one: arrive, explore the valley and farms. Day two: full day in Valle Nuevo National Park (hire a local 4x4 guide). Day three: Aguas Blancas waterfall and the town market before heading out. If you combine with Jarabacoa (1.5 hours away), a five-day mountain circuit makes perfect sense." }
+  - { question: "Can I camp in Valle Nuevo National Park?", answer: "Yes, and it is one of the best camping experiences in the Dominican Republic. The park has designated camping areas and the night skies are extraordinary — some of the clearest in the Caribbean at this elevation. Bring serious cold-weather gear: temperatures drop below freezing at night. You need to arrange a park permit and ideally go with a guide who knows the terrain." }
+  - { question: "What should I pack for Constanza?", answer: "Pack as if you are going to a cool mountain destination, not the beach. Fleece or down jacket (essential at night), long pants, layers for daytime temperature swings, waterproof shoes or hiking boots for Valle Nuevo, and a warm sleeping bag if camping. Sunscreen matters more than you would expect — UV exposure at 1,200+ meters elevation is intense even when the air feels cool." }
+  - { question: "Is Constanza safe to visit?", answer: "Constanza is one of the safest places in the Dominican Republic. It is a small farming town with minimal tourism infrastructure and virtually no crime targeting visitors. Standard precautions apply on mountain roads — drive carefully on steep, winding routes, especially after dark or in wet conditions. The 4x4 roads in Valle Nuevo require skill and a capable vehicle." }
 affiliatePicks:
   - name: "Hotel Altocerro Villas"
     type: "hotel"
@@ -78,6 +82,8 @@ The strawberries were extraordinary — small, deeply red, and intensely sweet i
 ### Japanese Farming Legacy
 
 Constanza has a unique Japanese farming community that dates to the 1950s, when Japanese immigrants arrived to establish agricultural colonies. Their influence on the valley's farming techniques was profound — they introduced intensive greenhouse cultivation, improved irrigation methods, and new crop varieties. The Japanese colony is smaller today, but the legacy is visible in the precision of Constanza's farming operations and in the small Japanese cultural center in town.
+
+<immersive-break-inline videoSrc="/videos/destinations/constanza-hero.mp4" heading="The Caribbean's Coldest Valley" subheading="Frost on strawberry fields, pine forests at altitude, and skies blazing with stars." />
 
 ## Valle Nuevo National Park
 
@@ -164,3 +170,17 @@ Cell service in Constanza town is adequate, but coverage becomes spotty to nonex
 Constanza will not appear on most Dominican Republic travel itineraries, and that is exactly what makes it special. This is the Caribbean at its most unexpected — a place where frost forms on strawberry fields, where pine forests climb to treeless ridges, where the night sky blazes with more stars than you thought possible. It demands effort to reach and rewards that effort generously.
 
 I came to Constanza expecting a quirky side trip and left feeling like I had discovered something genuinely rare. In a region where every island competes on beaches and sunshine, here is a valley that offers fog, cool air, and the smell of pine. It is quietly magnificent.
+
+<div class="scott-tips">
+
+**Scott's Tips for Constanza**
+
+- **Book a 4x4 guide for Valle Nuevo — do not attempt it alone in a rental.** The park roads are rough, unmarked, and easy to get wrong. A local guide costs RD$4,000-5,000 (~$68-$85 USD) for the day and is worth every peso in safety, knowledge, and finding the best viewpoints.
+- **Pack cold-weather layers, not just a light jacket.** Nights drop to near-freezing in January and February. A proper fleece or down jacket, long pants, and warm socks are not optional. The cool air feels deceptive — you will be cold at 2am without the right gear.
+- **Buy strawberries at roadside farm stands, not in town shops.** The price is lower and the quality is higher — often picked that morning. A kilogram of Constanza strawberries costs RD$80-150 (~$1.50-$2.50 USD) direct from the farms.
+- **Go to the Aguas Blancas waterfall in the morning.** The path can be slippery in wet conditions and is best done before any afternoon rain. It is about a 45-minute hike from the trailhead — not difficult, but bring water and sturdy footwear.
+- **Sunscreen is not optional even on cool days.** UV intensity at 1,200+ meters elevation is significantly higher than at sea level. The cool air masks how much sun you are getting. Apply SPF 50 regardless of how comfortable the temperature feels.
+- **Constanza town shuts down early.** Restaurants close by 9pm, and there is essentially no nightlife. Embrace it — this is a place to eat well, sleep deeply, and wake up to cold mountain air and stunning light.
+- **Pair Constanza with Jarabacoa for a full mountain circuit.** The two towns complement each other perfectly — Constanza for altitude and farming, Jarabacoa for adventure sports and the Jimenoa waterfalls. The connecting road is rough but beautiful.
+
+</div>

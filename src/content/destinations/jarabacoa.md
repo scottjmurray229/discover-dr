@@ -30,6 +30,10 @@ faqItems:
   - { question: "Is Jarabacoa worth visiting if I am not into extreme sports?", answer: "Absolutely. The cool climate alone is a welcome escape from the coast. The town has excellent restaurants, coffee farms you can tour, horseback riding through the mountains, and waterfalls that require only short hikes. The pace of life is relaxed, and the natural scenery is stunning even from the road." }
   - { question: "What should I pack for Jarabacoa?", answer: "Layers are essential. Daytime temperatures are pleasant (20-25°C) but evenings drop to 12-15°C, and higher elevations get colder. Bring a light jacket, long pants, and closed-toe shoes or hiking boots. If trekking Pico Duarte, you need warm layers — summit temperatures can drop below freezing. Rain gear is advisable year-round as mountain showers are common." }
   - { question: "Can I visit Jarabacoa as a day trip?", answer: "You can, but I would not recommend it. The drive from Santo Domingo or Santiago eats into your day, and rushing through the waterfalls and town feels wrong. Two to three nights lets you properly explore the waterfalls, do a rafting trip, and soak in the mountain atmosphere. If Pico Duarte is on your list, budget at least four nights." }
+  - { question: "Is white-water rafting in Jarabacoa safe for beginners?", answer: "Yes — the Río Yaque del Norte has Class II-III rapids on the main commercial section, making it accessible for most people with no experience. Reputable outfitters like Rancho Baiguate provide all equipment, safety briefing, and experienced guides. Higher water levels during rainy season make the rapids more intense. If you have any concerns, tell your guide and they will position you appropriately in the raft." }
+  - { question: "How do I get from Jarabacoa to Constanza?", answer: "The direct road between Jarabacoa and Constanza is scenic and rough — about 1.5 hours in good conditions, longer after rain. A 4x4 or high-clearance vehicle is strongly recommended for this route. The payoff is stunning mountain scenery and the logical completion of a Cordillera Central circuit. Alternatively, backtrack to La Vega and take the paved route via Bonao (about 2.5 hours total but much easier)." }
+  - { question: "Where are the best waterfalls near Jarabacoa?", answer: "Salto de Jimenoa Uno is the famous 40-meter cascade crossed by a swing bridge — dramatic and photogenic. Salto de Jimenoa Dos is larger and more powerful but a harder hike. Salto de Baiguate is the easiest to reach and great for swimming. Jimenoa Uno is the must-do; combine it with Baiguate for a full waterfall day. All three are within 20 minutes of town." }
+  - { question: "What is the food scene like in Jarabacoa?", answer: "Better than you would expect for a mountain town. Aroma de la Montaña is the best restaurant — Dominican cuisine done with care and local ingredients. Several chicken-and-rice comedores serve enormous meals for RD$300-400 (~$5-7 USD). The town has a strong café culture with locally grown mountain coffee. Market days (Wednesday and Saturday) are worth visiting for fresh produce from surrounding farms." }
 affiliatePicks:
   - name: "Jarabacoa River Club"
     type: "hotel"
@@ -80,6 +84,8 @@ The temperature at the top was near freezing, and I was grateful for the thermal
 A Pico Duarte trek requires a licensed guide and mule, which you arrange through an outfitter in Jarabacoa or directly in La Ciénaga. Full packages including guide, mule, food, tent, and sleeping bag run RD$12,000-25,000 (~$205-$425 USD) per person depending on group size and comfort level. The park entrance fee is about RD$100 (~$2 USD). I recommend booking through one of the established adventure companies in Jarabacoa — they handle all logistics and provide reliable equipment.
 
 Physical fitness matters. The trail is not technically difficult, but 46 kilometers of mountain hiking over two to three days with significant elevation gain will test anyone who is not in reasonable shape. Train with some long hikes before you go, and break in your boots well in advance.
+
+<immersive-break-inline videoSrc="/videos/destinations/jarabacoa-hero.mp4" heading="The City of Everlasting Spring" subheading="Mountain rivers, pine forests, and the highest peak in the Caribbean." />
 
 ## The Waterfalls
 
@@ -170,3 +176,17 @@ The elevation and cooler temperatures mean mosquitoes are far less of an issue t
 Jarabacoa changed my understanding of the Dominican Republic. Before I visited, I associated the country entirely with beaches, resorts, and tropical heat. This mountain town showed me a different DR — one of cool forests, rushing rivers, dramatic peaks, and a quieter, more contemplative beauty. It is the kind of place where you sit on a porch with a cup of local coffee, watch clouds drift through the valley, and feel genuinely grateful to be exactly where you are.
 
 If you have more than a week in the Dominican Republic, do not skip the mountains. Jarabacoa is the gateway, and what lies beyond is extraordinary.
+
+<div class="scott-tips">
+
+**Scott's Tips for Jarabacoa**
+
+- **Book Rancho Baiguate for activities, not just rafting.** They run the best adventure operation in town — experienced guides, solid equipment, and the ability to combine rafting, canyoning, and Pico Duarte treks in a single package. Booking through them is significantly easier than cobbling together separate operators.
+- **Do Jimenoa Uno waterfall in the morning.** The swing bridge fills up with visitors by late morning on weekends. Early morning means better light, fewer people, and the dramatic cascade to yourself for at least a few minutes.
+- **Evenings get cold.** Pack a real jacket, not just a light layer. After sunset the temperature drops noticeably — what felt like spring weather at 4pm becomes genuinely cool by 8pm. Restaurants without heaters get chilly.
+- **The coffee at mountain farms is extraordinary.** Ask your hotel to arrange a visit to a local coffee farm — several outside town offer informal tours and sell freshly roasted beans directly. Dominican mountain coffee is legitimately excellent and underpriced by international standards.
+- **If Pico Duarte is the goal, allow four nights minimum.** The trek itself takes two to three days round trip, and you want a buffer day to recover and adjust before heading out. Rushing the highest peak in the Caribbean is a bad idea.
+- **Weekdays are significantly quieter than weekends.** Dominican families from Santiago and the capital flood Jarabacoa on weekends. If your schedule allows, arrive Monday or Tuesday and leave by Friday.
+- **Carry cash.** ATMs exist in town but run out on busy weekends. The rafting operators, guesthouses, and most restaurants prefer cash. Bring more than you think you will need.
+
+</div>

@@ -24,8 +24,13 @@ relatedDestinations:
   - "la-romana"
 faqItems:
   - { question: "Is Santo Domingo safe for tourists?", answer: "The Colonial Zone and major tourist areas are generally safe during the day and well-patrolled. Like any large Caribbean capital, exercise standard urban awareness. Avoid displaying expensive jewelry, use registered taxis or rideshare apps at night, and stay on well-lit streets. The Colonial Zone after dark is lively and populated, which adds to safety." }
+  - { question: "Is Santo Domingo worth visiting?", answer: "Absolutely. Santo Domingo is where you understand the Dominican Republic as a nation rather than just a vacation destination. The Zona Colonial is the oldest European settlement in the Americas — a UNESCO World Heritage Site with 500+ years of New World history compressed into a walkable district. The food is better, the nightlife is more authentic, and the cultural depth is unmatched anywhere in the DR." }
+  - { question: "Best time to visit Santo Domingo?", answer: "December through April is the dry season and most comfortable for exploring the city on foot. The city is a year-round destination with few seasonal closures. Carnival season (February) is particularly festive. Hurricane season (June-November) brings more rain but rarely disrupts city visits." }
+  - { question: "How much does Santo Domingo cost per day?", answer: "Very affordable. Budget travelers in the Colonial Zone can manage $35-50 USD/day in guesthouses eating at local restaurants. Mid-range visitors at a boutique Colonial Zone hotel with restaurant meals should budget $120-200 USD/day. Santo Domingo is significantly cheaper than comparable capitals in the Caribbean." }
+  - { question: "Do I need a visa for the Dominican Republic?", answer: "US, Canadian, Australian, UK, and most EU nationals can enter without a prior visa for up to 30 days. The tourist card fee has been included in airline tickets since 2022 for most flights. Always verify current requirements before departure." }
+  - { question: "What is Santo Domingo famous for?", answer: "Santo Domingo is famous for being the first permanent European settlement in the Americas (founded 1496), the Zona Colonial UNESCO World Heritage Site, the Catedral Primada de América (first cathedral in the New World), and a nightlife scene along the Malecón that rivals any Caribbean capital." }
   - { question: "How many days do I need in Santo Domingo?", answer: "Two to three full days lets you cover the Colonial Zone thoroughly, enjoy the food scene, experience the nightlife, and take a day trip. One day feels rushed given the density of historical sites. If you are combining it with a beach destination, two days is the sweet spot." }
-  - { question: "Is Santo Domingo worth visiting or should I just go to the beach?", answer: "Absolutely worth visiting. Santo Domingo gives you the cultural and historical depth that the resort towns cannot. This is where you understand the Dominican Republic as a nation, not just a vacation destination. The food is better, the nightlife is more authentic, and the historical significance is unmatched anywhere in the Americas." }
+  - { question: "Santo Domingo vs Havana — which Caribbean capital?", answer: "Both are extraordinary historic capitals. Havana has more visual drama and is more foreign (in the sense that its isolation has preserved something unique). Santo Domingo is more accessible, livelier as a modern city, and easier to combine with beach tourism. If colonial history is your priority, Santo Domingo has older and more historically significant sites. Both are worth visiting." }
 affiliatePicks:
   - name: "Colonial Zone Boutique Hotel"
     type: "hotel"
@@ -78,6 +83,8 @@ The oldest paved street in the Americas runs from the Alcazar south to the Forta
 ### Fortaleza Ozama
 
 This fortress at the southern end of the Colonial Zone is the oldest European military structure in the Americas, with construction beginning in 1502. The Torre del Homenaje (Tower of Homage) rises above the river and offers panoramic views of the Ozama, the Colonial Zone, and the modern city beyond. I climbed the narrow stone staircase to the top and spent twenty minutes watching cargo ships and fishing boats navigate the river below. The fortress grounds are peaceful, shaded, and far less crowded than the more famous sites.
+
+<immersive-break-inline videoSrc="/videos/destinations/santo-domingo-hero.mp4" heading="Santo Domingo: The First City of the New World" subheading="500 years of history, Caribbean nightlife, and the Americas' oldest European streets" />
 
 ## Beyond the Colonial Zone
 
