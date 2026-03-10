@@ -139,6 +139,7 @@ function buildDestinationSchemas() {
 }
 
 function buildBlogSchemas() {
+  const authorSlug = (data.author || 'Scott').toLowerCase() === 'jenice' ? 'jenice' : 'scott';
 
   return [
     {
