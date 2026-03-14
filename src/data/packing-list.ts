@@ -6,6 +6,36 @@ export const DR_ESSENTIALS: PackingItem[] = [
   { id: 'dr-repellent', name: 'DEET Insect Repellent', category: 'destination', description: 'Dengue and Zika are present in the DR. Mosquitoes are heavy near rivers, mangroves, and in the capital Santo Domingo. DEET-based repellent in the evenings.', essential: true, amazonSearchFallback: 'deet+insect+repellent+30+percent', affiliatePrice: '$8–15' },
   { id: 'dr-watershoes', name: 'Water Shoes', category: 'destination', description: 'Rocky beach entries on the north coast (Cabarete, Las Terrenas), river excursions (Damajagua waterfalls), and cenote swimming all require water shoes. Essential outside the Punta Cana resort strip.', essential: false, amazonSearchFallback: 'water+shoes+quick+dry+snorkeling', affiliatePrice: '$20–35' },
   { id: 'dr-drybag', name: 'Dry Bag (10–20L)', category: 'destination', description: 'Boat trips to Saona Island, whale watching in Samaná Bay, and river canyoning at Damajagua all put your gear at risk of getting soaked. A dry bag is the simple solution.', essential: true, amazonSearchFallback: 'dry+bag+10l+20l+waterproof', affiliatePrice: '$15–30' },
+  {
+    id: 'vpn-subscription',
+    name: 'VPN Subscription',
+    category: 'electronics',
+    description: 'Secure your data on public WiFi — essential for hotel, airport, and cafe networks abroad.',
+    essential: false,
+    affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=XXXXX&url_id=902',
+    affiliatePrice: '~$3/month',
+    affiliatePartner: 'NordVPN',
+  },
+  {
+    id: 'action-camera',
+    name: 'Waterproof Action Camera',
+    category: 'gear',
+    description: 'Capture snorkeling, diving, and beach adventures hands-free.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/go-ultra?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$299',
+    affiliatePartner: 'Insta360',
+  },
+  {
+    id: 'phone-gimbal',
+    name: 'Phone Gimbal for Travel Vlogging',
+    category: 'electronics',
+    description: 'Stabilized video from your phone — no editing needed.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/flow-2-pro?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$149',
+    affiliatePartner: 'Insta360',
+  },
 ];
 
 export const DR_GEAR_RECOMMENDATIONS: GearRecommendation[] = [
