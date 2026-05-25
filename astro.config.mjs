@@ -18,6 +18,7 @@ export default defineConfig({
   },
 
   integrations: [sitemap({
+    filter: (page) => !page.includes('/companion/app') && !page.includes('/companion/success'),
     serialize(item) {
       item.lastmod = new Date().toISOString();
       return item;
