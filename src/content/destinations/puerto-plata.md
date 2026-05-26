@@ -100,7 +100,6 @@ The houses line several blocks around the central Parque Independencia, with the
 
 Many of the houses are in various states of restoration. Some have been beautifully maintained and converted into boutique hotels, restaurants, or cultural centres. Others are peeling and faded, which only adds to their melancholy beauty. Walking through this neighbourhood in the golden light of late afternoon, with *bachata* drifting from open windows and neighbours chatting on their verandas, I felt like I had stepped into a different era.
 
-<immersive-break-inline videoSrc="/videos/destinations/puerto-plata-hero.mp4" heading="The Amber Coast's Historic Heart" subheading="Cable cars, 27 waterfalls, Victorian gingerbread houses, and real Dominican city life." />
 
 ## The Amber Museum
 

@@ -92,7 +92,6 @@ The strawberries were extraordinary — small, deeply red, and intensely sweet i
 
 Constanza has a unique Japanese farming community that dates to the 1950s, when Japanese immigrants arrived to establish agricultural colonies. Their influence on the valley's farming techniques was profound — they introduced intensive greenhouse cultivation, improved irrigation methods, and new crop varieties. The Japanese colony is smaller today, but the legacy is visible in the precision of Constanza's farming operations and in the small Japanese cultural center in town.
 
-<immersive-break-inline videoSrc="/videos/destinations/constanza-hero.mp4" heading="The Caribbean's Coldest Valley" subheading="Frost on strawberry fields, pine forests at altitude, and skies blazing with stars." />
 
 ## Valle Nuevo National Park
 

@@ -93,7 +93,6 @@ The oldest paved street in the Americas runs from the Alcazar south to the Forta
 
 This fortress at the southern end of the Colonial Zone is the oldest European military structure in the Americas, with construction beginning in 1502. The Torre del Homenaje (Tower of Homage) rises above the river and offers panoramic views of the Ozama, the Colonial Zone, and the modern city beyond. I climbed the narrow stone staircase to the top and spent twenty minutes watching cargo ships and fishing boats navigate the river below. The fortress grounds are peaceful, shaded, and far less crowded than the more famous sites.
 
-<immersive-break-inline videoSrc="/videos/destinations/santo-domingo-hero.mp4" heading="Santo Domingo: The First City of the New World" subheading="500 years of history, Caribbean nightlife, and the Americas' oldest European streets" />
 
 ## Beyond the Colonial Zone
 

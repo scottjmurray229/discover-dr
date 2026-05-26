@@ -109,7 +109,6 @@ I will be candid: the day trip to Isla Saona is touristy. The catamarans are pac
 
 The natural pool stop deserves its own mention because it is one of those experiences that sounds absurd until you are standing in it. You are literally standing waist-deep in the Caribbean Sea, a kilometre from any land, on a sandbar surrounded by every shade of blue. Starfish dot the sandy bottom (do not pick them up -- they are protected and touching them can cause harm). A vendor appears with a tray of rum and coconut. *Bachata* plays from a waterproof speaker on one of the boats. It is surreal, it is touristy, and it is genuinely wonderful.
 
-<immersive-break-inline videoSrc="/videos/destinations/la-romana-hero.mp4" heading="Where Luxury Meets Dominican Soul" subheading="A recreated medieval village, island paradise beaches, and the DR's best coral walls." />
 
 ## Catalina Island
 

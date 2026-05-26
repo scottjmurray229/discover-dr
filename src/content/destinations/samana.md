@@ -83,7 +83,6 @@ The season runs from mid-January through late March. February is the peak month,
 
 Dominican regulations require boats to maintain a minimum distance of 50 metres from the whales and limit viewing time to 30 minutes per group of whales. In practice, the whales themselves often close that distance, approaching boats with apparent curiosity. Choose a licensed operator -- *Whale Samana* is the most established -- and avoid the cheapest options, which sometimes cut corners on safety and crowd boats beyond comfortable capacity.
 
-<immersive-break-inline videoSrc="/videos/destinations/samana-hero.mp4" heading="Samaná Peninsula: Whales, Waterfalls, and the DR's Most Beautiful Beach" subheading="Humpback whale season, Playa Rincón, and a peninsula the resort crowd hasn't found yet" />
 
 ## El Limon Waterfall
 

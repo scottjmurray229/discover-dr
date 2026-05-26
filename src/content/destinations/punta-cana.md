@@ -79,7 +79,6 @@ The water is shallow and calm for a surprising distance from shore, making it id
 
 The stretch near the fishing village of Cortecito offers a more local experience. Small bars and restaurants line the sand, vendors sell fresh coconut water and *empanadas de yuca*, and Dominican families gather on weekends with coolers of *Presidente* beer and speakers blasting *bachata*. It is louder and less polished than the resort sections, and I loved every minute of it. This is where you get a glimpse of how Dominicans actually enjoy their own beaches.
 
-<immersive-break-inline videoSrc="/videos/destinations/punta-cana-hero.mp4" heading="Punta Cana: Bavaro Beach and the Caribbean Dream" subheading="The all-inclusive done right — and what's waiting just beyond the resort gate" />
 
 ## Hoyo Azul: The Hidden Cenote
 

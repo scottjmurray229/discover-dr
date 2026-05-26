@@ -94,7 +94,6 @@ There is no shade. Let me repeat that for emphasis: there is absolutely no natur
 
 Bring all your food and water. There is nothing to buy on the beach — no vendors, no kiosks, no fresh coconuts. I packed sandwiches, fruit, a full cooler of water and Presidente, and it was exactly right. This is wilderness beach-going at its purest. If that sounds inconvenient, it is the wrong destination for you. If it sounds like paradise, it absolutely is.
 
-<immersive-break-inline videoSrc="/videos/destinations/barahona-hero.mp4" heading="The Other Dominican Republic" subheading="Empty beaches, flamingos, and landscapes that defy every Caribbean stereotype." />
 
 ## The Coastal Road: Barahona to Pedernales
 

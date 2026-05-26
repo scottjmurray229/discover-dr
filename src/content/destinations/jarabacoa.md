@@ -94,7 +94,6 @@ A Pico Duarte trek requires a licensed guide and mule, which you arrange through
 
 Physical fitness matters. The trail is not technically difficult, but 46 kilometers of mountain hiking over two to three days with significant elevation gain will test anyone who is not in reasonable shape. Train with some long hikes before you go, and break in your boots well in advance.
 
-<immersive-break-inline videoSrc="/videos/destinations/jarabacoa-hero.mp4" heading="The City of Everlasting Spring" subheading="Mountain rivers, pine forests, and the highest peak in the Caribbean." />
 
 ## The Waterfalls
 

@@ -136,7 +136,6 @@ Half-day tours run about RD$4,000-6,000 (~$68-$102 USD) per person, including bo
 
 If you visit during whale season, this excursion is non-negotiable. Build your entire Samaná itinerary around it.
 
-<immersive-break-inline videoSrc="/videos/destinations/las-terrenas-hero.mp4" heading="Caribbean Soul, European Flair" subheading="Where French bistros, Dominican beaches, and humpback whales share the same peninsula." />
 
 ## El Limón Waterfall
 

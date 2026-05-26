@@ -114,7 +114,6 @@ I hired a local guide at the park entrance for about RD$1,000 (~$17 USD), and it
 
 The park entrance fee is about RD$200 (~$3.50 USD), and you can easily spend two to three hours exploring. Bring water, sunscreen, and shoes with grip — some of the limestone paths are slippery.
 
-<immersive-break-inline videoSrc="/videos/destinations/cabarete-hero.mp4" heading="Where the Trade Winds Never Stop" subheading="Kiteboarding, surf breaks, and north coast energy that keeps you coming back." />
 
 ## The Cabarete Caves and Lagoon
 
